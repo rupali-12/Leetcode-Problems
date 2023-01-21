@@ -13,6 +13,7 @@ public:
        //     }
        // }
         
+        // another Approach>>>>>>
         int i=0;
         for(int j=0; j<nums.size(); j++){
             if(nums[j]!=0){
