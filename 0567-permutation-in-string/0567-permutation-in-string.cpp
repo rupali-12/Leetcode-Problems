@@ -10,6 +10,8 @@ public:
     }
     bool checkInclusion(string s1, string s2) {
         int temp[26]={0};
+        
+        // Store count of every characters in s1
         for(int i=0; i<s1.length(); i++){
             int ind = s1[i]-'a';
             temp[ind]++;
