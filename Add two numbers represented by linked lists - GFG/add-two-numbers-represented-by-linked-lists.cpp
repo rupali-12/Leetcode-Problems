@@ -124,15 +124,15 @@ class Solution
     struct Node* addTwoLists(struct Node* first, struct Node* second)
     {
         // code here
-        // if(first==NULL && second==NULL){
-        //     return NULL;
-        // }
-        // if(first==NULL){
-        //     return second;
-        // }
-        // if(second==NULL){
-        //     return first;
-        // }
+        if(first==NULL && second==NULL){
+            return NULL;
+        }
+        if(first==NULL){
+            return second;
+        }
+        if(second==NULL){
+            return first;
+        }
         // step1-> reverse two lists >>
         first = revers(first);
         second = revers(second);
