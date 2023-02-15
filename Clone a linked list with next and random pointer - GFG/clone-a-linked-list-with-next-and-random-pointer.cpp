@@ -18,6 +18,8 @@ struct Node {
 
 
 // } Driver Code Ends
+
+// Approach-1>>> using Map
 class Solution
 {
     private:
@@ -44,9 +46,9 @@ class Solution
             insertAtTail(cloneHead, cloneTail, temp->data);
             temp= temp->next;
         }
-        // Mapping of original nodes with the cloned node 
         Node* originalNode= head;
         Node* cloneNode= cloneHead;
+ 
         map<Node*, Node*>mp;
         while(originalNode!=NULL){
             mp[originalNode]=cloneNode;
@@ -62,7 +64,8 @@ class Solution
             originalNode= originalNode->next;
             cloneNode= cloneNode->next;
         }
-       return cloneHead;   
+        
+      return cloneHead;   
     }
 };
 
