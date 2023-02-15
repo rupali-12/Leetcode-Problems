@@ -19,7 +19,58 @@ struct Node {
 
 // } Driver Code Ends
 
-// Approach-1>>> using Map
+// // Approach-1>>> using Map
+// class Solution
+// {
+//     private:
+//     void insertAtTail(Node* &cloneHead, Node* &cloneTail, int d){
+//         Node* temp= new Node(d);
+//         if(cloneHead==NULL){
+//             cloneHead = temp;
+//             cloneTail = temp;
+//         }
+//         else{
+//             cloneTail->next= temp;
+//             cloneTail= temp;
+//         }
+//     }
+//     public:
+//     Node *copyList(Node *head)
+//     {
+//         //Write your code here
+//         Node* cloneHead=NULL;
+//         Node* cloneTail=NULL;
+        
+//         Node* temp=head;
+//         while(temp!=NULL){
+//             insertAtTail(cloneHead, cloneTail, temp->data);
+//             temp= temp->next;
+//         }
+//         Node* originalNode= head;
+//         Node* cloneNode= cloneHead;
+ 
+//         map<Node*, Node*>mp;
+//         while(originalNode!=NULL){
+//             mp[originalNode]=cloneNode;
+//             originalNode= originalNode->next;
+//             cloneNode= cloneNode->next;
+//         }
+        
+//         // point random pointers of cloned node 
+//         originalNode= head;
+//         cloneNode= cloneHead;
+//         while(originalNode!=NULL){
+//             cloneNode->arb = mp[originalNode->arb];
+//             originalNode= originalNode->next;
+//             cloneNode= cloneNode->next;
+//         }
+        
+//       return cloneHead;   
+//     }
+// };
+
+
+// Approach-2>>>>changing links>>>>>>>>>
 class Solution
 {
     private:
@@ -46,24 +97,49 @@ class Solution
             insertAtTail(cloneHead, cloneTail, temp->data);
             temp= temp->next;
         }
+        
+        // step-2> point originalNodes to New Nodes >>
         Node* originalNode= head;
         Node* cloneNode= cloneHead;
+ while(originalNode!=NULL){
+     Node* next = originalNode->next;
+     originalNode->next= cloneNode;
+     originalNode =next;
+     
+     next = cloneNode->next;
+     cloneNode->next= originalNode;
+     cloneNode = next;
+ }
  
-        map<Node*, Node*>mp;
-        while(originalNode!=NULL){
-            mp[originalNode]=cloneNode;
-            originalNode= originalNode->next;
-            cloneNode= cloneNode->next;
-        }
+//  step-3>> copy clone Pointer>>
+Node* curr = head;
+while(curr!=NULL){
+    if(curr->next!=NULL){
+        curr->next->arb = curr->arb? curr->arb->next: curr->arb;
         
-        // point random pointers of cloned node 
-        originalNode= head;
-        cloneNode= cloneHead;
-        while(originalNode!=NULL){
-            cloneNode->arb = mp[originalNode->arb];
-            originalNode= originalNode->next;
-            cloneNode= cloneNode->next;
-        }
+        // if(curr->arb!=NULL){
+        //     curr->next->arb =curr->arb->next;
+        // }
+        // else{
+        //     curr->next =curr->arb;
+        // }
+    }
+    // next two times >>
+    curr= curr->next->next;
+}
+
+// step-3>> revert steps of step-2>>
+  originalNode= head;
+  cloneNode= cloneHead;
+   while(originalNode!=NULL){
+       originalNode->next =cloneNode->next;
+       originalNode= originalNode->next;
+       
+       if(originalNode!=NULL){
+           cloneNode->next= originalNode->next;
+       }
+       cloneNode = cloneNode->next;
+   }
         
       return cloneHead;   
     }
