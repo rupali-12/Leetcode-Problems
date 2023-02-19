@@ -28,10 +28,10 @@ class Solution {
                          st.pop();
                      }
                     //  it comes out from while loop when it is encountered with opening bracket 
-                     st.pop();
                      if(isRedundant==true){
                          return 1;
                      }
+                     st.pop();
                 }
             }
         }
