@@ -11,7 +11,7 @@ public:
         //     return nums[s];
         // }
         if(mid%2==0){
-            if(nums[mid]==nums[mid+1]){
+            if(nums[mid] == nums[mid+1]){
                 s =mid+2;
             }
             else{
@@ -19,11 +19,11 @@ public:
             }
         }
         else{
-              if(nums[mid]==nums[mid+1]){
-                e= mid-1;
+              if(nums[mid]==nums[mid-1]){
+                s = mid + 1;;
             }
             else{
-                s=mid+1;
+                e =mid;
             }
         }
     mid =s+(e-s)/2;
