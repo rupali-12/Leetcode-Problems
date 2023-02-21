@@ -24,6 +24,6 @@ public:
         }
     mid =s+(e-s)/2;
         }
-        return nums[s];
+        return nums[mid];
     }
 };
