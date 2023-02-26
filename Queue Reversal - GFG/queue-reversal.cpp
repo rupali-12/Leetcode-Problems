@@ -35,7 +35,9 @@ int main()
 //Function to reverse the queue.
 queue<int> rev(queue<int> q)
 {
-    // add code here.
+    // add code here
+    
+    // Approach--1>>using stack>>>>>>>>>>>>>>>>>>>>
     stack<int>s;
     while(!q.empty()){
         int temp = q.front();
@@ -46,8 +48,22 @@ queue<int> rev(queue<int> q)
     queue<int>ans;
     while(!s.empty()){
         int temp= s.top();
-        s.pop();
+        s.pop(); 
         ans.push(temp);
     }
     return ans;
+    
+    // *******************************************************************************************
+    // Approach--2>>>using recursion>>>>>>>>>>>>>>>>>>>>>>
+//     //   queue<int>ans;
+//     if(q.empty()){
+//         return q;
+//     }
+//      int temp= q.front();
+//      q.pop();
+//   q= rev(q);
+//      q.push(temp);
+     
+//      return q;
 }
+
