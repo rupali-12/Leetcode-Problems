@@ -71,23 +71,21 @@ vector<long long> printFirstNegativeInteger(long long int A[],
     //     return ans;
     
     
-//     // >>Approach-2>>>>  only 10055 test passed
+// //     // >>Approach-2>>>>  only 10055 test passed
 //   vector<long long int>ans;
-//   for(int i=0; i<N-K+1; i++){
-//       int j=0, l=i, flag=0;
-//       while(j<K){
-//           if(A[l]<0){
-//               flag=1;
-//               break;
-//           }
-//           l++; j++;
-//       }   
-//       if(flag==1){
-//           ans.push_back(A[l]);
-//       }
-//       else{
-//           ans.push_back(0);
-//       }
+//   bool flag;
+//   for(int i=0; i<(N-K+1); i++){
+//       flag=false;
+//      for(int j=0; j<K; j++){
+//          if(A[i+j]<0){
+//               ans.push_back(A[i+j]);
+//              flag= true;
+//              break;
+//          }
+//      }
+//      if(!flag){
+//          ans.push_back(0);
+//      }
 //   }
 //     return ans;
     
@@ -96,19 +94,19 @@ vector<long long> printFirstNegativeInteger(long long int A[],
     int firstNegIndex=0;
     int firstNegElement;
     vector<long long int>ans;
-   for(int i=K-1; i<N; i++){
-       while((firstNegIndex<i) && (firstNegIndex<=i-K || A[firstNegIndex]>=0)){
-           firstNegIndex++;
-       }
-       if(A[firstNegIndex]<0){
-           firstNegElement= A[firstNegIndex];
-       }
-       else{
-           firstNegElement=0;
-       }
-       ans.push_back(firstNegElement);
-   }
-   return ans;
+  for(int i=K-1; i<N; i++){
+      while((firstNegIndex<i) && (firstNegIndex<=i-K || A[firstNegIndex]>=0)){
+          firstNegIndex++;
+      }
+      if(A[firstNegIndex]<0){
+          firstNegElement= A[firstNegIndex];
+      }
+      else{
+          firstNegElement=0;
+      }
+      ans.push_back(firstNegElement);
+  }
+  return ans;
  }
 
 
