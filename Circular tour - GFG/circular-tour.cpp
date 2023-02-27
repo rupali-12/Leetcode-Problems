@@ -27,23 +27,43 @@ class Solution{
     int tour(petrolPump p[],int n)
     {
        //Your code here
-       int start=0;
-       int balance=0;
-      int deficiet=0;
-      for(int i=start; i<n; i++){
-          balance= balance + (p[i].petrol- p[i].distance);
-          if(balance<0){
-              deficiet+= balance;
-              start= i+1;
-              balance=0;
-          }
-      }
-      if(deficiet+balance >=0){
-          return start;
-      }
-      else{
-          return -1;
-      }
+    //   int start=0;
+    //   int balance=0;
+    //   int deficiet=0;
+    //   for(int i=start; i<n; i++){
+    //       balance= balance + (p[i].petrol- p[i].distance);
+    //       if(balance<0){
+    //           deficiet+= balance;
+    //           start= i+1;
+    //           balance=0;
+    //       }
+    //   }
+    //   if(deficiet+balance >=0){
+    //       return start;
+    //   }
+    //   else{
+    //       return -1;
+    //   }
+    
+    
+    // 2nd approach usng queue>>>>
+    int start=0;
+    int end= 1;
+    int balance=p[start].petrol - p[start].distance;
+ while(start!=end || balance<0){
+     while(start!=end && balance<0){
+         balance-= p[start].petrol - p[start].distance;
+         start =(start+1)%n;
+         
+         if(start==0){
+             return -1;
+         }
+     }
+     balance+= p[end].petrol - p[end].distance;
+      end = (end+1)%n;
+    
+ }
+    return start;  
     }
 };
 
