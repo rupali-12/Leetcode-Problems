@@ -10,6 +10,8 @@ public:
            while(j<n && chars[i]==chars[j]){
                j++;
            }
+           
+           // here reaches , when the complete array is traversed or a new character is encountered 
            chars[index++]= chars[i];
            int count = j-i;
             if(count>1){
@@ -19,6 +21,7 @@ public:
                     chars[index++]= ch;
                 }
             }
+           // moving to next character 
            i=j;
        }
         return index;
