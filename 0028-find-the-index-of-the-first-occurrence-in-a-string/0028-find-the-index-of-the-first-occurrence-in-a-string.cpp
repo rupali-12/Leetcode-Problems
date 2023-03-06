@@ -26,15 +26,14 @@ public:
             if(j==m){
                 ans = i-m;
                 return ans;
-                j= lps[j-1];
+                // j= lps[j-1];
             }
             
         else if(needle[j]!=haystack[i]){
             if(j==0) {i++;}
             else{
             j= lps[j-1];
-            }
-            
+            }   
         }
         }
         return ans;
