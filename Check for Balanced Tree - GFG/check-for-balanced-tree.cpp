@@ -144,9 +144,6 @@ class Solution{
     bool isBalanced(Node *root)
     {
         //  Your Code here
-        if(root==NULL){
-            return true;
-        }
        return isBalancedFast(root).first;
     }
 };
