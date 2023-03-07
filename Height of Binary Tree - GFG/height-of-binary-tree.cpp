@@ -105,9 +105,9 @@ class Solution{
         if(node==NULL){
             return 0;
         }
-        if(node->left==NULL && node->right==NULL){
-            return 1;
-        }
+        // if(node->left==NULL && node->right==NULL){
+        //     return 1;
+        // }
         
         int leftH = height(node->left);
         int rightH = height(node->right);
