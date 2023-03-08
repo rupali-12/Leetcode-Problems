@@ -110,15 +110,15 @@ class Solution
          pair<bool, int> left = isSumTreeFast(root->left);
         pair<bool, int> right = isSumTreeFast(root->right);
          
-         bool l = left.first;
-         bool r =right.first;
+         bool isLeftSumTree = left.first;
+         bool isRightSumTree =right.first;
         
          int sum = left.second + right.second;
-         if(l && r && (root->data==sum)){
+         if(isLeftSumTree && isRightSumTree && (root->data==sum)){
              ans.first = true;
             //  root->data , because we have to pass that total to upper node 
-            //  ans.second =root->data + left.second + right.second;
-             ans.second =2*root->data;
+             ans.second =root->data + left.second + right.second;
+            //  ans.second =2*root->data;
          }
          else{
             ans.first =  false;
