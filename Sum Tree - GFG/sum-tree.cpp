@@ -117,11 +117,13 @@ class Solution
          if(l && r && (root->data==sum)){
              ans.first = true;
             //  root->data , because we have to pass that total to upper node 
-             ans.second =root->data + left.second + right.second;
+            //  ans.second =root->data + left.second + right.second;
+             ans.second =2*root->data;
          }
          else{
             ans.first =  false;
     }
+
         return ans;
     }
     bool isSumTree(Node* root)
