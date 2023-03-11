@@ -120,7 +120,7 @@ class Solution{
         }
         // sum-=v[i];    // noneed to do when it run for return call of upper nodes then sum is again initialize 
     }
-        // v.pop_back();
+        // v.pop_back();     // not necessary 
   }
     int sumK(Node *root,int k)
     {
