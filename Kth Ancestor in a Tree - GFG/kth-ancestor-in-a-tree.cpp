@@ -125,8 +125,8 @@ Node* solve(Node* root, int &k, int node){
     
     if(left!=NULL && right==NULL){
         k--;
-        if(k<=0){
-            k= INT_MAX;
+        if(k==0){
+            // k= INT_MAX;
             return root;
         }
         // else{
@@ -143,8 +143,8 @@ Node* solve(Node* root, int &k, int node){
     }
     if(left==NULL && right!=NULL){
         k--;
-         if(k<=0){
-            k= INT_MAX;
+         if(k==0){
+            // k= INT_MAX;
             return root;
         }
         // else{
