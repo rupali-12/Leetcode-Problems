@@ -123,42 +123,42 @@ Node* solve(Node* root, int &k, int node){
     Node* left = solve(root->left, k, node);
     Node* right = solve(root->right, k, node);
     
-    if(left!=NULL && right==NULL){
+    if((left!=NULL && right==NULL) || (left==NULL && right!=NULL)){
         k--;
         if(k==0){
             // k= INT_MAX;
             return root;
         }
-        // else{
-        //   if(left==NULL){
-        //       return right;
-        //   }
-        //   else{
-        //         return left;
-        //   }
-        // }
         else{
-            return left;
-        }
-    }
-    if(left==NULL && right!=NULL){
-        k--;
-         if(k==0){
-            // k= INT_MAX;
-            return root;
+          if(left==NULL){
+              return right;
+          }
+          else{
+                return left;
+          }
         }
         // else{
-        //   if(left==NULL){
-        //       return right;
-        //   }
-        //   else{
-        //         return left;
-        //   }
+        //     return left;
         // }
-        else{
-            return right;
-        }
     }
+    // if(left==NULL && right!=NULL){
+    //     k--;
+    //      if(k==0){
+    //         // k= INT_MAX;
+    //         return root;
+    //     }
+    //     // else{
+    //     //   if(left==NULL){
+    //     //       return right;
+    //     //   }
+    //     //   else{
+    //     //         return left;
+    //     //   }
+    //     // }
+    //     else{
+    //         return right;
+    //     }
+    // }
     return NULL;
 }
 int kthAncestor(Node *root, int k, int node)
