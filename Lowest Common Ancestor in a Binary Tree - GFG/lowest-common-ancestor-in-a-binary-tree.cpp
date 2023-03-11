@@ -62,7 +62,7 @@ class Solution
               return left;
           }
       }
-      return NULL;
+    //   return NULL;
     }
 };
 
