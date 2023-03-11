@@ -142,7 +142,11 @@ Node* solve(Node* root, int &k, int node){
     // **********************************************************************************
     if(left!=NULL && right==NULL){
         k--;
-        if(k==0){
+        // if(k==0){
+        //     return root;
+        // }
+        if(k<=0){
+            k=INT_MAX;     // in order to ock answer so that i will never reach to 0 when i return back
             return root;
         }
         return left;
