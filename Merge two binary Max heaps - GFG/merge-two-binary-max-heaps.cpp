@@ -39,7 +39,7 @@ class Solution{
        }
         
         // step-2>> build heap using resultant vector
-        for(int i =ans.size()/2; i>=0; i--){
+        for(int i =ans.size()/2-1; i>=0; i--){
             heapify(ans, ans.size(), i);
         }
         return ans;
