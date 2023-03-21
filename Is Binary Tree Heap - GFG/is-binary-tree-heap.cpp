@@ -113,8 +113,10 @@ class Solution {
           return root->data > root->left->data;
       }
       else{
-         bool temp = root->data > root->left->data && root->data > root->right->data && isMaxOrder(root->left) && isMaxOrder(root->right);
-         if(temp){
+         bool temp = root->data > root->left->data && root->data > root->right->data;
+         bool left = isMaxOrder(root->left);
+         bool right = isMaxOrder(root->right);
+         if(temp && left && right){
              return true;
          }
          return false;
