@@ -124,11 +124,11 @@ class Solution {
       if(root==NULL){
           return 0;
       }
-    //   int left = countNode(root->left);
-    //   int right = countNode(root->right);
-    //   return left + right +1;
-    int ans =1 + countNode(root->left) + countNode(root->right);
-    return ans;
+      int left = countNode(root->left);
+      int right = countNode(root->right);
+      return left + right +1;
+    // int ans =1 + countNode(root->left) + countNode(root->right);
+    // return ans;
   }
     bool isHeap(struct Node* tree) {
         // code here
