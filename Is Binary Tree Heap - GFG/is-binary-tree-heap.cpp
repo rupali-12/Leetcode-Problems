@@ -113,7 +113,7 @@ class Solution {
           return root->data > root->left->data;
       }
       else{
-         bool temp = root->data > root->left->data && root->data > root->right->data;
+         bool temp = root->data > root->left->data && root->data > root->right->data && isMaxOrder(root->left) && isMaxOrder(root->right);
          if(temp){
              return true;
          }
@@ -127,14 +127,9 @@ class Solution {
       int left = countNode(root->left);
       int right = countNode(root->right);
       return left + right +1;
-    // int ans =1 + countNode(root->left) + countNode(root->right);
-    // return ans;
   }
     bool isHeap(struct Node* tree) {
         // code here
-        // if(tree==NULL){
-        //     return true;
-        // }
         int index=0;
         int totalCount =countNode(tree);
     if(isCBT(tree, index, totalCount) && isMaxOrder(tree)){
