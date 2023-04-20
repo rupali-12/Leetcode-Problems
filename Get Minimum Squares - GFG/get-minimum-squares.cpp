@@ -33,15 +33,30 @@ class Solution{
 	    dp[n]=ans;
 	    return dp[n];
 	}
+	int solveTab(int n){
+	    vector<int>dp(n+1, INT_MAX);
+	    dp[0]=0;
+	    for(int i=1; i<=n; i++){
+	       for(int j=1; j*j<=n; j++){
+	           if((i-j*j)>=0){
+	                dp[i]= min(dp[i], 1+ dp[i-(j*j)]);
+	           }
+	       }
+	    }
+	    return dp[n];
+	}
 	int MinSquares(int n)
 	{
 	    // Code here
 	   //// Approach-1> Using Recursion 
 	   //return solveRec(n);
 	   
-	     // Approach-2> Using Recursion + memoization
-	     vector<int>dp(n+1, -1);
-	   return solveMem(n, dp);
+	   //  // Approach-2> Using Recursion + memoization
+	   //  vector<int>dp(n+1, -1);
+	   //return solveMem(n, dp);
+	   
+	      // Approach-3> Using Tabulation
+	   return solveTab(n);
 	}
 };
 
