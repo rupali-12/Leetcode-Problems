@@ -64,6 +64,28 @@ int solveTab(vector<vector<int>>&mat, int row, int col, int &maxi){
     }
     return dp[0][0];
 }
+int solveSpOpt(vector<vector<int>>&mat, int row, int col, int &maxi){
+    vector<int>curr(col+1, 0);
+    vector<int>next(col+1, 0);
+    for(int i=row-1; i>=0; i--){
+        for(int j=col-1; j>=0; j--){
+     int right =curr[j+1];
+     int diagonal =next[j+1];
+     int down =next[j];
+     
+     if(mat[i][j]==1){
+         curr[j] =1 +  min(right, min(down, diagonal));
+         maxi =max(maxi, curr[j]);
+     }
+     else{
+         curr[j]=0;
+     }
+        }
+        // update next after every iteration
+        next=curr;
+    }
+    return next[0];
+}
     int maxSquare(int n, int m, vector<vector<int>> mat){
         // code here
         // // Approach-1>> Using Recursion 
@@ -77,9 +99,14 @@ int solveTab(vector<vector<int>>&mat, int row, int col, int &maxi){
         //  solveMem(mat, 0, 0, dp, maxi);
         //  return maxi;
         
-         // Approach-3>> Using Tabulation
+        //  // Approach-3>> Using Tabulation
+        //  int maxi=0;
+        // solveTab(mat, n, m, maxi);
+        //  return maxi;
+        
+        // Approach-4>> Using space optimization
          int maxi=0;
-        solveTab(mat, n, m, maxi);
+        solveSpOpt(mat, n, m, maxi);
          return maxi;
     }
 };
