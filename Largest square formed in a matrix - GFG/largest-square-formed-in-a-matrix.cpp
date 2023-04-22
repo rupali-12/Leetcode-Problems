@@ -44,9 +44,11 @@ int solveMem( vector<vector<int>>&mat, int i, int j, vector<vector<int>>&dp, int
          return dp[i][j]=0;
       }
 }
-int solveTab(vector<vector<int>> mat, int i, int j, int &maxi){
-     vector<vector<int>>dp(mat.size(), vector<int>(mat[0].size(), 0));
-     dp[mat.size()][mat[0].size()] =0;
+int solveTab(vector<vector<int>>&mat, int row, int col, int &maxi){
+     vector<vector<int>>dp(row+1, vector<int>(col+1, 0));
+     
+    for(int i=row-1; i>=0; i--){
+        for(int j=col-1; j>=0; j--){
      int right =dp[i][j+1];
      int diagonal =dp[i+1][j+1];
      int down =dp[i+1][j];
@@ -54,11 +56,13 @@ int solveTab(vector<vector<int>> mat, int i, int j, int &maxi){
      if(mat[i][j]==1){
          dp[i][j] =1 +  min(right, min(down, diagonal));
          maxi =max(maxi, dp[i][j]);
-         return dp[i][j];
      }
      else{
-         return dp[i][j]=0;
+         dp[i][j]=0;
      }
+        }
+    }
+    return dp[0][0];
 }
     int maxSquare(int n, int m, vector<vector<int>> mat){
         // code here
@@ -67,16 +71,16 @@ int solveTab(vector<vector<int>> mat, int i, int j, int &maxi){
         //  solveRec(mat, 0, 0, maxi);
         //  return maxi;
         
-         // Approach-2>> Using Recursion + Memoization
-         int maxi=0;
-        vector<vector<int>>dp(n, vector<int>(m, -1));
-         solveMem(mat, 0, 0, dp, maxi);
-         return maxi;
-        
-        //  // Approach-3>> Using Tabulation
+        //  // Approach-2>> Using Recursion + Memoization
         //  int maxi=0;
-        //  solveMem(mat, 0, 0, maxi);
+        // vector<vector<int>>dp(n, vector<int>(m, -1));
+        //  solveMem(mat, 0, 0, dp, maxi);
         //  return maxi;
+        
+         // Approach-3>> Using Tabulation
+         int maxi=0;
+        solveTab(mat, n, m, maxi);
+         return maxi;
     }
 };
 
