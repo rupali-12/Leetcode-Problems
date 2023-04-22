@@ -46,7 +46,7 @@ int solveMem( vector<vector<int>>&mat, int i, int j, vector<vector<int>>&dp, int
 }
 int solveTab(vector<vector<int>>&mat, int row, int col, int &maxi){
      vector<vector<int>>dp(row+1, vector<int>(col+1, 0));
-     
+     dp[row][col]=0;
     for(int i=row-1; i>=0; i--){
         for(int j=col-1; j>=0; j--){
      int right =dp[i][j+1];
