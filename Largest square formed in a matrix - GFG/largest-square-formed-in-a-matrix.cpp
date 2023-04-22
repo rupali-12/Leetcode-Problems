@@ -84,7 +84,7 @@ int solveSpOpt(vector<vector<int>>&mat, int row, int col, int &maxi){
         // update next after every iteration
         next=curr;
     }
-    return next[0];
+    return cr[0];
 }
     int maxSquare(int n, int m, vector<vector<int>> mat){
         // code here
