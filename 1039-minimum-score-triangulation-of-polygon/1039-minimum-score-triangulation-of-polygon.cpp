@@ -25,8 +25,8 @@ public:
            ans =min(ans, sum);
         dp[i][j]=ans;
         }
-         return ans;
-        // return dp[i][j];
+         // return ans;
+        return dp[i][j];
     }
     int minScoreTriangulation(vector<int>& values) {
         
