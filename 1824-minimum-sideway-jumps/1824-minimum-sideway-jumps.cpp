@@ -75,6 +75,34 @@ public:
         }
         return min(dp[2][0], min(1+dp[1][0], 1+dp[3][0]));
     }
+    int solveSpOpt(vector<int>& obstacles){
+        int n=obstacles.size()-1;
+      vector<int>curr(4);
+        vector<int>next(4);
+         next[0]=0;
+         next[1]=0;
+         next[2]=0;
+         next[3]=0;
+        
+        for(int currpos= n-1; currpos>=0; currpos--){
+            for(int currlane=1; currlane<=3; currlane++){
+                if(obstacles[currpos+1]!=currlane){
+                 curr[currlane] = next[currlane];
+                }
+                else{
+                    int ans= 1e9;
+                    for(int i=1; i<=3; i++){
+                        if(currlane!=i && obstacles[currpos]!=i){
+                            ans =min(ans, 1+next[i]);
+                        }
+                    }
+                curr[currlane]=ans;
+                }
+                next=curr;
+            }
+        }
+        return min(curr[2], min(1+curr[1], 1+curr[3]));
+    }
     int minSideJumps(vector<int>& obstacles) {
         // // Approach-1>. Using Recursion 
         // return solveRec(obstacles, 2, 0);
@@ -84,7 +112,10 @@ public:
         // // dp[lane][position ]
         // return solveMem(obstacles, 2, 0, dp);
         
-         // // Approach-3>. Using Tabulation
-        return solveTab(obstacles);
+        //  // // Approach-3>. Using Tabulation
+        // return solveTab(obstacles);
+        
+         // // Approach-4>. Using space optimization
+        return solveSpOpt(obstacles);
     }
 };
