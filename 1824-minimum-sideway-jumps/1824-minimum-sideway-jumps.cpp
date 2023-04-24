@@ -98,8 +98,9 @@ public:
                     }
                 curr[currlane]=ans;
                 }
+                }
                 next=curr;
-            }
+
         }
         return min(curr[2], min(1+curr[1], 1+curr[3]));
     }
