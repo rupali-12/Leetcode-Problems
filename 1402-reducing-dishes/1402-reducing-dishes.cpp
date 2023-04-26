@@ -47,7 +47,7 @@ public:
         for(int index=n-1; index>=0;index--){
             for(int time =n-1; time>=0; time--){
                 int include= satisfaction[index]*(time+1) + next[time+1];
-                int exclude = next[time];
+                int exclude = curr[time];
                    // bcoz in last iteration curr represent last  row
                 curr[time]=max(include, exclude);
             }
