@@ -35,7 +35,7 @@ public:
         
          // Approach-2> Using Recursion +Memoization 
         int n =satisfaction.size();
-        vector<vector<int>>dp(n+1, vector<int>(n+1, -1));
+        vector<vector<int>>dp(n+2,vector<int>(n+1, -1));
          return solveMem(satisfaction, 0, 1,dp);
     }
 };
