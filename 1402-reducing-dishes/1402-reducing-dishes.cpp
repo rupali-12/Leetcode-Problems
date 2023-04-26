@@ -39,6 +39,22 @@ public:
         }
         return dp[0][0];
         }
+    int solveSpOpt(vector<int>& satisfaction){
+        int n=satisfaction.size();
+        vector<int>curr(n+1, 0);
+        vector<int>next(n+1,0);
+        next[n]=0;
+        for(int index=n-1; index>=0;index--){
+            for(int time =n-1; time>=0; time--){
+                int include= satisfaction[index]*(time+1) + next[time+1];
+                int exclude = next[time];
+                   // bcoz in last iteration curr represent last  row
+                curr[time]=max(include, exclude);
+            }
+           next=curr;
+        }
+        return next[0];
+    }
     int maxSatisfaction(vector<int>& satisfaction) {
         sort(satisfaction.begin(), satisfaction.end());
         
@@ -51,8 +67,12 @@ public:
         // vector<vector<int>>dp(n+2,vector<int>(n+1, -1));
         //  return solveMem(satisfaction, 0, 1,dp);
         
-           // Approach-3 Using Tabulation
+        //    // Approach-3 Using Tabulation
+        // int n =satisfaction.size();
+        //  return solveTab(satisfaction);
+        
+          // Approach-4> using space optimization
         int n =satisfaction.size();
-         return solveTab(satisfaction);
+         return solveSpOpt(satisfaction);
     }
 };
