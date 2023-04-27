@@ -40,6 +40,23 @@ class Solution
          int exclude = 0 + solveMem(a, n, currIndex+1, prevIndex,dp);
          return dp[currIndex][prevIndex+1]= max(include, exclude);   // to avoid negative index
     }
+    int solveTab(int *a, int n){
+         vector<vector<int>>dp(n+1 , vector<int>(n+1, 0));
+        //  dp[n-1][n+1]= 0;
+         
+         for(int currIndex=n-1; currIndex>=0; currIndex--){
+             for(int prevIndex=currIndex-1; prevIndex>=-1; prevIndex--){
+                 int include =0;
+                 if(prevIndex==-1 || a[currIndex]>a[prevIndex]){
+                     include = 1+dp[currIndex+1][currIndex+1];
+                 }
+                 
+                 int exclude =0 +dp[currIndex+1][prevIndex+1];
+                 dp[currIndex][prevIndex+1]= max(include, exclude);
+             }
+         }
+         return dp[0][0];
+    }
     int longestSubsequence(int n, int a[])
     {
        // your code here
@@ -48,9 +65,12 @@ class Solution
     // // Approach-2>>Using Recursion 
     // return solveRec(a, n, 0, -1);
     
-     // Approach-2>>Using Recursion + memoization
-     vector<vector<int>>dp(n , vector<int>(n+1, -1));
-    return solveMem(a, n, 0, -1, dp);
+    //  // Approach-2>>Using Recursion + memoization
+    //  vector<vector<int>>dp(n , vector<int>(n+1, -1));
+    // return solveMem(a, n, 0, -1, dp);
+    
+      // Approach-3>>Using Tabulation
+    return solveTab(a, n);
     }
 };
 
