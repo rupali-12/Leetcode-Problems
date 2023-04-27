@@ -57,6 +57,23 @@ class Solution
          }
          return dp[0][0];
     }
+    int solvespOpt(int*a, int n){
+        vector<int>next(n+1, 0);
+        vector<int>curr(n+1, 0);
+         for(int currIndex=n-1; currIndex>=0; currIndex--){
+             for(int prevIndex=currIndex-1; prevIndex>=-1; prevIndex--){
+                 int include =0;
+                 if(prevIndex==-1 || a[currIndex]>a[prevIndex]){
+                     include = 1+next[currIndex+1];
+                 }
+                 
+                 int exclude =0 +next[prevIndex+1];
+                curr[prevIndex+1]= max(include, exclude);
+             }
+             next=curr;
+         }
+        return next[0];
+    }
     int longestSubsequence(int n, int a[])
     {
        // your code here
@@ -69,8 +86,11 @@ class Solution
     //  vector<vector<int>>dp(n , vector<int>(n+1, -1));
     // return solveMem(a, n, 0, -1, dp);
     
-      // Approach-3>>Using Tabulation
-    return solveTab(a, n);
+    //   // Approach-3>>Using Tabulation
+    // return solveTab(a, n);
+    
+       // Approach-4>>Using Space optimization
+    return solvespOpt(a, n);
     }
 };
 
