@@ -47,17 +47,34 @@ class Solution {
           ans =ans + solveMem(dice-1, faces, target-i, dp);
       }
       dp[dice][target] =ans;
-      
+  }
+  long long solveTab(int dc, int fc, int trgt){
+        vector<vector<long long >>dp(dc+1, vector<long long >(trgt+1, 0));
+        dp[0][0]=1;
+        for(int dice=1; dice<=dc; dice++){
+            for(int target=1; target<=trgt; target++){
+                long long ans=0;
+                for(int i=1; i<=fc; i++){
+                    if(target-i >=0){
+                        ans =ans + dp[dice-1][target-i];
+                    }
+                }
+                dp[dice][target]=ans;
+            }
+        }
+        return dp[dc][trgt];
   }
     long long noOfWays(int M , int N , int X) {
         // code here
     //     // Approach-1: Using Recursion
     //   return solveRec(N, M, X);
     
-  // Approach-1: Using Recursion+Memoi
-  vector<vector<long long >>dp(N+1, vector<long long >(X+1, -1));
-      return solveMem(N, M, X, dp);
+//   // Approach-2: Using Recursion+Memoization
+//   vector<vector<long long >>dp(N+1, vector<long long >(X+1, -1));
+//       return solveMem(N, M, X, dp);
 
+ // Approach-3: Using Tabulation
+      return solveTab(N, M, X);
     }
 };
 
