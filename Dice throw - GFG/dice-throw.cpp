@@ -64,6 +64,22 @@ class Solution {
         }
         return dp[dc][trgt];
   }
+  long long solveSpOpt(int dc, int fc, int trgt){
+      vector<long long>dp(dc+1);
+      dp[0]=1;
+      for(int dice=1; dice<=dc; dice++){
+          for(int target=1; target<=trgt; target++){
+              long long ans=0;
+              for(int i=1; i<=fc; i++){
+                  if(target-i>=0){
+                      ans =ans + dp[target-i];
+                  }
+              }
+              dp[target]=ans;
+          }
+      }
+      return dp[trgt];
+  }
     long long noOfWays(int M , int N , int X) {
         // code here
     //     // Approach-1: Using Recursion
@@ -75,6 +91,9 @@ class Solution {
 
  // Approach-3: Using Tabulation
       return solveTab(N, M, X);
+      
+      // Approach-4: Using space optimization
+      return solveSpOpt(N, M, X);
     }
 };
 
