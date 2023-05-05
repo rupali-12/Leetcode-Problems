@@ -38,6 +38,24 @@ bool solveMem(int N, int *arr, int i, int target, vector<vector<int>>&dp){
     bool exclude= solveMem(N, arr, i+1, target, dp);
     dp[i][target]= include | exclude;
 }
+int solveTab(int N, int *arr, int total){
+     vector<vector<int>>dp(N+1, vector<int>(total+1, 0));
+    //  when target=0 
+    for(int i=0; i<N; i++){
+        dp[i][0]=1;
+    }
+     for(int i=N-1; i>=0; i--){
+         for(int target = 1; target<=total; target++){
+             int include=0;
+             if(target-arr[i]>=0){
+                 include =dp[i+1][target-arr[i]];
+             }
+             int exclude =dp[i+1][target];
+             dp[i][target]=include | exclude;
+         }
+     }
+     return dp[0][total];
+}
     int equalPartition(int N, int arr[])
     {
         // code here
@@ -53,9 +71,12 @@ bool solveMem(int N, int *arr, int i, int target, vector<vector<int>>&dp){
         // // Approach-1>> Using Recursion 
         // return solveRec(N, arr, 0, target);
         
-         // Approach-2>> Using Recursion + memoization
-         vector<vector<int>>dp(N+1, vector<int>(target+1, -1));
-        return solveMem(N, arr, 0, target, dp);
+        //  // Approach-2>> Using Recursion + memoization
+        //  vector<vector<int>>dp(N+1, vector<int>(target+1, -1));
+        // return solveMem(N, arr, 0, target, dp);
+        
+           // Approach-3>> Using Tabulation
+        return solveTab(N, arr, total/2);
     }
 };
 
