@@ -56,6 +56,24 @@ int solveTab(int N, int *arr, int target){
      }
      return dp[0][target];
 }
+int solveSpOpt(int N, int *arr, int target){
+    vector<int>curr(target+1);
+    vector<int>next(target+1);
+    curr[0]=1;
+    next[0]=1;
+    for(int i=N-1; i>=0; i--){
+        for(int t=0; t<=target; t++){
+            int include=0;
+            if(t-arr[i]>=0){
+                include = next[t-arr[i]];
+            }
+            int exclude = next[t];
+            curr[t]=include | exclude;
+        }
+        next=curr;
+    }
+    return next[target];
+}
     int equalPartition(int N, int arr[])
     {
         // code here
@@ -75,8 +93,11 @@ int solveTab(int N, int *arr, int target){
         //  vector<vector<int>>dp(N+1, vector<int>(target+1, -1));
         // return solveMem(N, arr, 0, target, dp);
         
-           // Approach-3>> Using Tabulation
-        return solveTab(N, arr, target);
+        //   // Approach-3>> Using Tabulation
+        // return solveTab(N, arr, target);
+        
+        // Approach-4>> Using Space optimization
+        return solveSpOpt(N, arr, target);
     }
 };
 
