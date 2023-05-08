@@ -34,6 +34,17 @@ public:
         }
         return dp[n];
     }
+
+    unsigned long int solveSpOpt(int n){
+        if(n<=1){
+            return 1;
+        }
+        unsigned long int ans=0;
+        for(int i=0; i<n; i++){
+            ans+= solveSpOpt(i)*solveSpOpt(n-i-1);
+        }
+        return ans;
+    }
     int numTrees(int n) {
         
         // // Approach 1>> Using Recursion 
@@ -43,7 +54,10 @@ public:
         // vector<int>dp(n+1, -1);
         // return solveMem(n, dp);
         
-         // Approach 3>> Using Tabulation  
-        return solveTab(n);
+        //  // Approach 3>> Using Tabulation  
+        // return solveTab(n);
+        
+          // Approach 34> Using space optimization  
+        return solveSpOpt(n);
     }
 };
