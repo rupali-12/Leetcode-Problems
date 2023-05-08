@@ -35,11 +35,11 @@ public:
         return dp[n];
     }
 
-    unsigned long int solveSpOpt(int n){
+      int solveSpOpt(int n){
         if(n<=1){
             return 1;
         }
-        unsigned long int ans=0;
+          int ans=0;
         for(int i=0; i<n; i++){
             ans+= solveSpOpt(i)*solveSpOpt(n-i-1);
         }
