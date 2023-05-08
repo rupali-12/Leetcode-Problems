@@ -40,8 +40,10 @@ public:
             return 1;
         }
           int ans=0;
+          // int ans=1;
         for(int i=0; i<n; i++){
             ans+= solveSpOpt(i)*solveSpOpt(n-i-1);
+              // ans = ans *2*(2*i+1)/(i+2);  // overfow
         }
         return ans;
     }
