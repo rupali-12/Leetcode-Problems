@@ -161,13 +161,13 @@ public:
      return dp[index][buy][limit]=profit;                   
     }
     
-    int solveTab(vector<int>& prices){
+    int solveTab(vector<int>& prices, int k){
         int n= prices.size();
-        vector<vector<vector<int>>>dp(n+1, vector<vector<int>>(2, vector<int>(3, 0)));
+        vector<vector<vector<int>>>dp(n+1, vector<vector<int>>(2, vector<int>(k+1, 0)));
         int profit=0;
         for(int index=n-1; index>=0; index--){
             for(int buy=0; buy<2;buy++){
-                for(int limit=1; limit<3; limit++){
+                for(int limit=1; limit<k+1; limit++){
                     if(buy){
                         profit= max((-prices[index] + dp[index+1][0][limit]), (0 +dp[index+1][1][limit]));
                     }
@@ -180,14 +180,14 @@ public:
         }
         return dp[0][1][2];
     }
-      int solveTabSpOpt(vector<int>& prices){
+      int solveTabSpOpt(vector<int>& prices, int k){
         int n= prices.size();
-        vector<vector<int>>curr(2, vector<int>(3, 0));
-        vector<vector<int>>next(2, vector<int>(3, 0));
+        vector<vector<int>>curr(2, vector<int>(k+1, 0));
+        vector<vector<int>>next(2, vector<int>(k+1, 0));
         int profit=0;
         for(int index=n-1; index>=0; index--){
-            for(int buy=0; buy<2;buy++){
-                for(int limit=1; limit<3; limit++){
+            for(int buy=0; buy<=1;buy++){
+                for(int limit=1; limit<=k; limit++){
                     if(buy){
                         profit= max((-prices[index] + next[0][limit]), (0 +next[1][limit]));
                     }
@@ -199,8 +199,8 @@ public:
             }
             next=curr;
         }
-        // return curr[1][2];
-        return next[1][2];
+        return curr[1][k];
+        // return next[1][2];
     }
     int maxProfit(int k, vector<int>& prices) {
     // // Approach-1: 
@@ -219,15 +219,15 @@ public:
         // // (index, buy, limit)
         // return solveRec(prices, 0, 1, k);
         
-        // method-2: Using Recursion +Memoization 
-        // // (index, buy, limit)
-       vector<vector<vector<int>>>dp(n, vector<vector<int>>(2, vector<int>(k+1, -1)));
-        return solveMem(prices, 0, 1, k, dp);
+       //  // method-2: Using Recursion +Memoization 
+       //  // // (index, buy, limit)
+       // vector<vector<vector<int>>>dp(n, vector<vector<int>>(2, vector<int>(k+1, -1)));
+       //  return solveMem(prices, 0, 1, k, dp);
         
-        // // method-3: Using Tabulation
-        // return solveTab(prices);
+        // method-3: Using Tabulation
+        // return solveTab(prices, k);
         
         //  // method-4: Using Tabulation + Space optimization
-        // return solveTabSpOpt(prices, k);
+        return solveTabSpOpt(prices, k);
     }
 };
