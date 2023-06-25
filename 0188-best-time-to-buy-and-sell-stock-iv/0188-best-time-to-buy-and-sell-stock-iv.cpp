@@ -178,7 +178,7 @@ public:
                 }
             }
         }
-        return dp[0][1][2];
+        return dp[0][1][k];
     }
       int solveTabSpOpt(vector<int>& prices, int k){
         int n= prices.size();
@@ -199,8 +199,8 @@ public:
             }
             next=curr;
         }
-        return curr[1][k];
-        // return next[1][2];
+        // return curr[1][k];
+        return next[1][k];
     }
     int maxProfit(int k, vector<int>& prices) {
     // // Approach-1: 
@@ -225,9 +225,9 @@ public:
        //  return solveMem(prices, 0, 1, k, dp);
         
         // method-3: Using Tabulation
-        // return solveTab(prices, k);
+        return solveTab(prices, k);
         
         //  // method-4: Using Tabulation + Space optimization
-        return solveTabSpOpt(prices, k);
+        // return solveTabSpOpt(prices, k);
     }
 };
