@@ -154,6 +154,27 @@ public:
         }
         return dp[0][1][2];
     }
+      int solveTabSpOpt(vector<int>& prices){
+        int n= prices.size();
+        vector<vector<int>>curr(2, vector<int>(3, 0));
+        vector<vector<int>>next(2, vector<int>(3, 0));
+        int profit=0;
+        for(int index=n-1; index>=0; index--){
+            for(int buy=0; buy<2;buy++){
+                for(int limit=1; limit<3; limit++){
+                    if(buy){
+                        profit= max((-prices[index] + next[0][limit]), (0 +next[1][limit]));
+                    }
+                    else{
+                          profit= max((prices[index] +next[1][limit-1]), (0 +next[0][limit]));  
+                    }
+                    curr[buy][limit]=profit;
+                }
+            }
+            next=curr;
+        }
+        return curr[1][2];
+    }
     int maxProfit(vector<int>& prices) {
     // // Approach-1: 
     //     int min_price1=INT_MAX, min_price2= INT_MAX, maxProfit1=0, maxProfit2=0;
@@ -176,7 +197,10 @@ public:
        // vector<vector<vector<int>>>dp(n, vector<vector<int>>(2, vector<int>(3, -1)));
        //  return solveMem(prices, 0, 1, 2, dp);
         
-        // method-3: Using Tabulation
-        return solveTab(prices);
+        // // method-3: Using Tabulation
+        // return solveTab(prices);
+        
+         // method-4: Using Tabulation + Space optimization
+        return solveTabSpOpt(prices);
     }
 };
