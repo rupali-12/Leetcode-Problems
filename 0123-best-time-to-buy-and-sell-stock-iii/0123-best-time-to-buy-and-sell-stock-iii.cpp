@@ -134,6 +134,26 @@ public:
         }
      return dp[index][buy][limit]=profit;                   
     }
+    
+    int solveTab(vector<int>& prices){
+        int n= prices.size();
+        vector<vector<vector<int>>>dp(n+1, vector<vector<int>>(2, vector<int>(3, 0)));
+        int profit=0;
+        for(int index=n-1; index>=0; index--){
+            for(int buy=0; buy<2;buy++){
+                for(int limit=1; limit<3; limit++){
+                    if(buy){
+                        profit= max((-prices[index] + dp[index+1][0][limit]), (0 +dp[index+1][1][limit]));
+                    }
+                    else{
+                          profit= max((prices[index] + dp[index+1][1][limit-1]), (0 +dp[index+1][0][limit]));  
+                    }
+                    dp[index][buy][limit]=profit;
+                }
+            }
+        }
+        return dp[0][1][2];
+    }
     int maxProfit(vector<int>& prices) {
     // // Approach-1: 
     //     int min_price1=INT_MAX, min_price2= INT_MAX, maxProfit1=0, maxProfit2=0;
@@ -151,9 +171,12 @@ public:
         // // (index, buy, limit)
         // return solveRec(prices, 0, 1, 2);
         
-        // method-2: Using Recursion +Memoization 
-        // // (index, buy, limit)
-       vector<vector<vector<int>>>dp(n, vector<vector<int>>(2, vector<int>(3, -1)));
-        return solveMem(prices, 0, 1, 2, dp);
+       //  // method-2: Using Recursion +Memoization 
+       //  // // (index, buy, limit)
+       // vector<vector<vector<int>>>dp(n, vector<vector<int>>(2, vector<int>(3, -1)));
+       //  return solveMem(prices, 0, 1, 2, dp);
+        
+        // method-3: Using Tabulation
+        return solveTab(prices);
     }
 };
