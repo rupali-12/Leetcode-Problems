@@ -173,7 +173,8 @@ public:
             }
             next=curr;
         }
-        return curr[1][2];
+        // return curr[1][2];
+                  return next[1][2];
     }
     int maxProfit(vector<int>& prices) {
     // // Approach-1: 
