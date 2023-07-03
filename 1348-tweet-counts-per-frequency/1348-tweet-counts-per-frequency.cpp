@@ -14,7 +14,7 @@ public:
            vector<int>ans((et-st)/60 +1, 0);
            for(auto a: mp[tweetName]){
                if(a>=st && a<=et){
-                   ans[(a-st)/60]++;
+                   ans[(a-st)/60]++;    //  (150-0)/60
                }
            }
            return ans;
