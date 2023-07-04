@@ -11,61 +11,31 @@ class Solution
 {
     public:
     //Function to find if there is a celebrity in the party or not.
+    bool knows(vector<vector<int> >& M, int can, int per){
+        if(M[can][per]==1){
+            return true;
+        }
+        return false;
+    }
     int celebrity(vector<vector<int> >& M, int n) 
     {
-        // code here
-        // // using map>>>
-        // unordered_map<int, int>row, col;
-        // for(int i=0; i<n; i++){
-        //     for(int j=0; j<n ;j++){
-        //         if(M[i][j]==1){
-        //           row[i]++; col[j]++;
-        //         }
-        //     }
-        // }
-        
-        //   for(int j=0; j<n ;j++){
-        //         if(col[j]==n-1 && row[j]==0){
-        //             return j;
-        //         }
-        //     }
-        //      return -1;
-        
-        // Approach-2>>>> 
-        stack<int>s;
+        // code here 
+        int  c=0;
         for(int i=0; i<n; i++){
-            s.push(i);
+            if(knows(M, c, i)){
+                c=i;
+            }
         }
         
-        while(s.size()!=1){
-            int A = s.top();
-            s.pop();
-            int B =s.top();
-            s.pop();
-            
-            // if A knows B 
-            if(M[A][B]==1){
-                s.push(B);
-            }
-            // B knows A
-            else{
-                s.push(A);
+        // check if candidate knows anyone or not 
+        for(int i=0; i<n; i++){
+            if(i==c) continue;
+            // if c knows everyone but there exist an i which does not know c then return -1;
+            if(knows(M, c,i) || (!knows(M, i, c))){
+                return -1;
             }
         }
-      int remCandidate = s.top();
-    //   Check all row elements for remCandidate is 0 
-      for(int i=0; i<n; i++){
-          if(M[remCandidate][i]==1){
-             return -1;
-          }
-      }
-    //   Check all column elements for remCandidate is 1 except diagonal element 
-      for(int i=0; i<n; i++){
-          if(M[i][remCandidate]==0 && i != remCandidate){
-              return -1;
-          }
-      }
-      return remCandidate;
+        return c;
     }
 };
 
