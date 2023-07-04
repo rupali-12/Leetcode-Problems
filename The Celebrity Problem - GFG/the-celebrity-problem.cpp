@@ -29,7 +29,7 @@ class Solution
         
         // check if candidate knows anyone or not 
         for(int i=0; i<n; i++){
-            if(i==c) continue;
+            if(i==c) continue;     // code stucks there thats why we continue this case as M[i][c]==0 
             // if c knows everyone but there exist an i which does not know c then return -1;
             if(knows(M, c,i) || (!knows(M, i, c))){
                 return -1;
