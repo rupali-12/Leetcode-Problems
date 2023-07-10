@@ -20,9 +20,9 @@ public:
         sort(nums.begin(), nums.end());
         pair<int,int>p= {nums[0], 1};
         
-         if(nums.size()==1){
-             return ans;
-         }
+         // if(nums.size()==1){
+         //     return ans;
+         // }
         for(int i=1; i<nums.size(); i++){
             if(nums[i]!= nums[i-1]){
                 if(p.second>1){
