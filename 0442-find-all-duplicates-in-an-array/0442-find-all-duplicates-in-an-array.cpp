@@ -20,6 +20,7 @@ public:
         sort(nums.begin(), nums.end());
         pair<int,int>p= {nums[0], 1};
         
+           // no need to handle separately 
          // if(nums.size()==1){
          //     return ans;
          // }
