@@ -5,7 +5,7 @@ public:
         sort(nums.begin(), nums.end());
         for(int i=0; i<nums.size(); i++){
             int a =nums[i];
-            int t=-a;
+            int t=0-a;
             int start=i+1, end=nums.size()-1;
             while(start<end){
                 if(nums[start]+nums[end]==t){
