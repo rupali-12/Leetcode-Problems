@@ -9,7 +9,7 @@ public:
         if(arr[mid]==target){
             return mid;
         }
-//         right part is sorted >>
+//         right part is sorted >>search in right part 
         else if(arr[mid]<arr[s]){
             if(target>arr[mid] && target<=arr[n-1]){
                 s = mid+1;
@@ -18,6 +18,7 @@ public:
                 e = mid-1;
             }
         }
+        // search in left part
         else{
             if(target<arr[mid] && target>=arr[s]){
                 e= mid-1;
