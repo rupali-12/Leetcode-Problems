@@ -13,12 +13,15 @@ public:
                temp[k++]= v[i++];
             }
         }
+                while(j<=e){
+            temp[k++]= v[j++];
+        }
         while(i<=mid){
            temp[k++]= v[i++];
         }
-        while(j<=e){
-            temp[k++]= v[j++];
-        }
+        // while(j<=e){
+        //     temp[k++]= v[j++];
+        // }
        for(int i=s; i<=e; i++){
            v[i] =temp[i-s];
        }
