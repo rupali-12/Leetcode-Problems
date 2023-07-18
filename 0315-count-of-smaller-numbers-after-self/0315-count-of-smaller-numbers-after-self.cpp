@@ -7,21 +7,17 @@ public:
         while(i<=mid && j<=e){
             if(v[i].first<= v[j].first){
                 temp[k++]= v[j++];
-                // j++;
             }
             else{
                 count[v[i].second]+= e -j+1;
                temp[k++]= v[i++];
-                // i++;
             }
         }
         while(i<=mid){
            temp[k++]= v[i++];
-            // i++;
         }
         while(j<=e){
             temp[k++]= v[j++];
-            // j++;
         }
        for(int i=s; i<=e; i++){
            v[i] =temp[i-s];
