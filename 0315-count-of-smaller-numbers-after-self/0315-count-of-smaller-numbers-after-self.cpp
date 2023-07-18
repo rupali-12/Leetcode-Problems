@@ -2,6 +2,7 @@ class Solution {
 public:
     void merge(vector<pair<int, int>>&v, vector<int>& count, int s, int e, int mid){
         int i=s, j= mid+1;
+        
         vector<pair<int, int>>temp(e-s+1);
         int k=0;
         while(i<=mid && j<=e){
@@ -13,12 +14,14 @@ public:
                temp[k++]= v[i++];
             }
         }
-                while(j<=e){
+         while(j<=e){
             temp[k++]= v[j++];
         }
         while(i<=mid){
            temp[k++]= v[i++];
         }
+        
+        // i-s as because we want to copy the sorted temp array in specified range of v 
        for(int i=s; i<=e; i++){
            v[i] =temp[i-s];
        }
