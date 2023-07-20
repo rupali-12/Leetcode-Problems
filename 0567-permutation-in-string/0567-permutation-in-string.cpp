@@ -9,40 +9,33 @@ public:
         return true;
     }
     bool checkInclusion(string s1, string s2) {
-        int temp[26]={0};
+        int temp1[26]={0};
         
         // Store count of every characters in s1
         for(int i=0; i<s1.length(); i++){
             int ind = s1[i]-'a';
-            temp[ind]++;
+            temp1[ind]++;
         }
-        
-       int i=0;
-        int count2[26]={0};
-        int winSize = s1.length();
-        while(i<winSize && i<s2.length()){
-            char ch = s2[i];
-            int ind = ch-'a';
-            count2[ind]++;
-            i++;
-        }
-        if(comp(count2, temp)){
-            return true;
-        }
+        int i=0, winSize=s1.length();
+        int temp2[26]={0};
+      while(i<winSize && i<s2.length()){
+          int ind= s2[i]-'a';
+          temp2[ind]++;
+          i++;
+      }
+         if(comp(temp1, temp2)){
+           return true;   
+          }
         
         while(i<s2.length()){
-            char newChar = s2[i];
-            int ind = newChar -'a';
-            count2[ind]++;
-            
-            char oldChar = s2[i-winSize];
-            int ind1 = oldChar-'a';
-            count2[ind1]--;
+            int n= s2[i]-'a';
+            temp2[n]++;
+            n= s2[i-winSize]-'a';
+            temp2[n]--;
             i++;
-            
-            if(comp(count2, temp)){
+            if(comp(temp1, temp2)){
                 return true;
-            }            
+            }
         }
         return false;
     }
