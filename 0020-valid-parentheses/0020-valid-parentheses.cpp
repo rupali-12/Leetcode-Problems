@@ -9,13 +9,15 @@ public:
             if(s[i]=='(' || s[i]=='{' || s[i]=='['){
                 temp.push_back(s[i]);
             }
-            else{
-                if((s[i]==')' && temp.back()!='(') || (s[i]=='}' && temp.back()!='{') || (s[i]==']' && temp.back()!='[')){
+            else if((s[i]==')' && temp.back()!='(') || (s[i]=='}' && temp.back()!='{') || (s[i]==']' && temp.back()!='[')){
+                
                   return false;
-                }
-                  temp.pop_back();
             }
+              else{
+                  temp.pop_back();
+              }
         }
+        cout<<temp.size();
         if(temp.size()==0){
             return true;
         }
