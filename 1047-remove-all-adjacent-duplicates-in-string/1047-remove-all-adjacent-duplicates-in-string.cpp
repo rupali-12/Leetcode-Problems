@@ -12,7 +12,7 @@ public:
           else{
               temp.push_back(s[i]);
           }
-      }        
+      }
         return temp;
     }
 };
