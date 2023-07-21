@@ -35,10 +35,14 @@ public:
             int j=1;
             if(isPrime[i]){
                 count++;
-                 while(i*j <n){
-                isPrime[i*j]=false;
-                j++;
-            }
+            //      while(i*j <n){
+            //     isPrime[i*j]=false;
+            //     j++;
+            // }
+                
+                for(int k=2*i; k<n; k+=i){
+                    isPrime[k]=false;
+                }
             }
         }
         return count;
