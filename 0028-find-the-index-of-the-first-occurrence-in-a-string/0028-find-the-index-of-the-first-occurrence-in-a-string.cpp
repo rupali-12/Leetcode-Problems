@@ -38,6 +38,7 @@ public:
 //         }
 //         return ans;
         
+        // Approach-2> using built-in function
         int i= haystack.find(needle);
         return i;
     }
