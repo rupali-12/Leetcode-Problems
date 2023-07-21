@@ -1,7 +1,8 @@
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-        int n = haystack.length();
+        // Approach-1>>
+//         int n = haystack.length();
 //        vector<int>lps(needle.size(), 0);
 //         for(int i=1; i<needle.size(); i++){
 //             int j= lps[i-1];
@@ -38,8 +39,22 @@ public:
 //         }
 //         return ans;
         
-        // Approach-2> using built-in function
-        int i= haystack.find(needle);
-        return i;
+        // Approach-2> 
+        if(needle.length()>haystack.length()){
+            return -1;
+        }
+        for(int i=0; i< haystack.length()- needle.length()+1; i++){
+            if(needle[0]==haystack[i]){
+               string temp= haystack.substr(i, needle.length());
+                if(temp==needle){
+                    return i;
+                }
+            }
+        }
+        return -1;
+        
+        // // Approach-3> using built-in function
+        // int i= haystack.find(needle);
+        // return i;
     }
 };
