@@ -6,10 +6,10 @@ public:
             return;
         }
         
-        // Case of exclusion >>
-        solve(nums, output, index+1, ans);
+        // case of exclusion 
+      solve(nums, output, index+1, ans);
         
-        // Case of Inclusion >>
+        // case of inclusion 
         output.push_back(nums[index]);
         solve(nums, output, index+1, ans);
         
