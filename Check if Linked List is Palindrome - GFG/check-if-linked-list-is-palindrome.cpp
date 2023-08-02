@@ -34,7 +34,7 @@ using namespace std;
 class Solution{
   public:
     //Function to check whether the list is palindrome.
-    bool isPalindrome(vector<int>arr){
+    bool isPalin(vector<int>arr){
         int i=0, j=arr.size()-1;
         while(i<=j){
             if(arr[i]!=arr[j]){
@@ -54,7 +54,7 @@ class Solution{
             arr.push_back(temp->data);
             temp= temp->next;
         }
-        return isPalindrome(arr);
+        return isPalin(arr);
     }
 };
 
