@@ -28,86 +28,33 @@ struct Node {
   }
 };
 */
-#include<vector>
+#include<bits/stdc++.h>
+using namespace std;
+
 class Solution{
-    private:
-    
-    Node* findMiddle(Node* &head){
-        Node* slow= head;
-        Node* fast= head->next;
-        while(fast!=NULL && fast->next!=NULL){
-            fast= fast->next->next;
-            slow= slow->next;
-        }
-        return slow;
-    }
-    
-    Node* revrse(Node* &head){
-        Node* prev= NULL;
-        Node* temp= head;
-        while(temp!=NULL){
-             Node* forward= temp->next;
-            temp->next = prev;
-            prev=temp;
-            temp=forward;
-        }
-      
-        return prev;
-    }
-
-
-// bool checkPalindrome(vector<int>v){
-//     int n= v.size();
-//     int s=0, e=n-1;
-//     while(s<=e){
-//         if(v[s]!=v[e]){
-//             return false;
-//         }
-//         s++; e--;
-//     }
-//     return true;
-// }
   public:
     //Function to check whether the list is palindrome.
-    
+    bool isPalindrome(vector<int>arr){
+        int i=0, j=arr.size()-1;
+        while(i<=j){
+            if(arr[i]!=arr[j]){
+                return false;
+            }
+            i++; j--;
+        }
+        return true;
+    }
     bool isPalindrome(Node *head)
     {
         //Your code here
-        
-    // //  Approach --1>. By creating an array >>>>>>  
-    //     vector<int>v;
-    //     Node* temp= head;
-    //     while(temp!=NULL){
-    //         v.push_back(temp->data);
-    //         temp= temp->next;
-    //     }
-    //     if(checkPalindrome(v)){
-    //         return true;
-    //     }
-    //     else{
-    //         return false;
-    //     }
-        
-        
-        // Approach-2>> By finding middle and reverse ll after middle and compare these two halves 
-     Node* mid = findMiddle(head);
-     
-    //  rev linked list after mid
-    Node* temp =mid->next;
-    mid->next= revrse(temp);
-     
-     Node* head1= head;
-     Node* head2=mid->next;
-     while(head2!=NULL){
-         if(head1->data!=head2->data){
-             return false;
-         }
-         head1= head1->next;
-         head2= head2->next;
-     }
-     temp= mid->next;
-     mid->next= revrse(temp);
-     return true;
+        // Approach-1> using array
+        vector<int>arr;
+        Node* temp= head;
+        while(temp!=NULL){
+            arr.push_back(temp->data);
+            temp= temp->next;
+        }
+        return isPalindrome(arr);
     }
 };
 
