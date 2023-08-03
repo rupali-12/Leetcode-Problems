@@ -34,27 +34,74 @@ using namespace std;
 class Solution{
   public:
     //Function to check whether the list is palindrome.
-    bool isPalin(vector<int>arr){
-        int i=0, j=arr.size()-1;
-        while(i<=j){
-            if(arr[i]!=arr[j]){
-                return false;
-            }
-            i++; j--;
+    // Approach-1> 
+    // bool isPalin(vector<int>arr){
+    //     int i=0, j=arr.size()-1;
+    //     while(i<=j){
+    //         if(arr[i]!=arr[j]){
+    //             return false;
+    //         }
+    //         i++; j--;
+    //     }
+    //     return true;
+    // }
+    
+     // Approach-2->>
+    int getLength(Node*head){
+        int count=0;
+        Node* temp= head;
+        while(temp!=NULL){
+            count++;
+            temp= temp->next;
         }
-        return true;
+        return count;
+    }
+    Node* findMid(Node* head, int count){
+        int len=0;
+        Node* temp=head;
+        while(len<count/2){
+            temp= temp->next;
+            len++;
+        }
+        return temp;
+    }
+    Node* reverse(Node* head){
+        if(head==NULL || head->next==NULL){
+            return head;
+        }
+        auto ans= reverse(head->next);
+        head->next->next= head;
+        head->next=NULL;
+        return ans;
     }
     bool isPalindrome(Node *head)
     {
         //Your code here
-        // Approach-1> using array
-        vector<int>arr;
+        // // Approach-1> using array
+        // vector<int>arr;
+        // Node* temp= head;
+        // while(temp!=NULL){
+        //     arr.push_back(temp->data);
+        //     temp= temp->next;
+        // }
+        // return isPalin(arr);
+        
+          // Approach-> 2->Find mid , Revrse after mid and compare the two halves
+        int length= getLength(head);
+        Node* mid= findMid(head, length);
+        Node* revList =reverse(mid);
+        Node* rev= revList;
         Node* temp= head;
-        while(temp!=NULL){
-            arr.push_back(temp->data);
+        
+        while(temp!=mid && rev!=NULL){
+            if(rev->data!= temp->data){
+                return false;
+            }
+            rev= rev->next;
             temp= temp->next;
         }
-        return isPalin(arr);
+        
+        return true;
     }
 };
 
