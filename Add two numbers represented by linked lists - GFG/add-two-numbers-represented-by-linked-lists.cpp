@@ -59,98 +59,23 @@ struct Node {
 
 class Solution
 {
-    private:
-    Node* revers(Node* head){
-        Node*prev =NULL;
-        Node* curr= head;
+    public:
+    //Function to add two numbers represented by linked list.
+      struct Node* reverse( struct Node* head){
+        if(head==NULL|| head->next==NULL){
+            return head;
+        }
+         struct Node* curr= head;
+         struct Node* prev= NULL;
         while(curr!=NULL){
-            Node* temp=curr->next;
-            curr->next = prev;
+             struct Node*temp= curr->next;
+            curr->next= prev;
             prev=curr;
             curr= temp;
         }
         return prev;
     }
-    void insertAtTail(struct Node* &head,struct Node* &tail, int d){
-        Node* temp=new Node(d);
-  if(head==NULL){
-      head= temp;
-      tail= temp;
-      return;
-  }
-  else{
-       tail->next =temp;
-        tail= temp;
-  }
-       
-    }
-    
-    
-    struct Node* add(struct Node* first, struct Node* second){
-        int carry=0;
-        Node* ansHead =NULL;
-        Node* ansTail =NULL;
-        
-    // ******************************************************************************
-        
-    //     while(first!=NULL && second!=NULL){
-    //   int sum = carry + first->data + second->data;
-    //         int digit= sum%10;
-    //         insertAtTail(ansHead, ansTail, digit);
-    //         carry= sum/10;
-    //         first= first->next;
-    //         second= second->next;
-    //     }
-    //       while(first!=NULL){
-    //         int sum= carry+ first->data;
-    //         int digit= sum%10;
-    //       insertAtTail(ansHead, ansTail, digit);
-    //       carry = sum/10;
-    //       first= first->next;
-    //       }
-    //       while(second!=NULL){
-    //         int sum= carry+ second->data;
-    //         int digit= sum%10;
-    //       insertAtTail(ansHead, ansTail, digit);
-    //       carry = sum/10;
-    //       second= second->next;
-    //       }
-    //       while(carry!=0){
-    //         int sum= carry;
-    //         int digit= sum%10;
-    //       insertAtTail(ansHead, ansTail, digit);
-    //       carry = sum/10;
-    //       }
-    
-    
-    // ******************************************************************************
-        // General>>>
-        while(first!=NULL || second!=NULL || carry!=0){
-            int val1= 0;
-            if(first!=NULL)
-               val1= first->data;
-               
-            int val2=0;
-            if(second!=NULL)
-               val2= second->data;
-               
-            int sum = carry +val1+val2;
-            int digit =sum%10;
-            insertAtTail(ansHead, ansTail, digit);
-            carry =sum/10;
-            
-            if(first!=NULL)
-               first= first->next;
-            if(second!=NULL)
-               second= second->next;
-        }
-        return ansHead;
-    }
-    public:
-    //Function to add two numbers represented by linked list.
-    struct Node* addTwoLists(struct Node* first, struct Node* second)
-    {
-        // code here
+     struct Node* sum( struct Node* first,  struct Node* second){
         if(first==NULL && second==NULL){
             return NULL;
         }
@@ -160,12 +85,53 @@ class Solution
         if(second==NULL){
             return first;
         }
-        // step1-> reverse two lists >>
-        first = revers(first);
-        second = revers(second);
-        Node* ans= add(first, second);
-        ans =revers(ans);
-        return ans;
+         struct Node* ans= new  struct Node(-1);
+         struct Node* temp= ans;
+        int carry=0;
+        while(first!=NULL && second!=NULL){
+         int sum  = first->data + second->data + carry;
+              carry= sum/10;
+               sum%=10;
+             struct Node* newNode= new  struct Node(sum);
+            temp->next= newNode;
+            temp= newNode;
+            first=first->next;
+            second= second->next;
+        }
+        while(first!=NULL){
+            int sum= first->data + carry;
+            carry= sum/10;
+            sum%=10;
+             struct Node* newNode= new Node(sum);
+            temp->next= newNode;
+            temp= temp->next;
+            first= first->next;
+        }
+         while(second!=NULL){
+           int sum= second->data + carry;
+            carry= sum/10;
+            sum%=10;
+            struct Node* newNode= new Node(sum);
+            temp->next= newNode;
+            temp= temp->next;
+            second= second->next;
+        }
+        if(carry){
+            struct Node* node =new  Node(carry);
+            temp->next= node;
+            temp= node;
+        }
+
+        return ans->next;
+    }
+    struct Node* addTwoLists(struct Node* first, struct Node* second)
+    {
+        // code here
+         struct Node* revfirst = reverse(first);
+         struct Node* revsecond= reverse(second);
+         struct Node* res= sum(revfirst, revsecond);
+        res = reverse(res);
+        return res;
     }
 };
 
