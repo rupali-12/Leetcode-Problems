@@ -21,10 +21,6 @@ public:
     }
     void deleteNode(ListNode* &head, int count, int length){
         if(count==1){
-           //  ListNode* temp= head->next;
-           //  head->next=NULL;
-           // head= temp;
-           //  return;
             head= head->next;
             cout<<head->val;
             return;
