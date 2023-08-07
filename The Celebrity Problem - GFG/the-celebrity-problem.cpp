@@ -11,8 +11,13 @@ class Solution
 {
     public:
     //Function to find if there is a celebrity in the party or not.
-    bool knows(vector<vector<int> >& M, int can, int per){
-        if(M[can][per]==1){
+    bool knows(int A, int B, vector<vector<int> >& M, int n){
+        // for(int i=0; i<n; i++){
+        //     if(M[A][i]==1){
+        //         return true;
+        //     }
+        // }
+        if(M[A][B]==1 || M[B][A]==0){
             return true;
         }
         return false;
@@ -20,22 +25,36 @@ class Solution
     int celebrity(vector<vector<int> >& M, int n) 
     {
         // code here 
-        int  c=0;
+        stack<int>s;
         for(int i=0; i<n; i++){
-            if(knows(M, c, i)){
-                c=i;
-            }
+            s.push(i);
         }
         
-        // check if candidate knows anyone or not 
+        while(s.size()!=1){
+            int A = s.top();
+            s.pop();
+            int B= s.top(); 
+            s.pop();
+            
+            if(knows(A, B, M, n)){
+                s.push(B);
+            }
+            else{
+                s.push(A);
+            }
+        }
+        int ansCandidate= s.top();
         for(int i=0; i<n; i++){
-            if(i==c) continue;     // code stucks there thats why we continue this case as M[i][c]==0 
-            // if c knows everyone but there exist an i which does not know c then return -1;
-            if(knows(M, c,i) || (!knows(M, i, c))){
+            if(M[ansCandidate][i]==1){
                 return -1;
             }
         }
-        return c;
+        for(int i=0; i<n; i++){
+            if(M[i][ansCandidate]==0 && ansCandidate!=i){
+                return -1;
+            }
+        }
+        return ansCandidate;
     }
 };
 
