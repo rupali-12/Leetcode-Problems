@@ -1,25 +1,25 @@
 class Solution {
 public:
-//      // int largestRectangleArea(vector<int>& heights) {
-//     // // Approach-1>> Brute Force>>>>O(n^2)-->TLE
-//     //     int n=heights.size();
-//     //     int area=0;
-//     //     for(int i=0;i <n; i++){
-//     //         int currArea=0;
-//     //         int minHeight=INT_MAX;
-//     //         for(int j=i; j<n; j++){
-//     //             minHeight =min(minHeight, heights[j]);
-//     //             currArea = max(currArea, minHeight*(j-i+1));
-//     //         }
-//     //         area =max(area, currArea);
-//     //     }
-//     //    return area;
-//      // }
+     // int largestRectangleArea(vector<int>& heights) {
+    // // Approach-1>> Brute Force>>>>O(n^2)-->TLE
+    //     int n=heights.size();
+    //     int area=0;
+    //     for(int i=0;i <n; i++){
+    //         int currArea=0;
+    //         int minHeight=INT_MAX;
+    //         for(int j=i; j<n; j++){
+    //             minHeight =min(minHeight, heights[j]);
+    //             currArea = max(currArea, minHeight*(j-i+1));
+    //         }
+    //         area =max(area, currArea);
+    //     }
+    //    return area;
+    //  }
          
          
-//          // Approach-2>> Using Stack>>>>>
-//     // here we have to push indexes not values 
-//     // and compare it with value at that index which is stored at top of stack
+         // Approach-2>> Using Stack>>>>>
+    // here we have to push indexes not values 
+    // and compare it with value at that index which is stored at top of stack
 
     vector<int>prevSmaller(vector<int> arr, int n){
          stack<int>s;
