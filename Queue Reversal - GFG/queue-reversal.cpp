@@ -3,7 +3,54 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-queue<int> rev(queue<int> q);
+
+// } Driver Code Ends
+//function Template for C++
+
+//Function to reverse the queue.
+class Solution
+{
+    public:
+    // TLE 
+    // void solve(queue<int>q, queue<int>&ans){
+    //      if(q.empty()){
+    //         return;
+    //     }
+    //     int temp= q.front();
+    //     q.pop();
+    //     solve(q, ans);
+    //     ans.push(temp);
+    // }
+
+    // queue<int> rev(queue<int> q)
+    // {
+    //     // add code here.
+    //  queue<int>ans;
+    //  solve(q, ans);
+    //   return ans;
+    // }
+    
+    // Approach-2 using stack 
+      queue<int> rev(queue<int> q)
+    {
+        // add code here.
+     stack<int>temp;
+    while(!q.empty()){
+        temp.push(q.front());
+        q.pop();
+    }
+    
+    while(!temp.empty()){
+        q.push(temp.top());
+        temp.pop();
+    }
+      return q;
+    }
+    
+};
+
+
+//{ Driver Code Starts.
 int main()
 {
     int test;
@@ -18,7 +65,8 @@ int main()
         cin>>var; 
         q.push(var);
     }
-    queue<int> a=rev(q); 
+    Solution ob;
+    queue<int> a=ob.rev(q); 
     while(!a.empty())
     {
         cout<<a.front()<<" ";
@@ -28,42 +76,3 @@ int main()
     }
 }
 // } Driver Code Ends
-
-
-//function Template for C++
-
-//Function to reverse the queue.
-queue<int> rev(queue<int> q)
-{
-    // add code here
-    
-    // Approach--1>>using stack>>>>>>>>>>>>>>>>>>>>
-    stack<int>s;
-    while(!q.empty()){
-        int temp = q.front();
-        q.pop();
-        s.push(temp);
-    }
-    
-    queue<int>ans;
-    while(!s.empty()){
-        int temp= s.top();
-        s.pop(); 
-        ans.push(temp);
-    }
-    return ans;
-    
-    // *******************************************************************************************
-    // Approach--2>>>using recursion>>>>>>>>>>>>>>>>>>>>>>
-//     //   queue<int>ans;
-//     if(q.empty()){
-//         return q;
-//     }
-//      int temp= q.front();
-//      q.pop();
-//   q= rev(q);
-//      q.push(temp);
-     
-//      return q;
-}
-
