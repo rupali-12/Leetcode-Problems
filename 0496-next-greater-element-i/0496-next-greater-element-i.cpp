@@ -13,13 +13,17 @@ public:
           s.push(nums2[j]);
       }
        vector<int>ans(nums1.size());
+        //   for(int i=0; i<nums1.size(); i++){
+        //   ans[i]= tmp[nums1[i]];
+        // }
+        
         for(int i=0; i<nums1.size(); i++){
-           // if(tmp.find(nums1[i])!=tmp.end()){
+           if(tmp.find(nums1[i])!=tmp.end()){
                 ans[i]= tmp[nums1[i]];
-           // }
-            // else{
-            //     ans[i]= -1;
-            // }
+           }
+            else{
+                ans[i]= -1;
+            }
         }
       return ans;
     }
