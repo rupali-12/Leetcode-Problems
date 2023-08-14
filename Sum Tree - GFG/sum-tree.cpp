@@ -95,41 +95,35 @@ struct Node
 class Solution
 {
     public:
-    // <issum, sum>
-    pair<bool, int>isSumTreeFast(Node*root){
+    pair<bool, int>isSum(Node* root){
         if(root==NULL){
-            pair<bool, int>p =make_pair(true, 0);
+            pair<bool, int>p = make_pair(true, 0);
             return p;
         }
         if(root->left==NULL && root->right==NULL){
-            pair<bool, int>p =make_pair(true, root->data);
+            pair<bool, int>p = make_pair(true, root->data);
             return p;
         }
-        
+        pair<bool, int>left = isSum(root->left);
+        pair<bool, int>right =isSum(root->right);
+        bool leftAns = left.first;
+        bool rightAns = right.first;
         pair<bool, int>ans;
-         pair<bool, int> left = isSumTreeFast(root->left);
-        pair<bool, int> right = isSumTreeFast(root->right);
-         
-         bool isLeftSumTree = left.first;
-         bool isRightSumTree =right.first;
-        
-         int sum = left.second + right.second;
-         if(isLeftSumTree && isRightSumTree && (root->data==sum)){
-             ans.first = true;
-            //  root->data , because we have to pass that total to upper node 
-             ans.second =root->data + left.second + right.second;
-            //  ans.second =2*root->data;
-         }
-         else{
-            ans.first =  false;
-    }
-
+        if(leftAns && rightAns && (left.second + right.second == root->data)){
+            ans.first =true;
+            ans.second =2*root->data;
+        }
+        else{
+            ans.first= false;
+        }
         return ans;
     }
     bool isSumTree(Node* root)
     {
          // Your code here
-       return isSumTreeFast(root).first;
+         pair<bool,int>ans= isSum(root);
+         return ans.first;
+        
     }
 };
 
