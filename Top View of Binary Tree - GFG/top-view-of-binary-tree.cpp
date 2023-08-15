@@ -122,7 +122,7 @@ class Solution
             int hd= temp.second;
 
             
-            if(mp[hd]==0){
+            if(mp.find(hd)==mp.end()){   // if entry is already present 
                 mp[hd]= frontNode->data;
             }
             if(frontNode->left){
