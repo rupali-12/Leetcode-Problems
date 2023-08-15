@@ -106,49 +106,35 @@ class Solution{
     vector <int> zigZagTraversal(Node* root)
     {
     	// Code here
-    	vector<int>ans;
-    	vector<int>level;
+    	vector<int>result;
     	queue<Node*>q;
+    	bool leftToRight= true;
     	q.push(root);
-    	q.push(NULL);
-    	bool flag= true;
-    	 if(root==NULL){
-    	     return ans;
-    	 }
     	while(!q.empty()){
-    	 Node* temp= q.front();
-    	 q.pop();
-    	
-    	    if(temp==NULL){
-    	       // check for flag that we have to fill from left to right or right to left 
-    	        if(flag==true){
-    	            for(auto i: level){
-    	                ans.push_back(i);
-    	            }
+    	    int size= q.size();
+    	    vector<int>ans(size);
+    	    for(int i=0;i<size;i++){
+    	        Node* fNode = q.front();
+    	        q.pop();
+    	        
+    	       // check flow
+    	        int index = leftToRight?i: (size-i-1);
+    	        ans[index]= fNode->data;
+    	        
+    	        if(fNode->left){
+    	            q.push(fNode->left);
     	        }
-    	        else{
-    	            reverse(level.begin(), level.end());
-    	            for(auto i: level){
-    	                ans.push_back(i);
-    	            }
-    	        }
-    	        level.erase(level.begin(), level.end());
-    	         flag= !flag;
-    	        if(!q.empty()){
-    	            q.push(NULL);
+    	        if(fNode->right){
+    	            q.push(fNode->right);
     	        }
     	    }
-    	    else{
-    	        level.push_back(temp->data);
-    	        if(temp->left){
-    	            q.push(temp->left);
-    	        }
-    	        if(temp->right){
-    	            q.push(temp->right);
-    	        }
+    	    leftToRight= !leftToRight;
+    	    
+    	    for(auto i: ans){
+    	        result.push_back(i);
     	    }
     	}
-    	return ans;
+    	return result;
     }
 };
 
