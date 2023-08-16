@@ -112,68 +112,43 @@ struct Node
 */
 // your task is to complete this function
 Node* solve(Node* root, int &k, int node){
-    if(root==NULL){
+       if(root==NULL){
         return NULL;
     }
-    
     if(root->data==node){
         return root;
     }
-    
-    Node* left = solve(root->left, k, node);
-    Node* right = solve(root->right, k, node);
-    
-    // if((left!=NULL && right==NULL) || (left==NULL && right!=NULL)){
-    //     k--;
-    //     if(k==0){
-    //         // k= INT_MAX;
-    //         return root;
-    //     }
-    //     else{
-    //       if(left==NULL){
-    //           return right;
-    //       }
-    //       else{
-    //             return left;
-    //       }
-    //     }
-    // }
-    
-    // **********************************************************************************
-    if(left!=NULL && right==NULL){
+    Node* leftAns = solve(root->left, k, node);
+    Node* rightAns= solve(root->right, k, node);
+    if(leftAns!=NULL && rightAns==NULL){
         k--;
-        // if(k==0){
-        //     return root;
-        // }
         if(k<=0){
-            k=INT_MAX;     // in order to ock answer so that i will never reach to 0 when i return back
+            // lock ans
+            k=INT_MAX;
             return root;
         }
-        return left;
+        return leftAns;
     }
-    
-    if(left==NULL && right!=NULL){
+     if(leftAns==NULL && rightAns!=NULL){
         k--;
-        if(k==0){
+        if(k<=0){
+            // lock ans
+            k=INT_MAX;
             return root;
         }
-        return right;
+        return rightAns;
     }
-    
-    return NULL;
+ return NULL;
 }
 int kthAncestor(Node *root, int k, int node)
 {
     // Code here
-    Node* ans = solve(root, k, node);
-//   if(ans==NULL || ans->data==node){
-//       return -1;
-//   }
-//   return ans->data;
-
-
-  if(ans!=NULL && ans->data!=node){
-      return ans->data;
-  }
-  return -1;
+    // handle case when ans->data = node
+    
+    Node* temp= solve(root, k, node);
+   if(temp==NULL || temp->data==node){
+       return -1;
+   }
+   return temp->data;
+     
 }
