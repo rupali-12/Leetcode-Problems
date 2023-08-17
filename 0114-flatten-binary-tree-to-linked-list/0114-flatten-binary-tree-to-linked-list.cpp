@@ -12,27 +12,21 @@
 class Solution {
 public:
     void flatten(TreeNode* root) {
-          TreeNode* current =root;
+         TreeNode* current=root;
         while(current!=NULL){
-            if(current->left==NULL){
-                current= current->right;
+            if(current->left){
+                // find predecessor
+                TreeNode* pred = current->left;
+                while(pred->right!=NULL){
+                    pred= pred->right;
+                }
+                
+                pred->right= current->right;
+                current->right= current->left;
+                  current->left=NULL;
             }
-            else{
-                TreeNode* prev = current->left;
-                 while(prev->right!=NULL){
-                 prev= prev->right;
-               }
-                if(prev->right==NULL){
-                    prev->right= current->right;
-                    current->right= current->left;
-                    current->left= NULL;
-                    current= current->right;    // current->right because we have already made current->left= current->right 
-                    // and when we make current->left  = NULL then current->left doessn't exist;
-                 }
-                // else{
-                    
-                // }
-            }
+            current= current->right;
         }
+        return;
     }
 };
