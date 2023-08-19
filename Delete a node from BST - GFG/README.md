@@ -1,10 +1,8 @@
 # Delete a node from BST
 ## Medium
-<div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given a Binary Search Tree and a node value X. Delete the node with the given value X from the BST. If no node with value x exists, then do not make any change.&nbsp;</span></p>
-
-<p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
-
-<pre><span style="font-size:18px"><strong>Input:
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given a Binary Search Tree and a node value X. Delete the node with the given value X from the BST. If no node with value x exists, then do not make any change.&nbsp;</span></p>
+<p><span style="font-size: 18px;"><strong>Example 1:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input:
 </strong>      2
 &nbsp;   /   \
 &nbsp;  1     3
@@ -14,10 +12,8 @@ Explanation: </strong>In the given input there
 is no node with value 12 , so the tree
 will remain same.</span>
 </pre>
-
-<p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
-
-<pre><span style="font-size:18px"><strong>Input:
+<p><span style="font-size: 18px;"><strong>Example 2:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input:
 </strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;\
  &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; 2
@@ -40,19 +36,8 @@ deleting 9 will be
 &nbsp; &nbsp; &nbsp; &nbsp;        &nbsp;5&nbsp; &nbsp;  11
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; /&nbsp; \&nbsp; &nbsp; &nbsp;\
 &nbsp; &nbsp; &nbsp;         4 &nbsp; &nbsp;7&nbsp; &nbsp;&nbsp;&nbsp;12</span></pre>
-
-<p><span style="font-size:18px"><strong>Your Task:</strong><br>
-You don't need to read input or print anything. Your task is to complete the function</span><span style="font-size:18px"> <strong>deleteNode()</strong>&nbsp;which takes two&nbsp;arguments. The first being the root of the tree, and an integer <strong>'X'</strong>&nbsp;denoting the node value to be deleted from the BST. Return the root of the BST after deleting the node with value X. Do not make any update if there's no node with value X present in the BST. </span></p>
-
-<p><span style="font-size:18px"><strong>Note: </strong>The generated output will be&nbsp;the inorder traversal of the modified tree.</span><br>
-&nbsp;</p>
-
-<p><span style="font-size:18px"><strong>Expected Time Complexity:&nbsp;</strong>O(Height of the BST).<br>
-<strong>Expected Auxiliary Space:&nbsp;</strong>O(Height of the BST).</span><br>
-&nbsp;</p>
-
-<p><span style="font-size:18px"><strong>Constraints:</strong><br>
-1 &lt;= N &lt;= 10<sup>5</sup></span></p>
-
-<p>&nbsp;</p>
-</div>
+<p><span style="font-size: 18px;"><strong>Your Task:</strong><br>You don't need to read input or print anything. Your task is to complete the function</span><span style="font-size: 18px;"> <strong>deleteNode()</strong>&nbsp;which takes two&nbsp;arguments. The first being the root of the tree, and an integer <strong>'X'</strong>&nbsp;denoting the node value to be deleted from the BST. Return the root of the BST after deleting the node with value X. Do not make any update if there's no node with value X present in the BST. </span></p>
+<p><span style="font-size: 18px;"><strong>Note: </strong>The generated output will be&nbsp;the inorder traversal of the modified tree.</span><br>&nbsp;</p>
+<p><span style="font-size: 18px;"><strong>Expected Time Complexity:&nbsp;</strong>O(Height of the BST).<br><strong>Expected Auxiliary Space:&nbsp;</strong>O(Height of the BST).</span><br>&nbsp;</p>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 &lt;= N &lt;= 10<sup>5</sup></span></p>
+<p>&nbsp;</p></div>
