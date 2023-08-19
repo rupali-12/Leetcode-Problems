@@ -112,49 +112,44 @@ int main() {
 Node *deleteNode(Node *root, int X) {
     // your code goes here
     if(root==NULL){
-        return root;
+        return NULL;
     }
-    
-    if(root->data ==X){
-        // 0 child
-        if(root->left==NULL && root->right==NULL){
+    if(root->data==X){
+        // case-1 : 0 child 
+        if(root->left==NULL &&root->right==NULL){
             delete(root);
             return NULL;
         }
-        
-        // 1 child
-        if((root->left==NULL &&root->right!=NULL) || (root->left!=NULL && root->right==NULL)){
+        // case-2 -> 1 child
+        else if((root->left==NULL && root->right!=NULL)|| (root->right==NULL && root->left!=NULL)){
             if(root->left!=NULL){
-                Node *temp = root->left;
-                delete root;
+                Node* temp= root->left;
+                delete(root);
                 return temp;
             }
             else{
-                Node *temp = root->right;
-                delete root;
+                Node* temp= root->right;
+                delete(root);
                 return temp;
             }
         }
-        
-        // 2 child
-        if(root->left!=NULL && root->right!=NULL){
-            Node* pre= root->left;
-            while(pre->right!=NULL){
-                pre= pre->right;
-            }
-           int maxValue =pre->data;
-              root->data =maxValue;
-              root->left = deleteNode(root->left, maxValue);
+        // case 3--> 2 child
+        else{
+              Node* pre=  root->left;
+              while(pre->right!=NULL){
+                  pre= pre->right;
+              }
+              int maxVal= pre->data;
+              root->data = maxVal;
+              root->left= deleteNode(root->left, maxVal);
               return root;
         }
-        
     }
     else if(root->data>X){
         root->left = deleteNode(root->left, X);
-        return root;
     }
     else{
-        root->right = deleteNode(root->right, X);
-        return root;
+        root->right=deleteNode(root->right, X);
     }
+    return root;
 }
