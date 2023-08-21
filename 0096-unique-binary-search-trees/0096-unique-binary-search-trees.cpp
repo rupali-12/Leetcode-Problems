@@ -35,18 +35,18 @@ public:
         return dp[n];
     }
 
-//       int solveSpOpt(int n){
-//         if(n<=1){
-//             return 1;
-//         }
-//           int ans=0;
-//           // int ans=1;
-//         for(int i=0; i<n; i++){
-//             ans+= solveSpOpt(i)*solveSpOpt(n-i-1);
-//               // ans = ans *2*(2*i+1)/(i+2);  // overfow
-//         }
-//         return ans;
-//     }
+      int solveSpOpt(int n){
+        if(n<=1){
+            return 1;
+        }
+          int ans=0;
+          // int ans=1;
+        for(int i=0; i<n; i++){
+            ans+= solveSpOpt(i)*solveSpOpt(n-i-1);
+              // ans = ans *2*(2*i+1)/(i+2);  // overfow
+        }
+        return ans;
+    }
     int numTrees(int n) {
         
         // // Approach 1>> Using Recursion 
@@ -57,9 +57,9 @@ public:
         // return solveMem(n, dp);
         
         //  // Approach 3>> Using Tabulation  
-        return solveTab(n);
+        // return solveTab(n);
         
           // Approach 34> Using space optimization  
-        // return solveSpOpt(n);
+        return solveSpOpt(n);
     }
 };
