@@ -127,7 +127,10 @@ class Solution{
       
       solve(root->left, ans,i);
       solve(root->right, ans, i);
-      if(i<ans.size()){
+    //  root->data = ans[i++];
+    
+    2
+     if(i<ans.size()){
           swap(ans[i++], root->data);
       }
       return;
