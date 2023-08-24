@@ -92,51 +92,56 @@ Node *buildTree(string str) {
 
 class Solution {
   public:
-  bool isCBT(struct Node* root, int  i, int nodeCount){
-      if(root==NULL){
+  int totalCount(struct Node* tree){
+      if(tree==NULL){
+          return 0;
+      }
+      int l = totalCount(tree->left);
+      int r= totalCount(tree->right);
+      int ans=1 +l +r;
+      return ans;
+  }
+  bool isCBT(struct Node* tree, int i, int nodeCount){
+      if(tree==NULL){
           return true;
       }
-      if(i>= nodeCount){
+      if(i>=nodeCount){
           return false;
       }
       else{
-          bool left = isCBT(root->left, 2*i+1, nodeCount);
-          bool right = isCBT(root->right, 2*i+2, nodeCount);
-          return left && right;
+          bool leftAns =isCBT(tree->left, 2*i+1, nodeCount);
+          bool rightAns =isCBT(tree->right, 2*i+2, nodeCount);
+      return leftAns && rightAns;
+          
       }
   }
-  bool isMaxOrder(struct Node* root){
-      if(root->left==NULL && root->right==NULL){
+  bool isMaxHeap(struct Node* tree){
+      if(tree==NULL){
           return true;
       }
-      if(root->right==NULL){
-          return root->data > root->left->data;
+    //   leafnode
+    else if(tree->left==NULL &&  tree->right==NULL){
+        return true;
+    }
+      else if(tree->right==NULL){
+          return tree->data >tree->left->data;
       }
-      else{
-         bool temp = root->data > root->left->data && root->data > root->right->data;
-         bool left = isMaxOrder(root->left);
-         bool right = isMaxOrder(root->right);
-         if(temp && left && right){
-             return true;
-         }
-         return false;
+      else if(tree->left==NULL){
+          return tree->data >tree->right->data;
       }
-  }
-  int countNode(struct Node* root){
-      if(root==NULL){
-          return 0;
-      }
-      int left = countNode(root->left);
-      int right = countNode(root->right);
-      return left + right +1;
+     bool ans =tree->data > tree->left->data && tree->data >tree->right->data && isMaxHeap(tree->left) && isMaxHeap(tree->right);
+      return ans;
   }
     bool isHeap(struct Node* tree) {
         // code here
-        int index=0;
-        int totalCount =countNode(tree);
-    if(isCBT(tree, index, totalCount) && isMaxOrder(tree)){
-        return true;
-    }
+        if(tree==NULL){
+            return true;
+        }
+        int count = totalCount(tree);
+        if(isCBT(tree, 0, count) && isMaxHeap(tree)){
+            return true;
+        }
+       
         return false;
     }
 };
