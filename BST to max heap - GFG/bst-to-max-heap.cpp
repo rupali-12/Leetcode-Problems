@@ -129,7 +129,7 @@ class Solution{
       solve(root->right, ans, i);
     //  root->data = ans[i++];
     
-    2
+    // 2nd way 
      if(i<ans.size()){
           swap(ans[i++], root->data);
       }
