@@ -1,6 +1,7 @@
+#include <cstdint> // for int64_t
 class Solution {
 public:
-    int mod= (int)(1e9+7);
+    const int mod = 1e9 + 7;
 int solveRec(int startRow, int startCol,vector< vector< int> > &mat){
      if(startRow>=0 && startCol>=0 && mat[startRow][startCol]==1){
 		 return 0;
@@ -40,18 +41,19 @@ int solveTab(int n, int m,vector< vector< int> > &mat){
 	 dp[0][0]=1;
 	 for(int row=0; row<n; row++){
 		 for(int col= 0; col<m; col++){
-		   if(row==0 && col==0){
+             if(mat[row][col]==1){
+                 dp[row][col]=0;
+             }
+		  else if(row==0 && col==0){
 			   dp[row][col] = 1;
 		   }
 		   else{
 			   int up=0, left=0;
-			   if(mat[row][col]!=1){
 				   if(row>0){
                  up= dp[row-1][col];
 			   }
 			   if(col>0){
 				   left= dp[row][col-1];
-			   }
 			   }
 			   dp[row][col] = (up + left)%mod;
 		   }
@@ -65,22 +67,20 @@ int solveSpOpt(int n, int m,vector< vector< int> > &mat ){
 	for(int row=0; row<n; row++){
 		vector<int>curr(m, 0);
 		for(int col=0; col<m; col++){
-			// if(mat[row][col]==-1){
-			// 	curr[col]=0;
-			// }
-			if(row==0 &&col==0){
+			if(mat[row][col]==1){
+				curr[col]=0;
+			}
+			else if(row==0 &&col==0){
 				curr[col]=1;
 			}
 			else{
 				int up=0, left=0;
-				if(mat[row][col]!=1){
                     if(row>0){
 					up = prev[col];
 				}
 				if(col>0){
 					left = curr[col-1];
 				}
-                }
 				curr[col]= (up+left)%mod;
 			}
 		}
@@ -98,10 +98,10 @@ int solveSpOpt(int n, int m,vector< vector< int> > &mat ){
 	// // Approach -2: Memoization 
 	vector<vector<int>>dp(n, vector<int>(m, -1));
 	int startRow=n-1, startCol=m-1;
-     return solveMem(startRow, startCol, dp,obstacleGrid);
+	return solveMem(startRow, startCol, dp,obstacleGrid);
 	
 	// // Approach-3> Tabulation
-    // return solveTab(n, m, obstacleGridmat);
+    // return solveTab(n, m, obstacleGrid);
 
 	// Approach-4> Tabulation + spae optimization 
 	// return (solveSpOpt(n, m, obstacleGrid));
