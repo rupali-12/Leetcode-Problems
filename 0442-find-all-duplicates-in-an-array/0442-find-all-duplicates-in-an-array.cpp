@@ -15,31 +15,49 @@ public:
         // }
         // return a;
         
-        // Approach-2: Using sorting
-        vector<int>ans;
-        sort(nums.begin(), nums.end());
-        pair<int,int>p= {nums[0], 1};
+//         // Approach-2: Using sorting
+//         vector<int>ans;
+//         sort(nums.begin(), nums.end());
+//         pair<int,int>p= {nums[0], 1};
         
-           // no need to handle separately 
-         // if(nums.size()==1){
-         //     return ans;
-         // }
-        for(int i=1; i<nums.size(); i++){
-            if(nums[i]!= nums[i-1]){
-                if(p.second>1){
-                    ans.push_back(p.first);
-                }
-                 p= {nums[i], 1};
+//            // no need to handle separately 
+//          // if(nums.size()==1){
+//          //     return ans;
+//          // }
+//         for(int i=1; i<nums.size(); i++){
+//             if(nums[i]!= nums[i-1]){
+//                 if(p.second>1){
+//                     ans.push_back(p.first);
+//                 }
+//                  p= {nums[i], 1};
+//             }
+//             else{
+//                 p.second++;
+//                 if(i==nums.size()-1){
+//                     ans.push_back(p.first);
+//                 }
+//             }
+//         }
+//         if(ans.size()==0 && p.second>1){
+//             ans.push_back(nums[0]);
+//         }
+//         return ans;
+        
+        // Approach-3: Optimized 
+        vector<int>ans;
+          int n= nums.size();
+        
+        for(int i=0; i<n; i++){
+            int index= abs(nums[i])-1;
+            if(nums[index]<0){
+                ans.push_back(index+1);
             }
             else{
-                p.second++;
-                if(i==nums.size()-1){
-                    ans.push_back(p.first);
-                }
+                nums[index]*= -1;
             }
-        }
-        if(ans.size()==0 && p.second>1){
-            ans.push_back(nums[0]);
+          
+            
+            
         }
         return ans;
     }
