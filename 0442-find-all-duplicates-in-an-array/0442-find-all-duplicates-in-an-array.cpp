@@ -54,10 +54,7 @@ public:
             }
             else{
                 nums[index]*= -1;
-            }
-          
-            
-            
+            }            
         }
         return ans;
     }
