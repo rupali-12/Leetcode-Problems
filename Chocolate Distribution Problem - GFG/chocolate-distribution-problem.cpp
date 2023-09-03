@@ -7,16 +7,19 @@ class Solution{
     public:
     long long findMinDiff(vector<long long> a, long long n, long long m){
     //code
-    sort(a.begin(), a.end());
-    int i=0; 
-    int j= m-1;
-    int mn= INT_MAX;
-    while(j<a.size()){
-        int diff = a[j]-a[i];
-        mn= min(mn, diff);
-        j++; i++;
+    int min_diff=INT_MAX;
+    if(n==0 || m==0){
+        return 0;
     }
-    return mn;
+    if(m>n){
+        return -1;
+    }
+   sort(a.begin(), a.end());
+    for(int i=0; i<n-m+1; i++){
+        int diff= a[i+m-1]-a[i];
+        min_diff= min(min_diff, diff);
+    }
+    return min_diff;
     }   
 };
 
