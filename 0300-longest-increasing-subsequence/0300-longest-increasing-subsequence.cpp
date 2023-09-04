@@ -74,6 +74,26 @@ public:
         }
         return nextRow[0];
     }
+    // optimized 
+    int optimizedSol(vector<int>nums){
+        int n= nums.size();
+        if(n==0){
+            return 0;
+        }
+        vector<int>ans;
+        ans.push_back(nums[0]);
+        for(int i=0; i<n; i++){
+            if(nums[i]>ans.back()){
+                ans.push_back(nums[i]);
+            }
+            else{
+                // find the index which is just recent larger than a[i]
+                int index = lower_bound(ans.begin(), ans.end(), nums[i])-ans.begin();
+                ans[index]=nums[i];
+            }
+        }
+        return ans.size();
+    }
     int lengthOfLIS(vector<int>& nums) {
         // // Approach-1: Recursion 
         // return solveRec(nums, -1, 0, dp);
@@ -85,8 +105,11 @@ public:
         // // Approach-3: Tabulation 
         // return solveTab(nums);
         
-         // Approach-4: Tabulation + space optimization
-        return solveSpOpt(nums);
+        //  // Approach-4: Tabulation + space optimization
+        // return solveSpOpt(nums);
+        
+        // Approach-5: Optimized Approach 
+        return optimizedSol(nums);
     }
 };
 
