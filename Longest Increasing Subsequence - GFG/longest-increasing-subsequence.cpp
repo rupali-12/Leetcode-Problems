@@ -9,88 +9,115 @@ class Solution
 {
     public:
     //Function to find length of longest increasing subsequence.
-    int solveRec(int *a, int n, int currIndex, int prevIndex){
-        if(currIndex==n){
+     int solveRec(int nums[],int n, int prev, int curr){
+        if(curr==n){
             return 0;
         }
-        // prevIndex  currIndex
-        // case of include-> include only when it is first element or then element shoud be greater than element at prevIndex
-      int include=0;
-        if(prevIndex==-1 || a[currIndex]>a[prevIndex]){
-         include = 1 + solveRec(a, n, currIndex+1, currIndex);
+          int ans=0;
+            int take= 1+solveRec(nums,n, curr, curr+1);
+            int nottake= solveRec(nums,n, prev, curr+1);
+           if(prev==-1 || nums[curr]>nums[prev]){
+            ans=max(take, nottake);
         }
-         
-        //  exclude
-         int exclude = 0 + solveRec(a, n, currIndex+1, prevIndex);
-         return max(include, exclude);
+           else{
+            ans=nottake;
+        }
+        return ans;
     }
-        int solveMem(int *a, int n, int currIndex, int prevIndex,vector<vector<int>>&dp){
-        if(currIndex==n){
+    
+    int solveMem(int nums[], int n, int prev, int curr,  vector<vector<int>>&dp){
+        if(curr==n){
             return 0;
         }
-        if(dp[currIndex][prevIndex+1]!=-1){
-            return dp[currIndex][prevIndex+1];
+        if(dp[prev+1][curr]!=-1){
+            return dp[prev+1][curr];
         }
-          int include=0;
-        if(prevIndex==-1 || a[currIndex]>a[prevIndex]){
-         include = 1 + solveMem(a, n, currIndex+1, currIndex, dp);
+          int ans=0;
+            int take= 1+solveMem(nums,n, curr, curr+1, dp);
+            int nottake= solveMem(nums,n, prev, curr+1, dp);
+           if(prev==-1 || nums[curr]>nums[prev]){
+            ans=max(take, nottake);
         }
-         
-        //  exclude
-         int exclude = 0 + solveMem(a, n, currIndex+1, prevIndex,dp);
-         return dp[currIndex][prevIndex+1]= max(include, exclude);   // to avoid negative index
+           else{
+            ans=nottake;
+        }
+        return dp[prev+1][curr] =ans;
     }
-    int solveTab(int *a, int n){
-         vector<vector<int>>dp(n+1 , vector<int>(n+1, 0));
-        //  dp[n-1][n+1]= 0;
-         
-         for(int currIndex=n-1; currIndex>=0; currIndex--){
-             for(int prevIndex=currIndex-1; prevIndex>=-1; prevIndex--){
-                 int include =0;
-                 if(prevIndex==-1 || a[currIndex]>a[prevIndex]){
-                     include = 1+dp[currIndex+1][currIndex+1];
-                 }
-                 
-                 int exclude =0 +dp[currIndex+1][prevIndex+1];
-                 dp[currIndex][prevIndex+1]= max(include, exclude);
-             }
-         }
-         return dp[0][0];
+    int solveTab(int nums[],int n){
+        vector<vector<int>>dp(n+1, vector<int>(n+1, 0));
+         for(int curr=n-1; curr>=0; curr--){
+        for(int prev=curr-1; prev>=-1; prev--){
+            
+            // include
+            int take=0;
+                if(prev==-1 || nums[curr]>nums[prev]){
+                   take=1+ dp[curr+1][curr+1];  // its prev but we consider prev as prev+1
+                }
+            
+            //Exclude
+            int nottake= 0+dp[curr+1][prev+1];  // as prev also equal to -1 for some cases 
+         dp[curr][prev+1] = max(take, nottake);
+            }
+        }
+        return dp[0][0];
     }
-    int solvespOpt(int*a, int n){
-        vector<int>next(n+1, 0);
-        vector<int>curr(n+1, 0);
-         for(int currIndex=n-1; currIndex>=0; currIndex--){
-             for(int prevIndex=currIndex-1; prevIndex>=-1; prevIndex--){
-                 int include =0;
-                 if(prevIndex==-1 || a[currIndex]>a[prevIndex]){
-                     include = 1+next[currIndex+1];
-                 }
-                 
-                 int exclude =0 +next[prevIndex+1];
-                curr[prevIndex+1]= max(include, exclude);
-             }
-             next=curr;
-         }
-        return next[0];
+        int solveSpOpt(int nums[],int n){
+       vector<int>nextRow(n+1, 0);
+             vector<int>currentRow(n+1, 0);
+         for(int curr=n-1; curr>=0; curr--){
+        for(int prev=curr-1; prev>=-1; prev--){
+            
+            // include
+            int take=0;
+                if(prev==-1 || nums[curr]>nums[prev]){
+                   take=1+nextRow [curr+1];  // its prev but we consider prev as prev+1
+                }
+            
+            //Exclude
+            int nottake= 0+ nextRow[prev+1];  // as prev also equal to -1 for some cases 
+         currentRow[prev+1] = max(take, nottake);
+            }
+             nextRow= currentRow;
+        }
+        return nextRow[0];
+    }
+        // optimized 
+    int optimizedSol(int nums[], int n){
+        if(n==0){
+            return 0;
+        }
+        vector<int>ans;
+        ans.push_back(nums[0]);
+        for(int i=0; i<n; i++){
+            if(nums[i]>ans.back()){
+                ans.push_back(nums[i]);
+            }
+            else{
+                // find the index which is just recent larger than a[i]
+                int index = lower_bound(ans.begin(), ans.end(), nums[i])-ans.begin();
+                ans[index]=nums[i];
+            }
+        }
+        return ans.size();
     }
     int longestSubsequence(int n, int a[])
     {
        // your code here
-    //   Approach-1>> brute force 
-    
-    // // Approach-2>>Using Recursion 
-    // return solveRec(a, n, 0, -1);
-    
-    //  // Approach-2>>Using Recursion + memoization
-    //  vector<vector<int>>dp(n , vector<int>(n+1, -1));
-    // return solveMem(a, n, 0, -1, dp);
-    
-    //   // Approach-3>>Using Tabulation
-    // return solveTab(a, n);
-    
-       // Approach-4>>Using Space optimization
-    return solvespOpt(a, n);
+         // // Approach-1: Recursion 
+        // return solveRec(a, n, -1, 0);
+        
+        // // // Approach-2: Memoization 
+        // vector<vector<int>>dp(n+1, vector<int>(n, -1));
+        // return solveMem(a,n, -1, 0, dp);
+        
+        // // Approach-3: Tabulation 
+        // return solveTab(a, n);
+        
+        //  // Approach-4: Tabulation + space optimization
+        // return solveSpOpt(a, n);
+        
+              // Approach-5: Optimized Approach 
+        return optimizedSol(a, n);
     }
 };
 
