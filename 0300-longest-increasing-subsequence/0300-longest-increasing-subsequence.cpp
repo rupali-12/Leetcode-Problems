@@ -52,8 +52,27 @@ public:
             }
         }
         return dp[0][0];
-        
-        
+    }
+        int solveSpOpt(vector<int>nums){
+        int n= nums.size();
+       vector<int>nextRow(n+1, 0);
+             vector<int>currentRow(n+1, 0);
+         for(int curr=n-1; curr>=0; curr--){
+        for(int prev=curr-1; prev>=-1; prev--){
+            
+            // include
+            int take=0;
+                if(prev==-1 || nums[curr]>nums[prev]){
+                   take=1+nextRow [curr+1];  // its prev but we consider prev as prev+1
+                }
+            
+            //Exclude
+            int nottake= 0+ nextRow[prev+1];  // as prev also equal to -1 for some cases 
+         currentRow[prev+1] = max(take, nottake);
+            }
+             nextRow= currentRow;
+        }
+        return nextRow[0];
     }
     int lengthOfLIS(vector<int>& nums) {
         // // Approach-1: Recursion 
@@ -63,8 +82,11 @@ public:
         // vector<vector<int>>dp(nums.size()+1, vector<int>(nums.size(), -1));
         // return solveMem(nums, -1, 0, dp);
         
-        // Approach-3: Tabulation 
-        return solveTab(nums);
+        // // Approach-3: Tabulation 
+        // return solveTab(nums);
+        
+         // Approach-4: Tabulation + space optimization
+        return solveSpOpt(nums);
     }
 };
 
