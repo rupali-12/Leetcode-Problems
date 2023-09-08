@@ -11,30 +11,33 @@ class Solution
     {
         // code here 
         vector<int>ans;
-        int startRow=0, startCol=0, endRow=r-1, endCol=c-1;
-        int count=0, total = r*c;
-        while(count<total){
-          for(int i=startCol; count<total && i<=endCol; i++){
-              ans.push_back(matrix[startRow][i]);
-               count++;
-          }  
+        int count=0;
+        int startRow=0, startCol=0, endRow= r-1, endCol= c-1;
+        while(count< r*c){
+            // start row 
+            for(int col=startCol; col<=endCol && count<r*c; col++){
+                ans.push_back(matrix[startRow][col]);
+                count++;
+            }
             startRow++;
-             for(int j=startRow; count<total && j<=endRow; j++){
-              ans.push_back(matrix[j][endCol]);
-                  count++;
-          }  
+            // end col 
+            for(int row=startRow; row<=endRow && count<r*c; row++){
+                ans.push_back(matrix[row][endCol]);
+                count++;
+            }
             endCol--;
-             for(int i=endCol; count<total && i>=startCol; i--){
-              ans.push_back(matrix[endRow][i]);
-                  count++;
-          }  
+            // start col 
+            for(int col=endCol; col>=startCol && count<r*c; col--){
+                ans.push_back(matrix[endRow][col]);
+                count++;
+            }
             endRow--;
-              for(int j=endRow; count<total && j>=startRow; j--){
-              ans.push_back(matrix[j][startCol]);
-                   count++;
-          }  
+            // start col 
+           for(int row=endRow; row>=startRow && count<r*c; row--){
+                ans.push_back(matrix[row][startCol]);
+                count++;
+            }
             startCol++;
-           
         }
         return ans;
     }
