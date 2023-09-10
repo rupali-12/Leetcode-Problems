@@ -42,7 +42,7 @@ public:
         for(int ind=i; ind<=j; ind++){
             int left= solveRec(s, 1, i, ind);
             int right= solveRec(s, k-1, ind+1, j);
-            int temp= (left+right)%99999;
+            int temp= (left+right);
             mini= min(mini, temp);
         }
         return mini;
@@ -87,7 +87,6 @@ public:
             mini= min(mini, temp);
         }
         return dp[i][j][k]= mini;
-         // **********************************************
     }
     
     
@@ -98,8 +97,9 @@ public:
         // // Approach-1: Recursion
         // return solveRec(s, k, i, j);
         
-        // // Memoization
+        // // // Memoization
         vector<vector<vector<int>>>dp(n, vector<vector<int>>(n, vector<int>(k+1, -1)));
         return solveMem(s, k, i, j, dp);
+        
     }
 };
