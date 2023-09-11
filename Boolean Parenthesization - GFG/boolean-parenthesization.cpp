@@ -78,7 +78,7 @@ const int mod= 1003;
         return dp[i][j][isTrue];
     }
     int ans=0;
-    for(int k=i+1; k<=j; k+=2){
+    for(int k=i+1; k<=j-1; k+=2){
         int lt = solveMem(s, i, k-1, 1, dp);
         int lf = solveMem(s, i, k-1, 0, dp);
         int rt = solveMem(s, k+1, j, 1, dp);
