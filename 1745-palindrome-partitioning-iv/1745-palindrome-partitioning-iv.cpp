@@ -106,7 +106,8 @@ public:
        }
         // if k==1 then check number of changes to amke it palindrome 
         if(k==1) {
-           if(isPalindrome(s, i, size)) return true;
+           // if(isPalindrome(s, i, size)) return true;
+             if(changesToMakePalindrome(s, i, size)==0) return true;
             else return false;
         }
          if(dp[i][k]!=-1){
@@ -115,7 +116,8 @@ public:
         
        bool ans=false;
         for(int j=i; j<=size; j++){
-           if(isPalindrome(s, i, j)){
+           // if(isPalindrome(s, i, j)){
+            if(changesToMakePalindrome(s, i, j)==0){
                ans = ans || optimizedApp(s, j+1, size, k-1, dp);
            }
         }
