@@ -116,8 +116,8 @@ public:
         
        bool ans=false;
         for(int j=i; j<=size; j++){
-           // if(isPalindrome(s, i, j)){
-            if(changesToMakePalindrome(s, i, j)==0){
+           // if(isPalindrome(s, i, j)){   // less time
+            if(changesToMakePalindrome(s, i, j)==0){  // more time
                ans = ans || optimizedApp(s, j+1, size, k-1, dp);
            }
         }
