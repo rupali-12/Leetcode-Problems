@@ -65,7 +65,7 @@ public:
         // vector<vector<int>>dp(k+1, vector<int>(n+1, -1));
         // return solveMem(k, n, dp);
         
-        //  // Approach 2: Recursion + memoization 
+        //  // Approach 3: Optimized (memoization + binary search )
         vector<vector<int>>dp(k+1, vector<int>(n+1, -1));
         return optimized(k, n, dp);
         
