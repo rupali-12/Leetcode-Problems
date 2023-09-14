@@ -28,6 +28,17 @@ class Solution{
 	    }
 	    return dp[n]=ans;
 	}
+	int solveTab(int n){
+	    vector<int>dp(n+1, 0);
+	    for(int x=1; x<=n; x++){
+	        int ans=x;
+	        for(int i=1; i*i<=x; i++){
+	            ans= min(ans, 1+dp[x-i*i]);
+	        }
+	        dp[x]=ans;
+	    }
+	    return dp[n];
+	}
 	int MinSquares(int n)
 	{
 	    // Code here
@@ -36,8 +47,11 @@ class Solution{
 	   // return solveRec(n);
 	   
 	   // // Approach-2: Memoization 
-	   vector<int>dp(n+1, -1);
-	    return solveMem(n, dp);
+	   //vector<int>dp(n+1, -1);
+	   // return solveMem(n, dp);
+	   
+	   //Approach-3: Tabulation 
+	   return solveTab(n);
 	}
 };
 
