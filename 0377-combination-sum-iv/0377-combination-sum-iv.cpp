@@ -12,7 +12,7 @@ int solveRec(vector<int> &num, int tar){
    return ans;
 }
 
-int solveMem(vector<int>&num, int tar, vector<int>&dp){
+int solveMem(vector<int>&num, int tar, vector<unsigned>&dp){
    if(tar==0) return 1;
    if(tar<0) return 0;
     if(dp[tar]!=-1){
@@ -43,7 +43,7 @@ int solveTab(vector<int>&num, int tar){
     // return solveRec(num, tar);
 
     // // Approach-2>> Using Memoization 
-    // vector<int>dp(tar+1, -1);
+    // vector<unsigned>dp(tar+1, -1);
     // return solveMem(num, tar, dp);
 
     // Approach-3>> USing Tabulation 
