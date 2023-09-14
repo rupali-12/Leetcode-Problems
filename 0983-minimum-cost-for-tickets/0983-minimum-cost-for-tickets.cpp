@@ -75,7 +75,29 @@ public:
         // vector<int>dp(n+1, -1);
         // return solveMem(n, days, costs, 0, dp);
         
-        // Approach-3: Tabulation 
-        return solveTab(n, days, costs);
+        // // Approach-3: Tabulation 
+        // return solveTab(n, days, costs);
+        
+        // Approach -4: Optimized 
+        queue<pair<int, int>>monthly;
+        queue<pair<int, int>>weekly;
+        int ans=0;
+        for(auto day: days){
+            // 1: Remove expired days from queue 
+            while(!monthly.empty() && monthly.front().first + 30 <= day){
+                monthly.pop();
+            }
+             while(!weekly.empty() && weekly.front().first + 7 <= day){
+                weekly.pop();
+            }
+            
+            // 2: add current day's cost 
+            monthly.push(make_pair(day, ans+costs[2]));
+            weekly.push(make_pair(day, ans+costs[1]));
+            
+            // 3: update ans 
+            ans = min(ans+costs[0], min(monthly.front().second, weekly.front().second));
+        }
+        return ans;
     }
 };
