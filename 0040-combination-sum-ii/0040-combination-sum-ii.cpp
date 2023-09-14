@@ -29,11 +29,18 @@ public:
           if(i>index && num[i]==num[i-1]){
               continue;
           }
-         if(num[i]<=tar){
+      //    if(num[i]<=tar){
+      //     temp.push_back(num[i]);
+      //      optimized(num, i+1, tar- num[i], temp, ans);  
+      //     temp.pop_back();
+      //    }
+      // }
+          
+          // *************
+         if(num[i]>tar) break;
           temp.push_back(num[i]);
            optimized(num, i+1, tar- num[i], temp, ans);  
           temp.pop_back();
-         }
       }
    return;
 }   
