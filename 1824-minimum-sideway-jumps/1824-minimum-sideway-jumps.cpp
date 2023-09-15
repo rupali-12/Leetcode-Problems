@@ -67,6 +67,35 @@ public:
         int res= min(dp[2][0], min(1+dp[1][0], 1+dp[3][0]));
         return res;
     }
+     int solveTabSpOpt(vector<int>obst){
+        int n= obst.size()-1;
+       vector<int>curr(4);
+         vector<int>next(4);
+        next[0]=0;
+        next[1]=0;
+         next[2]=0;
+         next[3]=0;
+         for(int currpos= n-1; currpos>=0; currpos--){
+           for(int currlane = 1; currlane<=3; currlane++){
+                if(obst[currpos+1]!=currlane){
+                    curr[currlane] = next[currlane];
+                }
+                else{
+                    int ans= 1e9+7;
+                    for(int i=1; i<=3; i++){
+                        if(currlane!=i && obst[currpos]!=i){
+                            ans = min(ans, 1 + next[i]);
+                        }
+                    }
+                    curr[currlane] = ans;
+                }
+            }
+             next=curr;
+        }
+      
+        int res= min(next[2], min(1+next[1], 1+next[3]));
+        return res;
+    }
     int minSideJumps(vector<int>& obst) {
         // // Approach-1: Recursion 
         // return solveRec(obst, 2, 0);
@@ -75,9 +104,13 @@ public:
         // vector<vector<int>>dp(4, vector<int>(obst.size(), -1));
         // return solveMem(obst, 2, 0, dp);
         
-        // Approach-3: Tabulation 
+        // // Approach-3: Tabulation 
+        // int n = obst.size();
+        // return solveTab(obst );
+        
+            // Approach-4: Tabulation + space optimization
         int n = obst.size();
-        return solveTab(obst );
+        return solveTabSpOpt(obst );
     }
 };
 
