@@ -37,6 +37,22 @@ public:
        }
         return dp[0][0];
     }
+      int solveTabSpOpt(vector<int>&satisfaction,int n){
+          vector<int>curr(n+1, 0);
+          vector<int>next(n+1, 0);
+      // index=0, time= 1 (if include) ans 0 if(not included)
+       for(int index= n-1; index>=0; index--){
+        for(int time= index; time>=0; time--){
+             // include 
+        int inc  = satisfaction[index]*(time+1) + next[time+1];
+        // exclude
+        int exc = 0 + curr[time];
+        curr[time] = max(inc, exc);
+        }
+           next=curr;
+       }
+        return next[0];
+    }
     int maxSatisfaction(vector<int>& satisfaction) {
         sort(satisfaction.begin(), satisfaction.end());
         // // Approach-1: Recursion 
@@ -46,10 +62,10 @@ public:
         // vector<vector<int>>dp(satisfaction.size(), vector<int>(satisfaction.size(), -1));
         // return solveMem(satisfaction, 0, 0, dp);
         
-        // Approach-3: Tabulation 
-        return solveTab(satisfaction, satisfaction.size());
+        // // Approach-3: Tabulation 
+        // return solveTab(satisfaction, satisfaction.size());
         
         // Approach-4: Tabulation + space optimization 
-        
+        return solveTabSpOpt(satisfaction, satisfaction.size());
     }
 };
