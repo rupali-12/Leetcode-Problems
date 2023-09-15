@@ -22,13 +22,34 @@ public:
         int ans = max(inc, exc);
         return dp[index][time] = ans;
     }
+         int solveTab(vector<int>&satisfaction,int n){
+  vector<vector<int>>dp(n+1, vector<int>(n+1, 0));
+             int time=0;
+             // index=0, time= 1 (if include) ans 0 if(not included)
+       for(int index= n-1; index>=0; index--){
+        for(int time= index; time>=0; time--){
+             // include 
+        int inc  = satisfaction[index]*(time+1) + dp[index+1][time+1];
+        // exclude
+        int exc = 0 + dp[index+1][time];
+        dp[index][time] = max(inc, exc);
+        }
+       }
+        return dp[0][0];
+    }
     int maxSatisfaction(vector<int>& satisfaction) {
         sort(satisfaction.begin(), satisfaction.end());
         // // Approach-1: Recursion 
         // return solveRec(satisfaction, 0, 0);
         
-        // Approach-2: Memoization 
-        vector<vector<int>>dp(satisfaction.size(), vector<int>(satisfaction.size(), -1));
-        return solveMem(satisfaction, 0, 0, dp);
+        // // Approach-2: Memoization 
+        // vector<vector<int>>dp(satisfaction.size(), vector<int>(satisfaction.size(), -1));
+        // return solveMem(satisfaction, 0, 0, dp);
+        
+        // Approach-3: Tabulation 
+        return solveTab(satisfaction, satisfaction.size());
+        
+        // Approach-4: Tabulation + space optimization 
+        
     }
 };
