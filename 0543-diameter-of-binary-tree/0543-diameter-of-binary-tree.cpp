@@ -11,6 +11,25 @@
  */
 class Solution {
 public:
+//         // Approahc-2:  works on GFG 
+//      int solve(TreeNode* root, int& res){
+//           if(root==NULL) return 0;
+//         int left= solve(root->left, res);
+//         int right= solve(root->right, res);
+//         // case when root combined with left and right and pass to root
+//          int temp= max(left, right) +1;
+//          int ans= max(temp, 1+left+right);
+         
+//          res= max(res, ans);
+//         return temp;
+//     }
+//      int diameterOfBinaryTree(TreeNode* root) {
+//       int res=INT_MIN;
+//          solve(root, res);
+//          return res;
+//     }
+    
+    // Approach-1: 
     int height(TreeNode* root){
         if(root==NULL){
             return 0;
@@ -28,4 +47,5 @@ public:
         int ans= max(left, max(right, combLeftRight));
         return ans;
     }
+
 };
