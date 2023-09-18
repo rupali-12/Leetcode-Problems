@@ -18,14 +18,33 @@ public:
         int ans = max(take, nottake);
         return dp[index][n]= ans;
     }
-//     int solveTab(vector<int>&slices){
-//         // here n is total number of slices, and k is the number of slices per person 
-     
-//         int case1 =dp1[0][n/3];  // want n/3 slices per person 
+    int solveTab(vector<int>&slices){
+        int n= slices.size();
+        // here n is total number of slices, and k is the number of slices per person
+        vector<vector<int>>dp1(n+2, vector<int>((n/3)+1, 0));
+        vector<vector<int>>dp2(n+2, vector<int>((n/3)+1, 0));
         
-//         // case of not include 1st slice
+        // case of including 1st slice 
+        for(int index=n-2; index>=0; index--){
+            for(int k=1; k<=n/3;k++){
+                int include = slices[index] + dp1[index+2][k-1];
+                int exclude = 0 + dp1[index+1][k];
+                dp1[index][k] = max(include, exclude);
+            }
+        }
+        int case1 =dp1[0][n/3];  // want n/3 slices per person 
         
-//     }
+        // case of not include 1st slice
+         for(int index=n-1; index>=1; index--){
+            for(int k=1; k<=n/3;k++){
+                int include = slices[index] + dp2[index+2][k-1];
+                int exclude = 0 + dp2[index+1][k];
+                dp2[index][k] = max(include, exclude);
+            }
+        }
+        int case2 =dp2[1][n/3];
+        return max(case1, case2);
+    }
 //     int solveSpOpt(vector<int>&slices){
        
 //     }
@@ -36,16 +55,16 @@ public:
        //  int case2NotTaken =solveRec(1, k-1, slices, k/3);
        //  return max(case1Taken, case2NotTaken);
         
-        //  // Approach-2>> Using Recursion + Memoization
-         int k =slices.size();
-        vector<vector<int>>dp1(k+1, vector<int>((k/3)+1, -1));
-        int case1Taken =solveMem(0, k-2, slices, k/3, dp1);
-        vector<vector<int>>dp2(k+1, vector<int>((k/3)+1, -1));
-        int case2NotTaken =solveMem(1, k-1, slices, k/3, dp2);
-        return max(case1Taken, case2NotTaken);
+        // //  // Approach-2>> Using Recursion + Memoization
+        //  int k =slices.size();
+        // vector<vector<int>>dp1(k+1, vector<int>((k/3)+1, -1));
+        // int case1Taken =solveMem(0, k-2, slices, k/3, dp1);
+        // vector<vector<int>>dp2(k+1, vector<int>((k/3)+1, -1));
+        // int case2NotTaken =solveMem(1, k-1, slices, k/3, dp2);
+        // return max(case1Taken, case2NotTaken);
         
-        //  // Approach-3>> Using Tabulation
-        // return solveTab(slices);
+         // Approach-3>> Using Tabulation
+        return solveTab(slices);
         
          // Approach-4>> Using Space Optimization 
         // return solveSpOpt(slices);
