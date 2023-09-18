@@ -22,20 +22,20 @@ public:
         // if any one outof two cases then return true; 
         return dp[index][target] = (include || exclude);
     }
-    bool solveTab(vector<int>&nums, int n, int target){
+     bool solveTab(vector<int>&nums, int n, int target){
         vector<vector<int>>dp(n+1, vector<int>(target+1, 0));
+        for(int i=0; i<n;i++){
+            dp[i][0]=1;
+        }
         for(int index=n-1; index>=0; index--){
-            for(int t=0; t<=target; t++){
-                if(t==0){
-                 dp[index][t]=1;
-                    continue;
-                }
+            for(int t=1; t<=target; t++){
+                
                 bool inc=false;
                if(t-nums[index]>=0){
                    inc = dp[index+1][t-nums[index]];
                }
                 bool exc = dp[index+1][t];
-                dp[index][t] = inc || exc;
+                dp[index][t] = inc | exc;
             }
         }
         return dp[0][target];
