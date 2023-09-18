@@ -7,7 +7,7 @@ public:
         int ans =INT_MAX;
         int prev1=nums1[index-1];
         int prev2 =nums2[index-1];
-        // catch id swapped is 1 then we have to swap prev1 and prev2 
+        // catch is swapped is 1 then we have to swap prev1 and prev2 
         if(swapped){
             swap(prev1, prev2);
         }
