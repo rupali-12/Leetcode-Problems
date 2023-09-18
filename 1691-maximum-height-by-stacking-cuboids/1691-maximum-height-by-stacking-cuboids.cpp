@@ -67,6 +67,7 @@ public:
                 int nottake = 0 + nextRow[prev+1];
                currRow[prev+1] = max(take, nottake);
             }
+            nextRow =currRow;
         }
         return nextRow[0];   
     }
@@ -87,8 +88,8 @@ public:
         // vector<vector<int>>dp(n+1, vector<int>(n+1, -1));
         // return solveMem(cuboids, -1, 0, dp);
         
-        // // step-3> solve - Tabulation 
-        return solveTab(cuboids);
+        // // // step-3> solve - Tabulation 
+        // return solveTab(cuboids);
         
         // // step-3> solve - Tabulation + space optimization
         return solveTabSpOpt(cuboids);
