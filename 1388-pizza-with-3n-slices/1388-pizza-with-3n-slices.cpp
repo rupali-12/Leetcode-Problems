@@ -45,9 +45,42 @@ public:
         int case2 =dp2[1][n/3];
         return max(case1, case2);
     }
-//     int solveSpOpt(vector<int>&slices){
-       
-//     }
+    int solveSpOpt(vector<int>&slices){
+       int n= slices.size();
+        vector<int>prev1(n+2,0);
+        vector<int>curr1(n+2,0);
+        vector<int>next1(n+2,0);
+        vector<int>prev2(n+2,0);
+        vector<int>curr2(n+2,0);
+        vector<int>next2(n+2,0);
+        
+         // case of including 1st slice 
+        for(int index=n-2; index>=0; index--){
+            for(int k=1; k<=n/3; k++){
+                int include = slices[index] + next1[k-1];
+                int exclude = 0 + curr1[k];
+                prev1[k] = max(include, exclude);
+            }
+            next1= curr1;
+            curr1= prev1;
+        }
+        int case1 =curr1[n/3];
+        
+          // case of not including 1st slice 
+        for(int index=n-1; index>=1; index--){
+            for(int k=1; k<=n/3; k++){
+                int include = slices[index] + next2[k-1];
+                int exclude = 0 + curr2[k];
+                prev2[k] = max(include, exclude);
+            }
+            next2= curr2;
+            curr2= prev2;
+        }
+        
+        int case2 = curr2[n/3];
+        
+        return max(case1, case2);
+    }
     int maxSizeSlices(vector<int>& slices) {
        // // // Approach-1>> Using Recursion 
        //   int k =slices.size();
@@ -63,10 +96,10 @@ public:
         // int case2NotTaken =solveMem(1, k-1, slices, k/3, dp2);
         // return max(case1Taken, case2NotTaken);
         
-         // Approach-3>> Using Tabulation
-        return solveTab(slices);
+        //  // Approach-3>> Using Tabulation
+        // return solveTab(slices);
         
          // Approach-4>> Using Space Optimization 
-        // return solveSpOpt(slices);
+        return solveSpOpt(slices);
     }
 };
