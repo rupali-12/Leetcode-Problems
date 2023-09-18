@@ -52,7 +52,7 @@ public:
                    inc =next[t-nums[index]];
                }
                 bool exc = next[t];
-                curr[t] = inc | exc;
+                curr[t] = inc || exc;
             }
             next= curr;
         }
