@@ -22,6 +22,24 @@ public:
         // if any one outof two cases then return true; 
         return dp[index][target] = (include || exclude);
     }
+    bool solveTab(vector<int>&nums, int n, int target){
+        vector<vector<int>>dp(n+1, vector<int>(target+1, 0));
+        for(int index=n-1; index>=0; index--){
+            for(int t=0; t<=target; t++){
+                if(t==0){
+                 dp[index][t]=1;
+                    continue;
+                }
+                bool inc=false;
+               if(t-nums[index]>=0){
+                   inc = dp[index+1][t-nums[index]];
+               }
+                bool exc = dp[index+1][t];
+                dp[index][t] = inc || exc;
+            }
+        }
+        return dp[0][target];
+    }
     bool canPartition(vector<int>& nums) {
         int total=0;
         int n = nums.size();
@@ -36,8 +54,11 @@ public:
         // // Approach-1: Recursion 
         // return solveRec(0, nums, n, target);
         
-         // Approach-2: Recursion + Memoization
-        vector<vector<int>>dp(n+1, vector<int>(target+1, -1));
-        return solveMem(0, nums, n, target, dp);
+        //  // Approach-2: Recursion + Memoization
+        // vector<vector<int>>dp(n+1, vector<int>(target+1, -1));
+        // return solveMem(0, nums, n, target, dp);
+        
+          // Approach-3:Tabulation
+        return solveTab(nums, n, target);
     }
 };
