@@ -9,7 +9,6 @@ public:
             int tempAns=0;
            
            // check if ans for temp already exist or not
-           // if(dp.find(temp)!=dp.end()){
            if(dp.count(temp)){
                tempAns= dp[temp];    // +1 to store current ans 
            }
