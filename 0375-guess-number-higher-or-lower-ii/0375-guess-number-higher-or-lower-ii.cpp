@@ -20,7 +20,7 @@ public:
         return dp[start][end] = mini;
     }
     int solveTab(int n){
-         vector<vector<int>>dp(n+2, vector<int>(n+1, 0));
+         vector<vector<int>>dp(n+2, vector<int>(n+2, 0));
         for(int start=n; start>=1; start--){
             for(int end= start; end<=n; end++){
 // start=end case when correct number is choosen, else we further proceedto find worst case
