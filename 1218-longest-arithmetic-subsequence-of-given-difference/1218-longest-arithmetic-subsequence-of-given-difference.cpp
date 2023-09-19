@@ -6,14 +6,14 @@ public:
         int ans=0;
        for(int i=0; i<arr.size(); i++){
            int temp = arr[i]-difference;
-            
+            int tempAns=0;
+           
            // check if ans for temp already exist or not
            if(dp.find(temp)!=dp.end()){
-               dp[arr[i]] = 1 + dp[temp];    // +1 to store current ans 
+               tempAns= dp[temp];    // +1 to store current ans 
            }
-           else{
-               dp[arr[i]] = 1+0;
-           }
+           
+               dp[arr[i]] = 1+ tempAns;
            ans= max(ans, dp[arr[i]]);
        }
         return ans;
