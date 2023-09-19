@@ -27,7 +27,7 @@ public:
 //     int longestArithSeqLength(vector<int>& nums) {
 // //         // Approach-1-i  Recursion
 // //         int n= nums.size();
-// //            if(n<=2) return 0;
+// //            if(n<=2) return n;
         
 // //         int ans=0;
 // //         for(int i=0; i<n; i++){
@@ -41,7 +41,7 @@ public:
 //         // Approach-1-ii  Memoization
 //         int n= nums.size();
 //         unordered_map<int, int>dp[n+1];
-//            if(n<=2) return 0;
+//            if(n<=2) return n;
         
 //         int ans=0;
 //         for(int i=0; i<n; i++){
