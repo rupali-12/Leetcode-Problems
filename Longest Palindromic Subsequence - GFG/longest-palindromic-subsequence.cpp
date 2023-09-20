@@ -84,7 +84,7 @@ class Solution{
        
 
         // //  // Approach-3> Using Tabulation(Bottom up)
-        return solveTab(str, revStr);
+        // return solveTab(str, revStr);
 
            // Approach-4> Using Tabulation(Bottom up)+Space optimization
         return solveSpOpt(str, revStr);
