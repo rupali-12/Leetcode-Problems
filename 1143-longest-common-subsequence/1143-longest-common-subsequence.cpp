@@ -40,9 +40,25 @@ public:
          }
         return dp[0][0];
     }
-//     int solveSpOpt(string text1, string text2){
-       
-//     }
+    int solveSpOpt(string text1, string text2){
+        // i-> curr, i+1->next  so make vector of text2 length 
+       vector<int>curr(text2.length()+1, 0);
+        vector<int>next(text2.length()+1, 0);
+        int ans=0;
+         for(int i= text1.length()-1; i>=0; i--){
+             for(int j= text2.length()-1; j>=0; j--){
+                 if(text1[i]==text2[j]){
+                     ans = 1 + next[j+1];
+                 }
+                 else{
+                     ans= max(next[j], curr[j+1]);
+                 }
+                 curr[j]=ans;
+             }
+             next=curr;
+         }
+        return next[0];
+    }
     int longestCommonSubsequence(string text1, string text2) {
         // // // Approach-1> Using Recursion
         // return solveRec(text1, text2, 0, 0);
@@ -52,9 +68,10 @@ public:
         // return solveMem(text1, text2, 0, 0, dp);
        
 
-        //  // Approach-3> Using Tabulation(Bottom up)
-        return solveTab(text1, text2);
+        // //  // Approach-3> Using Tabulation(Bottom up)
+        // return solveTab(text1, text2);
 
            // Approach-4> Using Tabulation(Bottom up)+Space optimization
+        return solveSpOpt(text1, text2);
     }
 };
