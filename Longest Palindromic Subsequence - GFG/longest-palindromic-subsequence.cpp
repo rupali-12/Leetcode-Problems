@@ -78,16 +78,16 @@ class Solution{
         // // // Approach-1> Using Recursion
         // return solveRec(str, revStr, 0, 0);
 
-        // // // Approach-2> Using Recursion + Meemoization
-        vector<vector<int>>dp(str.length(), vector<int>(revStr.length(), -1));
-        return solveMem(str, revStr, 0, 0, dp);
+        // // // // Approach-2> Using Recursion + Meemoization
+        // vector<vector<int>>dp(str.length(), vector<int>(revStr.length(), -1));
+        // return solveMem(str, revStr, 0, 0, dp);
        
 
         // //  // Approach-3> Using Tabulation(Bottom up)
-        // return solveTab(str, revStr);
+        return solveTab(str, revStr);
 
            // Approach-4> Using Tabulation(Bottom up)+Space optimization
-        // return solveSpOpt(str, revStr);
+        return solveSpOpt(str, revStr);
     }
 };
 
