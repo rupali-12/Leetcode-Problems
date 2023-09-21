@@ -28,86 +28,46 @@ public:
         }
         return dp[m][n];
     }
-//     string shortestCommonSupersequence(string str1, string str2) {
-        
-// 	// // Approach-1:Tabualtion 
-// 	vector<vector<int>>dp(str1.length()+1, vector<int>(str2.length()+1, 0));
-// 	solveTab(str1, str2, str1.length(), str2.length(), dp);
-// 	string s="";
-// 	int i=str1.length(), j=str2.length();
-// 	while(i>0 && j>0){
-// 		if(str1[i-1]==str2[j-1]){
-//           s.push_back(str1[i-1]);
-// 		  i--; j--;
-// 		}
-// 		else{
-//            if(dp[i-1][j]>dp[i][j-1]){
-//                s.push_back(str1[i-1]);
-// 			   i--;
-// 		   }
-// 		   else{
-//                s.push_back(str2[j-1]);
-// 			   j--;
-// 		   }
-// 		}
-// 	}
-//         // print is there is any remaining element in both string
-//         while(i>0){
-//             s.push_back(str1[i-1]);
-//             i--;
-//         }
-//          while(j>0){
-//             s.push_back(str1[j-1]);
-//             j--;
-//         }
-        
-// 	reverse(s.begin(), s.end());
-// 	return s;
-        
-        
-//         // Approach-2: optimized
-//         // string lcs = solve(str1, str2);
-//         // return lcs;
-//     }
-    
-    // **************************************************************
     string shortestCommonSupersequence(string str1, string str2) {
-      int n=str1.length(),m=str2.length();
-	 vector<vector<int>>dp(n+1,vector<int>(m+1,0));
-	solveTab(str1, str2, n, m, dp);
         
-    int i=n ,j=m;
-	string str="";
+	// // Approach-1:Tabualtion 
+	vector<vector<int>>dp(str1.length()+1, vector<int>(str2.length()+1, 0));
+	solveTab(str1, str2, str1.length(), str2.length(), dp);
+	string s="";
+	int i=str1.length(), j=str2.length();
 	while(i>0 && j>0){
 		if(str1[i-1]==str2[j-1]){
-	str.push_back(str1[i-1]);
+          s.push_back(str1[i-1]);
 		  i--; j--;
 		}
 		else{
-	if(dp[i-1][j]>dp[i][j-1]){
-	str.push_back(str1[i-1]);
+           if(dp[i-1][j]>dp[i][j-1]){
+               s.push_back(str1[i-1]);
 			   i--;
 		   }
 		   else{
-	str.push_back(str2[j-1]);
+               s.push_back(str2[j-1]);
 			   j--;
 		   }
 		}
 	}
- 
         // print is there is any remaining element in both string
         while(i>0){
-            str.push_back(str1[i-1]);
+            s.push_back(str1[i-1]);
             i--;
         }
          while(j>0){
-            str.push_back(str2[j-1]);
+            s.push_back(str2[j-1]);
             j--;
         }
         
-	reverse(str.begin(), str.end());
-	return str;
+	reverse(s.begin(), s.end());
+	return s;
         
+        
+        // Approach-2: optimized
+        // string lcs = solve(str1, str2);
+        // return lcs;
     }
 
 };
