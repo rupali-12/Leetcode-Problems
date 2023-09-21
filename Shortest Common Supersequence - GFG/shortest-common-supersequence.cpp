@@ -38,6 +38,20 @@ class Solution
         }
         return dp[i][j]=ans;
     }
+    int solveTab(string s1, string s2){
+         vector<vector<int>>dp(s1.length()+1, vector<int>(s2.length()+1, 0));
+         for(int i=1; i<=s1.length(); i++){
+             for(int j=1; j<=s2.length(); j++){
+                 if(s1[i-1]==s2[j-1]){
+                     dp[i][j]=1+dp[i-1][j-1];
+                 }
+                 else{
+                     dp[i][j]= max(dp[i-1][j], dp[i][j-1]);
+                 }
+             }
+         }
+         return dp[s1.length()][s2.length()];
+    }
     int shortestCommonSupersequence(string X, string Y, int m, int n)
     {
         //code here
@@ -45,9 +59,13 @@ class Solution
         // int lcs= solveRec(X, Y, 0, 0); 
         // return (m+n - lcs);
         
-         // Approach-2: Memoization
-         vector<vector<int>>dp(m+1, vector<int>(n+1, -1));
-        int lcs= solveMem(X, Y, 0, 0, dp); 
+        //  // Approach-2: Memoization
+        //  vector<vector<int>>dp(m+1, vector<int>(n+1, -1));
+        // int lcs= solveMem(X, Y, 0, 0, dp); 
+        // return (m+n - lcs);
+        
+          // Approach-3: Tabulation
+        int lcs= solveTab(X, Y); 
         return (m+n - lcs);
     }
 };
