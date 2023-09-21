@@ -52,6 +52,22 @@ class Solution
          }
          return dp[s1.length()][s2.length()];
     }
+    int solveSpOpt(string s1, string s2){
+      vector<int>curr(s2.length()+1, 0);
+      vector<int>prev(s2.length()+1, 0);
+         for(int i=1; i<=s1.length(); i++){
+             for(int j=1; j<=s2.length(); j++){
+                 if(s1[i-1]==s2[j-1]){
+                     curr[j]=1+ prev[j-1];
+                 }
+                 else{
+                     curr[j]= max(prev[j], curr[j-1]);
+                 }
+             }
+             prev=curr;
+         }
+         return prev[s2.length()];
+    }
     int shortestCommonSupersequence(string X, string Y, int m, int n)
     {
         //code here
@@ -64,8 +80,12 @@ class Solution
         // int lcs= solveMem(X, Y, 0, 0, dp); 
         // return (m+n - lcs);
         
-          // Approach-3: Tabulation
-        int lcs= solveTab(X, Y); 
+        //   // Approach-3: Tabulation
+        // int lcs= solveTab(X, Y); 
+        // return (m+n - lcs);
+        
+          // Approach-4: Tabulation + space optimization
+        int lcs= solveSpOpt(X, Y); 
         return (m+n - lcs);
     }
 };
