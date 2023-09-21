@@ -2,8 +2,7 @@ class Solution {
 public:
 
         int solveRec(vector<int>& nums1, vector<int>& nums2, int i , int j , int cnt){
-            int ans=0;
-        if(i==nums1.size() || j==nums2.size()) return ans;
+        if(i==nums1.size() || j==nums2.size()) return cnt;
         
         //match case
         if(nums1[i]==nums2[j]){
