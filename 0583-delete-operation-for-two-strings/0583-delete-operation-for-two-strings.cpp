@@ -34,12 +34,12 @@ public:
     int minDistance(string word1, string word2) {
           int n= word1.length(), m= word2.length();
 	    
-	   // approach-2:Memoization 
-	   vector<vector<int>>dp(n+1, vector<int>(m+1, -1));
-	   int lcs =  solveMem(word1, word2, 0, 0, dp);
+	   // // approach-2:Memoization 
+	   // vector<vector<int>>dp(n+1, vector<int>(m+1, -1));
+	   // int lcs =  solveMem(word1, word2, 0, 0, dp);
 	   
 	   // //Approach-2: Tabulation 
-	   // int lcs= solveTab(word1, word2, n, m);
+	   int lcs= solveTab(word1, word2, n, m);
 	   
 	    int total = word1.length() + word2.length();
 	    int ans= total - (2*lcs);
