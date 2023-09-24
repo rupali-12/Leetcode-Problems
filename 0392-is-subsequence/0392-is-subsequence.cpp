@@ -12,13 +12,35 @@ public:
         }
         return dp[i][j]= solve(i, j-1, s, t, dp);
     }
+    int solveTab(string s, string t, int n){
+         vector<vector<int>>dp(s.length()+1, vector<int>(n+1, 0));
+        int ans=0;
+        for(int i=1; i<=s.length(); i++){
+            for(int j=1; j<=n; j++){
+                if(s[i-1]==t[j-1]){
+                    ans= 1 + dp[i-1][j-1];
+                }
+                else{
+                    ans= max(dp[i][j-1], dp[i-1][j]);
+                }
+                dp[i][j]=ans;
+            }
+        }
+        return dp[s.length()][n];
+    }
     bool isSubsequence(string s, string t) {
         int n= t.length();
-        vector<vector<int>>dp(s.length(), vector<int>(n+1, -1));
         if(s.length()==0){
             return true;
         }
-        int lcsLength= solve(s.length()-1, n-1, s, t, dp);
+        
+        // // Approach-1: Memoization 
+         // vector<vector<int>>dp(s.length(), vector<int>(n+1, -1));
+        // int lcsLength= solve(s.length()-1, n-1, s, t, dp);
+        
+        // Approach-2: Tabulation 
+        int lcsLength =solveTab(s, t, n);
+        
         if(lcsLength==s.length()){
             return true;
         }
