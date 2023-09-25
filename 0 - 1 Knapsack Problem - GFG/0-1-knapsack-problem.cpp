@@ -8,38 +8,42 @@ class Solution
 {
     public:
     //Function to return max value that can be put in knapsack of capacity W.
-    int solve(int *wt, int *val, int n, int capacity){
-        vector<int>prev(capacity+1, 0);
-        vector<int>curr(capacity+1, 0);
-        // base case 
-        for(int w=wt[0]; w<=capacity; w++){
-            if(w<=capacity){
-                prev[w]=val[0];
-            }
-            else{
-                prev[w]=0;
-            }
-        }
+    int  solveRec(int wt[], int val[], int W, int n){
+        if(n==0 || W==0) return 0;
         
-        for(int index=1; index<n; index++){
-            for(int w=0; w<=capacity; w++){
-                int include=0;
-                if(wt[index]<=w){
-                    include = val[index] + prev[w-wt[index]];
-                }
-                int exclude =0 + prev[w];
-                curr[w] =max(include, exclude);
-            }
-            // update prev 
-            prev= curr;
+        // include
+        if(wt[n-1]<=W){
+            return max(val[n-1] + solveRec(wt, val, W-wt[n-1], n-1), solveRec(wt, val, W, n-1));
         }
-        return prev[capacity];
+        else{
+            return solveRec(wt, val, W, n-1);
+        }
+    }
+    int  solveMem(int wt[], int val[], int W, int n, vector<vector<int>>&dp){
+        if(n==0 || W==0) return 0;
+        if(dp[n][W]!=-1){
+            return dp[n][W];
+        }
+        int ans=0;
+        // include
+        if(wt[n-1]<=W){
+            ans= max(val[n-1] + solveMem(wt, val, W-wt[n-1], n-1, dp), solveMem(wt, val, W, n-1, dp));
+        }
+        else{
+            ans= solveMem(wt, val, W, n-1, dp);
+        }
+        return dp[n][W] =ans;
     }
     int knapSack(int W, int wt[], int val[], int n) 
     { 
        // Your code here
-    //   using space optimization
-    return solve(wt, val, n, W);
+       
+    // //   Approach-1: Recursion 
+    // return solveRec(wt, val, W, n);
+    
+     //   Approach-1: Mamoization 
+     vector<vector<int>>dp(n+1, vector<int>(W+1, -1));
+    return solveMem(wt, val, W, n, dp);
     }
 };
 
