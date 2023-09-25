@@ -34,6 +34,23 @@ class Solution
         }
         return dp[n][W] =ans;
     }
+    int  solveTab(int wt[], int val[], int W, int n){
+         vector<vector<int>>dp(n+1, vector<int>(W+1, 0));
+        for(int index= 1; index<=n; index++){
+        for(int weight=1; weight<=W; weight++){
+               int ans=0;
+        // include
+        if(wt[index-1]<=weight){
+            ans= max(val[index-1] + dp[index-1][weight-wt[index-1]] , dp[index-1][weight]);  
+        }
+        else{
+            ans= dp[index-1][weight];
+        }
+         dp[index][weight] =ans;
+            }
+        }
+        return dp[n][W];
+    }
     int knapSack(int W, int wt[], int val[], int n) 
     { 
        // Your code here
@@ -41,9 +58,12 @@ class Solution
     // //   Approach-1: Recursion 
     // return solveRec(wt, val, W, n);
     
-     //   Approach-1: Mamoization 
-     vector<vector<int>>dp(n+1, vector<int>(W+1, -1));
-    return solveMem(wt, val, W, n, dp);
+    //  //   Approach-2: Memoization 
+    //  vector<vector<int>>dp(n+1, vector<int>(W+1, -1));
+    // return solveMem(wt, val, W, n, dp);
+    
+     //   Approach-3: Tabulation
+    return solveTab(wt, val, W, n);
     }
 };
 
