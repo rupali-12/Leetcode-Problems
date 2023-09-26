@@ -75,11 +75,11 @@ public:
         // return solveRec(nums, n-1, target);
         
         //  // Approach-2: Recursion + Memoization
-        vector<vector<int>>dp(n+1, vector<int>(target+1, -1));
-        return solveMem(nums, n-1, target, dp);
+        // vector<vector<int>>dp(n+1, vector<int>(target+1, -1));
+        // return solveMem(nums, n-1, target, dp);
         
         //   // Approach-3:Tabulation
-        // return solveTab(nums, n, target);
+        return solveTab(nums, n, target);
         
            // Approach-4:Tabulation + space optimization
         // return solveTabSpOpt(nums, n, target);
