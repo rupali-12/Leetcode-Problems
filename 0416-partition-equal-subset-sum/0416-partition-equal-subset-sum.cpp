@@ -79,9 +79,9 @@ public:
         // return solveMem(nums, n-1, target, dp);
         
         //   // Approach-3:Tabulation
-        return solveTab(nums, n, target);
+        // return solveTab(nums, n, target);
         
            // Approach-4:Tabulation + space optimization
-        // return solveTabSpOpt(nums, n, target);
+        return solveTabSpOpt(nums, n, target);
     }
 };
