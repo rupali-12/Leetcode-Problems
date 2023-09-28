@@ -43,21 +43,47 @@ int solveMem(vector<int>&nums, int index, int sum, vector<vector<int>>&dp){
         return dp[index][sum] = ans;
 }
     
-
+   int solveTab(vector<int>&nums, int n, int sum){
+       vector<vector<int>>dp(n+1, vector<int>(sum+1, 0));
+      if(nums[0]==0)  dp[0][0] = 2;
+       else dp[0][0]=1;
+      
+       if(nums[0]!=0 && nums[0]<=sum) dp[0][nums[0]]=1;
+       
+       for(int index=1; index<n; index++){
+           for(int s = 0; s<=sum;s++){
+               int notTake= dp[index-1][s];
+               int take=0;
+               if(nums[index]<=s){
+                   take = dp[index-1][s-nums[index]];
+               }
+               dp[index][s]= take + notTake;
+           }
+       }
+       return dp[n-1][sum];
+   }
+    
+ 
     int findTargetSumWays(vector<int>& nums, int target) {
 	// //  // approach-1>> Using Recursion 
         int n= nums.size();
 	// return solveRec(nums, 0, target, 0);
 
-	// // approach-2>> Using Recursion+Memoization (count of subset with given diff)
+        // Approach- subset difference count 
         int totalSum=0;
         for(int i=0; i<n;i++){
             totalSum+= nums[i];
         }
       int s1 = (totalSum-target)/2;
-        if(target>totalSum || (totalSum-target)%2) return 0;
-        vector<vector<int>>dp(n+1, vector<int>(s1+1, -1));
-	return solveMem(nums, n-1, s1,  dp);
+	if(target>totalSum || (totalSum-target)%2) return 0;
+        
+        // // approach-2>> Using Recursion+Memoization (count of subset with given diff)
+	// vector<vector<int>>dp(n+1, vector<int>(s1+1, -1));
+	// return solveMem(nums, n-1, s1,  dp);
+        
+        // Approach-3 Tabulation
+        return solveTab(nums, n, s1);
+        
 
     }
 };
