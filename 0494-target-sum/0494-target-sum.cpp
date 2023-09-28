@@ -63,7 +63,27 @@ int solveMem(vector<int>&nums, int index, int sum, vector<vector<int>>&dp){
        return dp[n-1][sum];
    }
     
- 
+ int solveTabSpOpt(vector<int>&nums, int n, int sum){
+  vector<int>curr(sum+1, 0);
+     vector<int>prev(sum+1, 0);
+      if(nums[0]==0)  prev[0] = 2;
+       else prev[0]=1;
+      
+       if(nums[0]!=0 && nums[0]<=sum) prev[nums[0]]=1;
+       
+       for(int index=1; index<n; index++){
+           for(int s = 0; s<=sum;s++){
+               int notTake= prev[s];
+               int take=0;
+               if(nums[index]<=s){
+                   take = prev[s-nums[index]];
+               }
+               curr[s]= take + notTake;
+           }
+           prev= curr;
+       }
+       return prev[sum];
+   }
     int findTargetSumWays(vector<int>& nums, int target) {
 	// //  // approach-1>> Using Recursion 
         int n= nums.size();
@@ -81,9 +101,11 @@ int solveMem(vector<int>&nums, int index, int sum, vector<vector<int>>&dp){
 	// vector<vector<int>>dp(n+1, vector<int>(s1+1, -1));
 	// return solveMem(nums, n-1, s1,  dp);
         
-        // Approach-3 Tabulation
-        return solveTab(nums, n, s1);
+//         // Approach-3 Tabulation
+//         return solveTab(nums, n, s1);
         
-
+  
+        // Approach-4 Tabulation + space optimization
+        return solveTabSpOpt(nums, n, s1);
     }
 };
