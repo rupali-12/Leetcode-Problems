@@ -83,7 +83,7 @@ class Solution{
         // return solveMem(length, price, n, n-1, dp);
         
         //   // Approach -3:Tabulation
-        // return solveTab(length, price, n, n);
+        return solveTab(length, price, n);
         
           // Approach -4:space optimization 
         // return solveTabSpOpt(length, price, n, n);
