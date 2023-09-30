@@ -37,6 +37,25 @@ public:
       ans = take+notTake;
       return dp[index][amount]= ans;
   }
+    
+      int solveTab(vector<int>& coins, int amount,int N){
+       vector<vector<int>>dp(N+1, vector<int>(amount+1, 0));
+       for(int i=0; i<N; i++){
+           dp[i][0]=1;
+       }
+       for(int index=1; index<=N; index++){
+           for(int s= 0; s<=amount; s++){
+                 int ans=0, take=0;
+                   int notTake = dp[index-1][s];
+                  if(coins[index-1]<=s){
+                      take= dp[index][s-coins[index-1]];
+                  }
+            ans = take + notTake;
+            dp[index][s]=ans;
+           }
+       }
+       return dp[N][amount];
+   }
  
     int change(int amount, vector<int>& coins) {
          int n = coins.size();
@@ -44,9 +63,12 @@ public:
         // // // Approach-1: Recursion 
         // return solveRec(coins, amount, n-1);
         
-         // // Approach-2: Recursion + Memoization 
-     vector<vector<int>>dp(n+1, vector<int>(amount+1, -1));
-        return solveMem(coins, amount, n-1, dp);
+//          // // Approach-2: Recursion + Memoization 
+//      vector<vector<int>>dp(n+1, vector<int>(amount+1, -1));
+//         return solveMem(coins, amount, n-1, dp);
+           
+         // // Approach-3: Tabulation
+        return solveTab(coins, amount, n);
         
       
     }
