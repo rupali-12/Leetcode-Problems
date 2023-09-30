@@ -56,6 +56,27 @@ public:
        }
        return dp[N][amount];
    }
+    
+     int solveTabSpOpt(vector<int>& coins, int amount,int N){
+       vector<int>curr(amount+1, 0);
+         vector<int>prev(amount+1, 0);
+       for(int i=0; i<N; i++){
+           prev[0]=1;
+       }
+       for(int index=1; index<=N; index++){
+           for(int s= 0; s<=amount; s++){
+                 int ans=0, take=0;
+                   int notTake = prev[s];
+                  if(coins[index-1]<=s){
+                      take= curr[s-coins[index-1]];
+                  }
+            ans = take + notTake;
+            curr[s]=ans;
+           }
+           prev=curr;
+       }
+       return prev[amount];
+   }
  
     int change(int amount, vector<int>& coins) {
          int n = coins.size();
@@ -67,8 +88,11 @@ public:
 //      vector<vector<int>>dp(n+1, vector<int>(amount+1, -1));
 //         return solveMem(coins, amount, n-1, dp);
            
-         // // Approach-3: Tabulation
-        return solveTab(coins, amount, n);
+//          // // Approach-3: Tabulation
+//         return solveTab(coins, amount, n);
+        
+         // // Approach-4: Tabulation + space optimization
+        return solveTabSpOpt(coins, amount, n);
         
       
     }
