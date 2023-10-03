@@ -141,10 +141,10 @@ bool solveTabSpOpt(string text, string pattern){
     // return solveMem(text, pattern, text.length()-1, pattern.length()-1, dp);
 
    //  // Approach-3: Tabulation
-    return solveTab(text, pattern);
+    // return solveTab(text, pattern);
 
    //  // Approach-4: Tabulation + space optimization
-//   return solveTabSpOpt(text, pattern);
+  return solveTabSpOpt(text, pattern);
         
     }
 };
