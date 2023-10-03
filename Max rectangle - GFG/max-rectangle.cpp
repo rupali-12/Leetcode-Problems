@@ -9,62 +9,83 @@ using namespace std;
 
 class Solution{
   public:
-  vector<int>nextSmaller(int *arr, int n){
-      stack<int>s;
-      vector<int>ans(n);
-      s.push(-1);
-      for(int i=n-1; i>=0; i--){
-          while(s.top()!=-1 && arr[s.top()]>=arr[i]){
+  vector<int>nextSmaller(int *mat, int n){
+        stack<int>s;
+        s.push(-1);
+        vector<int>ans(n);
+        for(int i=n-1; i>=0; i--){
+             while(s.top()!=-1 && mat[s.top()]>=mat[i]){
               s.pop();
           }
-          ans[i]= s.top();
-          s.push(i);
-      }
+            ans[i] = s.top();
+            s.push(i);
+        }
       return ans;
-  }
-  vector<int>prevSmaller(int *arr, int n){
-      stack<int>s;
-      vector<int>ans(n);
-      s.push(-1);
-      for(int i=0; i<n; i++){
-          while(s.top()!=-1 && arr[s.top()]>=arr[i]){
+    }
+     vector<int>prevSmaller(int *mat, int n){
+        stack<int>s;
+        s.push(-1);
+        vector<int>ans(n);
+        for(int i=0; i<n; i++){
+             while(s.top()!=-1 && mat[s.top()]>=mat[i]){
               s.pop();
           }
-          ans[i]= s.top();
-          s.push(i);
-      }
+            ans[i] = s.top();
+            s.push(i);
+        }
       return ans;
-  }
-  int largestArea(int *arr, int n){
-      vector<int>next = nextSmaller(arr, n);
-      vector<int>prev = prevSmaller(arr, n);
-      int ans= INT_MIN;
-     for(int i=0; i<n; i++){
-          int len= arr[i];
-      if(next[i]==-1){
-          next[i]=n;
-      }
-      int breadth= next[i]-prev[i]-1;
-      ans= max(ans, len*breadth);
-     }
-      return ans;
-  }
+    }
+    int largestArea(int *mat, int n){
+        int maxArea =INT_MIN;
+        vector<int>next = nextSmaller(mat,n);
+        vector<int>prev = prevSmaller(mat,n);
+        
+        for(int i=0; i<n; i++){
+            if(next[i]==-1){     // to avoid negative value of width
+                next[i]= n;
+            }
+            int width = next[i]- prev[i]-1;
+            int area = mat[i]*width;
+            maxArea = max(area, maxArea);
+        }
+        return maxArea;
+    }
     int maxArea(int M[MAX][MAX], int n, int m) {
         // Your code here
-        int area = largestArea(M[0], m);
-        for(int i=1; i<n; i++){
-            for(int j=0; j<m; j++){
-                if(M[i][j]!=0){
-                    M[i][j]+= M[i-1][j];
-                }
-                else{
-                    M[i][j]=0;
-                }
+    //     // Way-1: 
+    //   int histogram[m]={0};
+    //     int maxRec =INT_MIN;
+    //     for(int i=0; i<n; i++){
+    //         // To create histogram array 
+    //         for(int j=0; j<m; j++){
+    //             if(M[i][j]==1){
+    //               histogram[j]++;
+    //             }
+    //             else{
+    //                  histogram[j]=0;
+    //             }
+    //         }
+    //         maxRec = max(maxRec, largestArea(histogram, m));
+    //     }
+    //     return maxRec;
+    
+    // Way-2: 
+    int maxRec = largestArea(M[0], m);
+    for(int i=1; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(M[i][j]==1){
+                M[i][j]+= M[i-1][j];
             }
-                area =max(area, largestArea(M[i], m));
+            else{
+                M[i][j]=0;
+            }
         }
-        return area;
+        maxRec = max(maxRec, largestArea(M[i], m));
     }
+    return maxRec;
+
+    }
+
 };
 
 
