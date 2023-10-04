@@ -1,10 +1,8 @@
 # Minimum Cost of ropes
 ## Easy
-<div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">There are given&nbsp;<strong>N</strong> ropes of different lengths, we need to connect these ropes into one rope. The cost to connect two ropes is equal to sum of their lengths. The task is to connect the ropes with minimum cost. Given&nbsp;<strong>N</strong> size array <strong>arr[]</strong> contains the lengths of the ropes.&nbsp;</span></p>
-
-<p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
-
-<pre><span style="font-size:18px"><strong>Input:
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">There are given&nbsp;<strong>N</strong> ropes of different lengths, we need to connect these ropes into one rope. The cost to connect two ropes is equal to sum of their lengths. <br>The task is to connect the ropes with minimum cost. Given&nbsp;<strong>N</strong> size array <strong>arr[]</strong> contains the lengths of the ropes.&nbsp;</span></p>
+<p><span style="font-size: 18px;"><strong>Example 1:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input:
 </strong>n = 4
 arr[] = {4, 3, 2, 6}
 <strong>Output: 
@@ -30,10 +28,8 @@ connect 4 and 6 first (we get three rope of 3,
 two rope of 13 and 2). Finally we
 connect 13 and 2. Total cost in this way
 is 10 + 13 + 15 = 38.</span></pre>
-
-<p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
-
-<pre><span style="font-size:18px"><strong>Input:
+<p><span style="font-size: 18px;"><strong>Example 2:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input:
 </strong>n = 5
 arr[] = {4, 2, 7, 6, 9}
 <strong>Output: 
@@ -50,14 +46,6 @@ finally, add these two which gives {28}.
 Hence, the total cost is 6 + 12 + 16 + 
 28 = 62.</span>
 </pre>
-
-<p><span style="font-size:18px"><strong>Your Task:</strong><br>
-You don't need to read input or print anything. Your task isto complete the&nbsp;function&nbsp;<strong>minCost()</strong> which takes an integer array arr[] and an integer n as&nbsp;arguments and returns the minimum cost.</span></p>
-
-<p><span style="font-size:18px"><strong>Expected Time Complexity</strong> : O(nlogn)<br>
-<strong>Expected Auxilliary Space</strong> : O(n)</span></p>
-
-<p><span style="font-size:18px"><strong>Constraints:</strong></span><br>
-<span style="font-size:18px">1 ≤ N ≤ 200000<br>
-1 ≤ arr[i] ≤ 10<sup>6</sup></span></p>
-</div>
+<p><span style="font-size: 18px;"><strong>Your Task:</strong><br>You don't need to read input or print anything. Your task is to complete the function&nbsp;<strong>minCost()</strong> which takes an integer array arr[] and an integer n as&nbsp;arguments and returns the minimum cost.</span></p>
+<p><span style="font-size: 18px;"><strong>Expected Time Complexity</strong> : O(nlogn)<br><strong>Expected Auxilliary Space</strong> : O(n)</span></p>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong></span><br><span style="font-size: 18px;">1 ≤ N ≤ 200000<br>1 ≤ arr[i] ≤ 10<sup>6</sup></span></p></div>
