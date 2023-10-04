@@ -33,30 +33,35 @@ class Solution
     vector<int> JobScheduling(Job arr[], int n) 
     { 
         // your code here
+        int jobCount=0;
+        int maxProfit = 0;
+        
         sort(arr, arr+n, cmp);
-        int maxDeadline=INT_MIN;
+       
+    //   find maxDeadline 
+    int maxDeadline=INT_MIN;
         for(int i=0; i<n; i++){
-            maxDeadline= max(maxDeadline, arr[i].dead);
+            maxDeadline = max(maxDeadline, arr[i].dead);
         }
-        vector<int>schedule(maxDeadline+1, -1);
-        int count=0, maxProfit=0;
-        vector<int>ans;
-        for(int i=0; i<n; i++){
-            int currProfit=arr[i].profit;
-            int currId=arr[i].id;
-            int currDead= arr[i].dead;
-            for(int k=currDead; k>0; k--){
-                 if(schedule[k]==-1){
-                maxProfit+=currProfit;
-                schedule[k]= currId;
-                count++;
-                break;
-               }
+    vector<int>deadline(maxDeadline+1, -1);
+      
+      for(int i=0; i<n; i++){
+        int currProfit =arr[i].profit;
+        int currId= arr[i].id;
+        int currDeadline = arr[i].dead;
+        for(int k= currDeadline; k>0; k--){    // 1- based indexing
+            if(deadline[k]==-1){
+                maxProfit+= currProfit;
+                deadline[k]= currId;
+                jobCount++;
+                break;    // break if find correct slot for current job
             }
         }
-        ans.push_back(count);
-        ans.push_back(maxProfit);
-        return ans;
+      }
+      vector<int>ans;
+      ans.push_back(jobCount);
+      ans.push_back(maxProfit);
+      return ans;
     } 
 };
 
