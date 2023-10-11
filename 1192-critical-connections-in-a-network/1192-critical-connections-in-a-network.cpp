@@ -14,7 +14,7 @@ public:
                 dfs(neigh, node, adj, vis, disc, low, bridges);
                 low[node]= min(low[node], low[neigh]);
                 
-                // node---> can be neigh or not agr return krte time agr neigh ka low node k low se greater h to vo usk tk nhi pahuch sakta so this is case of back edge or bridge 
+   // node---> can be neigh or not agr return krte time agr neigh ka low node k disc se greater h to vo usk tk nhi pahuch sakta so this is case of back edge or bridge 
                 if(low[neigh]>disc[node]){
                     bridges.push_back({neigh, node});
                 }
@@ -30,7 +30,7 @@ public:
         vector<int>adj[n];
         for(auto i: connections){
             int u= i[0];
-            int v= i[1];
+            int v= i[1]; 
             
             adj[u].push_back(v);
             adj[v].push_back(u);
