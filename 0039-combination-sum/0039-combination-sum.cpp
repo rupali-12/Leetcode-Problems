@@ -3,7 +3,7 @@ public:
     void solve(vector<int>& candid, int index,vector<vector<int>>&ans, vector<int>&output, 
               int sum, int target){
         if(sum>target) return;
-        if(sum==target &&  index<= candid.size()){
+        if(sum==target){
             ans.push_back(output);
             return;
         }
