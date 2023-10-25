@@ -16,7 +16,7 @@ public:
         }
         else{
               if(nums[mid]==nums[mid-1]){
-                s = mid + 1;;
+                s = mid + 1;
             }
             else{
                 e =mid-2;
