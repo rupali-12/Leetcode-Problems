@@ -12,6 +12,7 @@
 class Solution {
 public:
   vector<vector<int>> verticalTraversal(TreeNode* root) {    
+      // <HD, <level, <nodes>>
          map<int,map<int,multiset<int>>> mp;
         queue<pair<TreeNode*,pair<int,int>>> q;
         q.push({root,{0,0}});
