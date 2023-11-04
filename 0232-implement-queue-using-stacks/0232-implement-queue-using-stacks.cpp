@@ -69,10 +69,10 @@ public:
          s.pop();
      }
         s.push(x);
-          while(!temp.empty()){
-         s.push(temp.top());
-         temp.pop();
-     }
+        while(!temp.empty()){
+            s.push(temp.top());
+            temp.pop();
+        }
         return;
     }
     
