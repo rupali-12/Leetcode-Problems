@@ -77,13 +77,13 @@ int solveTabSpOpt(int*arr, int n){
 
 	// // Approach-2: Recursion + Memoization 
 // 	vector<vector<int>>dp(n+1, vector<int>(n, -1));
-     return solveMem(arr, -1, 0, n, dp);
+    //  return solveMem(arr, -1, 0, n, dp);
 
 	// // Approach-3: Tabulation 
-// 	return solveTab(arr, n);
+	return solveTab(arr, n);
 
 	// Approach-4: Tabulation + space optimization 
-// 	return solveTabSpOpt(arr, n);
+	return solveTabSpOpt(arr, n);
 	}  
 };
 
