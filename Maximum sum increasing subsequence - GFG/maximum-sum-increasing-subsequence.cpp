@@ -80,7 +80,7 @@ int solveTabSpOpt(int*arr, int n){
     //  return solveMem(arr, -1, 0, n, dp);
 
 	// // Approach-3: Tabulation 
-	return solveTab(arr, n);
+// 	return solveTab(arr, n);
 
 	// Approach-4: Tabulation + space optimization 
 	return solveTabSpOpt(arr, n);
