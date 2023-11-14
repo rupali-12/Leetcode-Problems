@@ -32,14 +32,14 @@ public:
                     dp[srow][scol] =grid[srow][scol];
                 }
                 else{
-                    int up=1e9, down=1e9;
+                    int up=1e9, left=1e9;
             if(srow>0){
                 up= grid[srow][scol] + dp[srow-1][scol];
             }
             if(scol>0){
-                down= grid[srow][scol] + dp[srow][scol-1];
+                left= grid[srow][scol] + dp[srow][scol-1];
             }
-            dp[srow][scol]= min(up, down);
+            dp[srow][scol]= min(up, left);
                 }
             }
         }
