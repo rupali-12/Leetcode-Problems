@@ -24,24 +24,15 @@ public:
            ans.push_back(temp);
            return;
        }
-
-      for(int i= index; i<num.size(); i++){
-          if(i>index && num[i]==num[i-1]){
-              continue;
-          }
-      //    if(num[i]<=tar){
-      //     temp.push_back(num[i]);
-      //      optimized(num, i+1, tar- num[i], temp, ans);  
-      //     temp.pop_back();
-      //    }
-      // }
-          
-          // *************
+     for(int i= index; i<num.size(); i++){
+         if(i>index && num[i]==num[i-1]) continue;
+         
          if(num[i]>tar) break;
-          temp.push_back(num[i]);
-           optimized(num, i+1, tar- num[i], temp, ans);  
-          temp.pop_back();
-      }
+         
+         temp.push_back(num[i]);
+         optimized(num, i+1, tar-num[i], temp, ans);
+         temp.pop_back();
+     }
    return;
 }   
 
@@ -51,8 +42,6 @@ public:
 //         set<vector<int>>s;
 //          vector<vector<int>>ans;
 //         vector<int>temp;
-//         // sort in order to avoid duplicates 
-//         sort(candidates.begin(), candidates.end());
 //         solveRec(candidates,0, target, temp, s);
         
 //         for(auto x:s){
