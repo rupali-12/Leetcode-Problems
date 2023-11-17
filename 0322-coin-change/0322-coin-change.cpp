@@ -52,6 +52,27 @@ public:
         }
         return dp[n-1][amount];
     }
+     int solveTabSpOpt(vector<int>& coins, int amount, int n){
+        vector<int>curr(amount+1, 0);
+         vector<int>prev(amount+1, 0);
+        for(int t=0; t<=amount; t++){
+            if(t%coins[0]==0) prev[t]= t/coins[0];
+            else prev[t]= 1e9;
+        }
+        
+        for(int index=1; index<n; index++){
+            for(int amt= 0; amt<=amount; amt++){
+                int take=INT_MAX;;
+        int notTake= prev[amt];
+        if(coins[index]<=amt){
+            take= 1+ curr[amt-coins[index]];
+        }
+                curr[amt]= min(take, notTake);
+            }
+            prev=curr;
+        }
+        return prev[amount];
+    }
     int coinChange(vector<int>& coins, int amount) {
         int n= coins.size();
         
@@ -62,8 +83,11 @@ public:
         // vector<vector<int>>dp(n, vector<int>(amount+1, -1));
         // int ans = solveMem(coins, amount, n-1, dp);
         
+        //  // Approach-3: Tabulation
+        // int ans = solveTab(coins, amount, n);
+        
          // Approach-3: Tabulation
-        int ans = solveTab(coins, amount, n);
+        int ans = solveTabSpOpt(coins, amount, n);
         
         if(ans==1e9) return -1;
         return ans;
