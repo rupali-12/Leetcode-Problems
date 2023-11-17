@@ -32,7 +32,7 @@ public:
             }
             j++;
         }
-        cout<<minWinSize<<" ";
+
         return minWinSize==INT_MAX? "": s.substr(start_i, minWinSize);
     }
 };
