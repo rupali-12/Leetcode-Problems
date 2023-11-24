@@ -67,6 +67,7 @@ public:
         
         
         // **********************************************
+        // Approach-2:
         priority_queue<ListNode*, vector<ListNode*>, compare>minheap;
 
     int k= listArray.size();
