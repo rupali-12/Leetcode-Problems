@@ -16,7 +16,7 @@ public:
 
 class Solution {
 public:
-    void insertAtTail(Node* &cloneHead, Node* &cloneTail, int data){
+      void insertAtTail(Node* &cloneHead, Node* &cloneTail, int data){
         Node* temp= new Node(data);
         
         if(cloneHead==NULL){
@@ -27,10 +27,10 @@ public:
             cloneTail->next=temp;
             cloneTail = temp;
         }
-        return;
+        return; 
     }
-    // Approach-1: Uing unordered map TC=O(N), SC= O(N)
     
+//     // Approach-1: Using unordered map TC=O(N), SC= O(N)
     Node* copyRandomList(Node* head) {
         Node* cloneHead =NULL;
         Node* cloneTail= NULL;
@@ -63,4 +63,5 @@ public:
         }
         return cloneHead;
     }
+    
 };
