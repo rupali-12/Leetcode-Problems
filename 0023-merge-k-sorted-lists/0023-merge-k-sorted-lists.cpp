@@ -10,6 +10,12 @@
  */
 class Solution {
 public:
+    class compare{
+    public:
+    bool operator()(ListNode* a,ListNode* b){
+        return a->val > b->val;
+    }
+};
     ListNode* merge(ListNode* first, ListNode* second){
         if(first==NULL){
             return second;
@@ -47,16 +53,48 @@ public:
         ans= ans->next;
         return ans;
     }
-    ListNode* mergeKLists(vector<ListNode*>& lists) {
-        if(lists.empty()){
-            return NULL;
+    ListNode* mergeKLists(vector<ListNode*>& listArray) {
+        // if(lists.empty()){
+        //     return NULL;
+        // }
+        // ListNode* ans = lists[0];
+        // int i=1;
+        // while(i<lists.size()){
+        //   ans = merge(ans, lists[i]);
+        //     i++;
+        // }
+        // return ans;
+        
+        
+        // **********************************************
+        priority_queue<ListNode*, vector<ListNode*>, compare>minheap;
+
+    int k= listArray.size();
+    // insert head of all lists 
+    for(int i=0; i<k; i++){
+         if(listArray[i]!=NULL){
+             minheap.push(listArray[i]);
+         }
+    }
+    
+   ListNode* head=NULL, *tail=NULL;
+
+    while(!minheap.empty()){
+        ListNode* top = minheap.top();
+        minheap.pop();
+
+        if(head==NULL){
+            head=tail= top;
         }
-        ListNode* ans = lists[0];
-        int i=1;
-        while(i<lists.size()){
-          ans = merge(ans, lists[i]);
-            i++;
+        else{
+            tail->next= top;
+            tail= top;
         }
-        return ans;
+
+        if(top->next!=NULL){
+            minheap.push(top->next);
+        }
+    }
+    return head;
     }
 };
