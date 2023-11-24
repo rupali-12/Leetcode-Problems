@@ -15,46 +15,52 @@ public:
 */
 
 class Solution {
-    private:
-     void insertAtTail(Node* &cloneHead, Node* &cloneTail, int d){
-        Node* temp= new Node(d);
+public:
+    void insertAtTail(Node* &cloneHead, Node* &cloneTail, int data){
+        Node* temp= new Node(data);
+        
         if(cloneHead==NULL){
             cloneHead = temp;
-            cloneTail = temp;
-        }
-        else{
-            cloneTail->next= temp;
             cloneTail= temp;
         }
+        else{
+            cloneTail->next=temp;
+            cloneTail = temp;
+        }
+        return;
     }
-public:
+    // Approach-1: Uing unordered map TC=O(N), SC= O(N)
+    
     Node* copyRandomList(Node* head) {
-            Node* cloneHead=NULL;
-        Node* cloneTail=NULL;
+        Node* cloneHead =NULL;
+        Node* cloneTail= NULL;
+        Node* temp= head;
         
-        Node* temp=head;
         while(temp!=NULL){
             insertAtTail(cloneHead, cloneTail, temp->val);
             temp= temp->next;
         }
-        // Mapping of original nodes with the cloned node 
-        Node* originalNode= head;
-        Node* cloneNode= cloneHead;
-        map<Node*, Node*>mp;
+        
+        // map original node with clone list 
+        unordered_map<Node* , Node*>mp;
+        Node* cloneNode = cloneHead;
+        Node* originalNode = head;
+        
         while(originalNode!=NULL){
-            mp[originalNode]=cloneNode;
+            mp[originalNode]= cloneNode;
             originalNode= originalNode->next;
             cloneNode= cloneNode->next;
         }
+       
         
-        // point random pointers of cloned node 
-        originalNode= head;
-        cloneNode= cloneHead;
+        // copy random pointers 
+          cloneNode = cloneHead;
+          originalNode = head;
         while(originalNode!=NULL){
             cloneNode->random = mp[originalNode->random];
             originalNode= originalNode->next;
             cloneNode= cloneNode->next;
         }
-       return cloneHead;
+        return cloneHead;
     }
 };
