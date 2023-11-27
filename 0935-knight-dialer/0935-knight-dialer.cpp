@@ -9,7 +9,7 @@ public:
             return dp[n][cell];
         }
         for(int &nextcell: adj[cell]){
-            ans= (ans+ solveRec(n-1, nextcell, dp)%mod)%mod;
+            ans= (ans+ solveRec(n-1, nextcell, dp))%mod;
         }
         return dp[n][cell] = ans;
     }
