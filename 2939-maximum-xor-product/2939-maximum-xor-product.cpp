@@ -26,6 +26,6 @@ public:
         }
         a= a%mod;
         b= b%mod;
-        return (1LL*a*b)%mod;
+        return (a*b)%mod;
     }
 };
