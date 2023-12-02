@@ -4,7 +4,7 @@ public:
         uint32_t result=0;
         for(int i=0; i<32; i++){
             int lsb= n & 1;
-            int revLsb = lsb << (31-i);
+            int revLsb = lsb << (31-i);    // (32-i-1)
             result = revLsb | result;
             n= n>>1;
         }
