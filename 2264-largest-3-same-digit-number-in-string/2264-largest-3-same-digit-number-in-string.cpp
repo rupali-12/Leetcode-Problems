@@ -10,8 +10,8 @@ public:
                 count++;
                 if(count==3){
                     if(ans!=""){
-                        if((str[0]-'0')>(ans[0]-'0')){
-                        // if(str>ans){
+                        // if((str[0]-'0')>(ans[0]-'0')){
+                        if(str>ans){
                         ans= str;
                     }
                     }
