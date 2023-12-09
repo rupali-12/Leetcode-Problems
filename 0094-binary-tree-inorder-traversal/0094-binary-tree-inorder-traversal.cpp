@@ -24,36 +24,37 @@ public:
         // return ans;
         
         // Morris traversal
-          vector<int>ans;
+       vector<int>ans;
         if(root==NULL){
             return ans;
         }
         TreeNode* curr= root;
-       while(curr!=NULL){
-            // if curr->left not exist 
-        if(curr->left==NULL){
-            ans.push_back(curr->val);
-            curr= curr->right;
-        }
-        else{
-            // find predecessor 
-            TreeNode* pred = curr->left;
-            while(pred->right!=NULL && pred->right!=curr){
-                pred= pred->right;
-            }
-            
-            // pred->right not exist 
-            if(pred->right==NULL){
-                pred->right= curr;
-                curr= curr->left;
-            }
-            else{
-                pred->right= NULL;
+        while(curr!=NULL){
+            if(curr->left==NULL){
                 ans.push_back(curr->val);
                 curr= curr->right;
             }
+            else{
+                TreeNode* pred= curr->left;
+                while(pred->right!=NULL && pred->right!=curr){
+                    pred= pred->right;
+                }
+                 
+                // if pred->right not exist 
+                if(pred->right==NULL){
+                    pred->right= curr;
+                    curr= curr->left;
+                }
+                else{
+                    pred->right=NULL;
+                    ans.push_back(curr->val);
+                    curr= curr->right;
+                }
+            }
         }
-       }
+        
+        
+            
         return ans;
     }
 };
