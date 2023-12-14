@@ -28,6 +28,7 @@ public:
 //             num1Col[j] = sum;
 //         }
         
+        // Single loop
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
                 if(grid[i][j]==1){
