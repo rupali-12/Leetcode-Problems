@@ -32,13 +32,37 @@ public:
         }
         return dp[index]= ans;
     }
+    int solveTab(string s){
+         vector<int>dp(s.length()+2, 0);
+        dp[s.length()]=1;
+        for(int index= s.length()-1; index>=0; index--){
+        if(s[index]=='0'){
+            dp[index]=0;
+        }  
+            else{
+        // case of including single digit 
+       int ans = dp[index+1];
+        
+        // case of two digits 
+        if(index+1 < s.length() && s.substr(index, 2)<="26"){
+            ans+= dp[index+2];
+        }
+            dp[index]=ans;
+            }
+       
+        }
+        return dp[0];
+    }
     int numDecodings(string s) {
         
         // // Approach-1: Recursion 
         // return solveRec(s, 0);
         
-        // Approach-2: Recursion + Memoization
-        vector<int>dp(s.length()+1, -1);
-        return solveMem(s, 0, dp);
+        // // Approach-2: Recursion + Memoization
+        // vector<int>dp(s.length()+1, -1);
+        // return solveMem(s, 0, dp);
+        
+          // Approach-3: Tabulation
+        return solveTab(s);
     }
 };
