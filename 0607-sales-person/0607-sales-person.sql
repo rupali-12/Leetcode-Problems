@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 with cte as(
-select o.com_id , o.sales_id from orders o left join company c on o.com_id = c.com_id where c.name = 'RED'
+select o.com_id , o.sales_id from orders o left join company c on o.com_id = c.com_id where c.name like 'RED'
 )
 
 # com_id   sales_id 
