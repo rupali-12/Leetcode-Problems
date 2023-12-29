@@ -1,0 +1,6 @@
+# Write your MySQL query statement below
+with cte as(
+select o.com_id , o.sales_id from orders o left join company c on o.com_id = c.com_id where c.name = 'RED'
+)
+
+select s.name from salesperson s left join cte c on c.sales_id = s.sales_id where c.com_id is null;
