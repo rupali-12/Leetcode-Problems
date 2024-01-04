@@ -12,8 +12,8 @@ public:
            if(count==1) return -1;
            if(count%3==0){
                ans+= count/3;
-           }
-            else{
+           }  
+            else{    // when rem =1 or 2
                 ans+= (count/3)+1;
             }
         }
