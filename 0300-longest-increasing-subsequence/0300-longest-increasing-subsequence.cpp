@@ -33,6 +33,25 @@ public:
         }
         return dp[curr][prev+1] = ans;
     }
+    int solveTab(vector<int>&nums, int n){
+         vector<vector<int>>dp(n+1, vector<int>(n+1, 0));
+        
+        for(int curr= n-1; curr>=0; curr--){
+            for(int prev= curr-1; prev>=-1; prev--){
+        int take = 1 + dp[curr+1][curr+1];   // prev= curr+1 bcoz we consider prev=prev+1 due to some prev=-1 so when we do prev = curr it becomes prev = prev+1 = curr+1;
+        int notTake= dp[curr+1][prev+1];
+        int ans;
+        if(prev==-1 || nums[curr]>nums[prev]){
+            ans = max(take, notTake);    // if prev==-1 then also we have to choose we take or not 
+        }
+        else{
+            ans= notTake;
+            }   
+           dp[curr][prev+1] = ans;     
+        }
+    }
+        return dp[0][0];
+}
     int lengthOfLIS(vector<int>& nums) {
         int n= nums.size();
         
@@ -40,8 +59,11 @@ public:
 //         // (num, prev, curr)
 //         return solveRec(nums, -1, 0);
         
-        // Approach-2 : Recursion + Memoization
-        vector<vector<int>>dp(n, vector<int>(n, -1));
-        return solveMem(nums, -1, 0, dp);
+//         // Approach-2 : Recursion + Memoization
+//         vector<vector<int>>dp(n, vector<int>(n, -1));
+//         return solveMem(nums, -1, 0, dp);
+                
+        // Approach-3 : Tabulation
+        return solveTab(nums, n);
     }
 };
