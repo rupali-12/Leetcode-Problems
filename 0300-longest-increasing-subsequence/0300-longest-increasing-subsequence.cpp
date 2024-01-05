@@ -1,212 +1,47 @@
 class Solution {
 public:
-//     int solveRec(vector<int>nums, int prev, int curr){
-//         if(curr==nums.size()){
-//             return 0;
-//         }
-//           int ans=0;
-//             int take= 1+solveRec(nums, curr, curr+1);
-//             int nottake= solveRec(nums, prev, curr+1);
-//            if(prev==-1 || nums[curr]>nums[prev]){
-//             ans=max(take, nottake);
-//         }
-//            else{
-//             ans=nottake;
-//         }
-//         return ans;
-//     }
-    
-//     int solveMem(vector<int>nums, int prev, int curr,  vector<vector<int>>&dp){
-//         if(curr==nums.size()){
-//             return 0;
-//         }
-//         if(dp[prev+1][curr]!=-1){
-//             return dp[prev+1][curr];
-//         }
-//           int ans=0;
-//             int take= 1+solveMem(nums, curr, curr+1, dp);
-//             int nottake= solveMem(nums, prev, curr+1, dp);
-//            if(prev==-1 || nums[curr]>nums[prev]){
-//             ans=max(take, nottake);
-//         }
-//            else{
-//             ans=nottake;
-//         }
-//         return dp[prev+1][curr] =ans;
-//     }
-//     int solveTab(vector<int>nums){
-//         int n= nums.size();
-//         vector<vector<int>>dp(n+1, vector<int>(n+1, 0));
-//          for(int curr=n-1; curr>=0; curr--){
-//         for(int prev=curr-1; prev>=-1; prev--){
-            
-//             // include
-//             int take=0;
-//                 if(prev==-1 || nums[curr]>nums[prev]){
-//                    take=1+ dp[curr+1][curr+1];  // its prev but we consider prev as prev+1
-//                 }
-            
-//             //Exclude
-//             int nottake= 0+dp[curr+1][prev+1];  // as prev also equal to -1 for some cases 
-//          dp[curr][prev+1] = max(take, nottake);
-//             }
-//         }
-//         return dp[0][0];
-//     }
-//         int solveSpOpt(vector<int>nums){
-//         int n= nums.size();
-//        vector<int>nextRow(n+1, 0);
-//              vector<int>currentRow(n+1, 0);
-//          for(int curr=n-1; curr>=0; curr--){
-//         for(int prev=curr-1; prev>=-1; prev--){
-            
-//             // include
-//             int take=0;
-//                 if(prev==-1 || nums[curr]>nums[prev]){
-//                    take=1+nextRow [curr+1];  // its prev but we consider prev as prev+1
-//                 }
-            
-//             //Exclude
-//             int nottake= 0+ nextRow[prev+1];  // as prev also equal to -1 for some cases 
-//          currentRow[prev+1] = max(take, nottake);
-//             }
-//              nextRow= currentRow;
-//         }
-//         return nextRow[0];
-//     }
-//     // optimized 
-//     int optimizedSol(vector<int>nums){
-//         int n= nums.size();
-//         if(n==0){
-//             return 0;
-//         }
-//         vector<int>ans;
-//         ans.push_back(nums[0]);
-//         for(int i=0; i<n; i++){
-//             if(nums[i]>ans.back()){
-//                 ans.push_back(nums[i]);
-//             }
-//             else{
-//                 // find the index which is just recent larger than a[i]
-//                 int index = lower_bound(ans.begin(), ans.end(), nums[i])-ans.begin();
-//                 ans[index]=nums[i];
-//             }
-//         }
-//         return ans.size();
-//     }
-//     int lengthOfLIS(vector<int>& nums) {
-//         // // Approach-1: Recursion 
-//         // return solveRec(nums, -1, 0);
-        
-//         // // // Approach-2: Memoization 
-//         // vector<vector<int>>dp(nums.size()+1, vector<int>(nums.size(), -1));
-//         // return solveMem(nums, -1, 0, dp);
-        
-//         // // Approach-3: Tabulation 
-//         // return solveTab(nums);
-        
-//         //  // Approach-4: Tabulation + space optimization
-//         // return solveSpOpt(nums);
-        
-//         // Approach-5: Optimized Approach 
-//         return optimizedSol(nums);
-    // }
-    
-    // *********************************************************************************
     int solveRec(vector<int>&nums, int prev, int curr){
-        if(curr==nums.size()){
+        if(curr== nums.size()){
             return 0;
         }
-        
-        int ans=0;
-        int take= 1+ solveRec(nums, curr, curr+1);
-        int notTake = solveRec(nums, prev, curr+1);
+        int take = 1 + solveRec(nums, curr, curr+1);
+        int notTake= solveRec(nums, prev, curr+1);
+        int ans;
         if(prev==-1 || nums[curr]>nums[prev]){
-            ans= max(notTake, take);  // as if prv==-1 then take decision for choose or not 
+            ans = max(take, notTake);    // if prev==-1 then also we have to choose we take or not 
         }
         else{
             ans= notTake;
         }
         return ans;
     }
-    
-     int solveMem(vector<int>&nums, int prev, int curr, vector<vector<int>>&dp){
-        if(curr==nums.size()){
+      int solveMem(vector<int>&nums, int prev, int curr, vector<vector<int>>&dp){
+        if(curr== nums.size()){
             return 0;
         }
-         if(dp[prev+1][curr]!=-1){
-             return dp[prev+1][curr];
-         }
-        
-        int ans=0;
-        int take= 1+ solveMem(nums, curr, curr+1, dp);
-        int notTake = solveMem(nums, prev, curr+1, dp);
+          if(dp[curr][prev+1]!=-1){
+              return dp[curr][prev+1];
+          }
+        int take = 1 + solveMem(nums, curr, curr+1, dp);
+        int notTake= solveMem(nums, prev, curr+1, dp);
+        int ans;
         if(prev==-1 || nums[curr]>nums[prev]){
-            ans= max(notTake, take);  // as if prev==-1 then take decision for choose or not 
+            ans = max(take, notTake);    // if prev==-1 then also we have to choose we take or not 
         }
         else{
             ans= notTake;
         }
-        return dp[prev+1][curr]=ans;
+        return dp[curr][prev+1] = ans;
     }
-    
-    int solveTab(vector<int>nums, int n){
-         vector<vector<int>>dp(n+1, vector<int>(n+1, 0));
-        for(int curr= n-1; curr>=0; curr--){
-            for(int prev= curr-1; prev>=-1; prev--){
-                int ans=0; 
-                int take= 1+dp[curr+1][curr+1];    // its prev=curr+1 but we consider prev as prev+1
-                int notTake =dp[curr+1][prev+1];  // due to some values of prev=-1 we take prev=prev+1
-                if(prev==-1 || nums[curr]>nums[prev]){
-                    ans= max(take, notTake);
-                }
-                else{
-                    ans= notTake;
-                }
-                dp[curr][prev+1]= ans;
-            }
-        }
-        return dp[0][0];
-    }
-    
-     int solveTabOpt(vector<int>nums, int n){
-         vector<int>nextRow(n+1, 0);
-          vector<int>currRow(n+1, 0);
-        for(int curr= n-1; curr>=0; curr--){
-            for(int prev= curr-1; prev>=-1; prev--){
-                int ans=0; 
-                int take= 1+nextRow[curr+1];    // its prev=curr+1 but we consider prev as prev+1
-                int notTake =nextRow[prev+1];  // due to some values of prev=-1 we take prev=prev+1
-                if(prev==-1 || nums[curr]>nums[prev]){
-                    ans= max(take, notTake);
-                }
-                else{
-                    ans= notTake;
-                }
-                currRow[prev+1]= ans;
-            }
-            nextRow= currRow;
-        }
-        return nextRow[0];
-    }
-    
-        int lengthOfLIS(vector<int>& nums) {
-        // // Approach-1: Recursion 
-       // return solveRec(nums, -1,0);
+    int lengthOfLIS(vector<int>& nums) {
+        int n= nums.size();
         
-        // // // Approach-2: Memoization 
-         // // <prev, curr>
-         // vector<vector<int>>dp(nums.size()+1, vector<int>(nums.size(), -1));
-         // return solveMem(nums, -1, 0, dp);
-       
-          // // Approach-3: Tabulation
-          // return solveTab(nums, nums.size());
+//         // Approach-1 : Recursion 
+//         // (num, prev, curr)
+//         return solveRec(nums, -1, 0);
         
-        //  // Approach-4: Tabulation + space optimization
-        return solveTabOpt(nums, nums.size());
-        
-        // Approach-5: Optimized Approach 
-       
+        // Approach-2 : Recursion + Memoization
+        vector<vector<int>>dp(n, vector<int>(n, -1));
+        return solveMem(nums, -1, 0, dp);
     }
 };
-
