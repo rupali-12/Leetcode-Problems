@@ -52,6 +52,26 @@ public:
     }
         return dp[0][0];
 }
+      int solveTabSpOpt(vector<int>&nums, int n){
+         vector<int>nextRow(n+1, 0);
+        vector<int>currRow(n+1, 0);
+        for(int curr= n-1; curr>=0; curr--){
+            for(int prev= curr-1; prev>=-1; prev--){
+        int take = 1 + nextRow[curr+1];   // prev= curr+1 bcoz we consider prev=prev+1 due to some prev=-1 so when we do prev = curr it becomes prev = prev+1 = curr+1;
+        int notTake= nextRow[prev+1];
+        int ans;
+        if(prev==-1 || nums[curr]>nums[prev]){
+            ans = max(take, notTake);    // if prev==-1 then also we have to choose we take or not 
+        }
+        else{
+            ans= notTake;
+            }   
+          currRow[prev+1] = ans;     
+        }
+            nextRow= currRow;
+    }
+        return nextRow[0];
+}
     int lengthOfLIS(vector<int>& nums) {
         int n= nums.size();
         
@@ -63,7 +83,10 @@ public:
 //         vector<vector<int>>dp(n, vector<int>(n, -1));
 //         return solveMem(nums, -1, 0, dp);
                 
-        // Approach-3 : Tabulation
-        return solveTab(nums, n);
+//         // Approach-3 : Tabulation
+//         return solveTab(nums, n);
+                     
+        // Approach-4 : Tabulation + Space Optimization
+        return solveTabSpOpt(nums, n);
     }
 };
