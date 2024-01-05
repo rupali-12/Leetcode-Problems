@@ -73,7 +73,7 @@ public:
         return currRow[0];  // as well nextRow[0];
 }
     int optimizedAp(vector<int>&nums, int n){
-        // if(n==0) return 0;
+        if(n==0) return 0;
         vector<int>ans;
         ans.push_back(nums[0]);
         for(int i=1;i<n; i++){
