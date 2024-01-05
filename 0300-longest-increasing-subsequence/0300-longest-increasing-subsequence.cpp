@@ -70,8 +70,24 @@ public:
         }
             nextRow= currRow;
     }
-        return currRow[0];
+        return currRow[0];  // as well nextRow[0];
 }
+    int optimizedAp(vector<int>&nums, int n){
+        // if(n==0) return 0;
+        vector<int>ans;
+        ans.push_back(nums[0]);
+        for(int i=1;i<n; i++){
+            if(nums[i]>ans.back()){
+                ans.push_back(nums[i]);
+            }
+            else{
+                // find index where value is just greater than nums[i]
+                int index = lower_bound( ans.begin(),ans.end(), nums[i])- ans.begin();
+                ans[index] = nums[i];
+            }
+        }
+        return ans.size();
+    }
     int lengthOfLIS(vector<int>& nums) {
         int n= nums.size();
         
@@ -86,7 +102,10 @@ public:
 //         // Approach-3 : Tabulation
 //         return solveTab(nums, n);
                      
-        // Approach-4 : Tabulation + Space Optimization
-        return solveTabSpOpt(nums, n);
+//         // Approach-4 : Tabulation + Space Optimization
+//         return solveTabSpOpt(nums, n);
+                      
+        // Approach-5 : Optimized Approach
+        return optimizedAp(nums, n);
     }
 };
