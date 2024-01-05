@@ -70,7 +70,7 @@ public:
         }
             nextRow= currRow;
     }
-        return nextRow[0];
+        return currRow[0];
 }
     int lengthOfLIS(vector<int>& nums) {
         int n= nums.size();
