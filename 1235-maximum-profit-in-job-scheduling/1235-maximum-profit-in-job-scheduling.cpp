@@ -55,9 +55,24 @@ public:
         // vector<int>dp(n, -1);
         // return solveMem(event, 0, startTime, n,  dp);
         
-        // // Approach-3: Tabulation
-        return solveTab(event, n, startTime);
-       
+        // // // Approach-3: Tabulation
+        // return solveTab(event, n, startTime);
         
+        // Approach-4: Min heap and sorting 
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>>pq;
+        int maxVal=0;
+        for(auto e: event){
+            while(!pq.empty() && pq.top().first <= e[0]){
+                maxVal = max(maxVal, pq.top().second);
+                pq.pop();
+            }
+            pq.push({e[1], maxVal+e[2]});
+        }
+        
+        while(!pq.empty()){
+            maxVal= max(maxVal, pq.top().second);
+            pq.pop();
+        }
+       return maxVal;
     }
 };
