@@ -25,22 +25,17 @@ public:
         return dp[index]= max(take, notTake);
     }
     
-   int solveTab(vector<vector<int>>& event, int n){
-        vector<vector<int>> dp(n+1, vector<int>(n+1, 0));
+   int solveTab(vector<vector<int>>& event, int n, vector<int>startTime){
+        vector<int> dp(n+1,  0);
        for(int index= n-1; index>=0; index--){
-           for(int prev= n-1; prev>=-1; prev--){
-                int ans;
-        int take = event[index][2] + dp[index+1][index+1];
-        int notTake = 0 + dp[index+1][prev+1];
-        if (prev == -1 || event[prev][1] <= event[index][0]) {
-            ans = max(take, notTake);
-        } else {
-            ans = notTake;
-        }
-               dp[index][prev+1]=ans;
+    int i= lower_bound(startTime.begin(), startTime.end(), event[index][1])-startTime.begin();
+        int take = event[index][2] + dp[i];
+        int notTake = 0 + dp[index+1];
+      
+               dp[index]=max(take, notTake);
            }
-       }
-       return dp[0][0];
+    
+       return dp[0];
    }
       int solveTabSpOpt(vector<vector<int>>& event, int n){
         vector<int>nextRow(n+1, 0);
@@ -75,12 +70,12 @@ public:
         // // Approach-1: Recursion 
         // return solveRec(event, 0, startTime, n);
 
-        // Approach-2: Recursion + Memoization
-        vector<int>dp(n, -1);
-        return solveMem(event, 0, startTime, n,  dp);
+        // // Approach-2: Recursion + Memoization
+        // vector<int>dp(n, -1);
+        // return solveMem(event, 0, startTime, n,  dp);
         
-//         // Approach-3: Tabulation
-//         return solveTab(event, n);
+        // Approach-3: Tabulation
+        return solveTab(event, n, startTime);
                 
         // // Approach-4: Tabulation + space optimization
         // return solveTabSpOpt(event, n);
