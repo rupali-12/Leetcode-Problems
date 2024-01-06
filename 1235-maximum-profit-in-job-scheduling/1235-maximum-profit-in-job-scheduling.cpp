@@ -37,25 +37,6 @@ public:
     
        return dp[0];
    }
-      int solveTabSpOpt(vector<vector<int>>& event, int n){
-        vector<int>nextRow(n+1, 0);
-          vector<int>currRow(n+1, 0);
-       for(int index= n-1; index>=0; index--){
-           for(int prev= n-1; prev>=-1; prev--){
-                int ans;
-        int take = event[index][2] + nextRow[index+1];
-        int notTake = 0 + nextRow[prev+1];
-        if (prev == -1 || event[prev][1] <= event[index][0]) {
-            ans = max(take, notTake);
-        } else {
-            ans = notTake;
-        }
-               currRow[prev+1]=ans;
-           }
-           nextRow = currRow;
-       }
-       return nextRow[0];
-   }
     int jobScheduling(vector<int>& startTime, vector<int>& endTime, vector<int>& profit) {
         int n = startTime.size();
         vector<vector<int>> event;
@@ -74,13 +55,9 @@ public:
         // vector<int>dp(n, -1);
         // return solveMem(event, 0, startTime, n,  dp);
         
-        // Approach-3: Tabulation
+        // // Approach-3: Tabulation
         return solveTab(event, n, startTime);
-                
-        // // Approach-4: Tabulation + space optimization
-        // return solveTabSpOpt(event, n);
-        
-      
+       
         
     }
 };
