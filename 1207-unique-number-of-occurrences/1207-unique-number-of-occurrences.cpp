@@ -1,14 +1,14 @@
 class Solution {
 public:
     bool uniqueOccurrences(vector<int>& arr) {
-     // Approach-1> using map and set 
+        // Approach-1: Brute force 
         unordered_map<int, int>mp;
-        for(auto i: arr){
-            mp[i]++;
-        }
+     for(auto a: arr){
+         mp[a]++;
+     }
         set<int>s;
-        for(auto a: mp){
-            s.insert(a.second);
+        for(auto m: mp){
+            s.insert(m.second);
         }
         return mp.size()==s.size();
     }
