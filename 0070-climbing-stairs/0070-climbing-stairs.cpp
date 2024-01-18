@@ -14,8 +14,8 @@ public:
             return 1;
         }
          if(step>n) return 0;
-         if(dp[n]!=-1){
-             return dp[n];
+         if(dp[step]!=-1){
+             return dp[step];
          }
         int take1 = solveMem(n, step+1, dp);
         int take2 = solveMem(n, step+2, dp);
@@ -33,11 +33,11 @@ public:
       //   return solveRec(n, 0);
         
      // // Approach-2: Recursion + Memoization
-        // vector<int>dp(n+1, -1);
-        // return solveMem(n, 0, dp);
+        vector<int>dp(n+1, -1);
+        return solveMem(n, 0, dp);
         
         // // Approach- 3 Tabulation 
-        vector<int>dp(n+1, 0);
-        return solveTab(n, dp);
+        // vector<int>dp(n+1, 0);
+        // return solveTab(n, dp);
     }
 };
