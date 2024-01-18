@@ -33,11 +33,11 @@ public:
       //   return solveRec(n, 0);
         
      // // Approach-2: Recursion + Memoization
-        vector<int>dp(n+1, -1);
-        return solveMem(n, 0, dp);
+        // vector<int>dp(n+1, -1);
+        // return solveMem(n, 0, dp);
         
         // // Approach- 3 Tabulation 
-        // vector<int>dp(n+1, 0);
-        // return solveTab(n, dp);
+        vector<int>dp(n+1, 0);
+        return solveTab(n, dp);
     }
 };
