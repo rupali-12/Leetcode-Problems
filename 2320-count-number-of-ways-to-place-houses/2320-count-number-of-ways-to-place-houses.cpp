@@ -15,15 +15,29 @@ public:
         }
         return dp[n] = (solveMem(n-1, dp) + solveMem(n-2, dp))%mod;
     }
+    int solveTab(int n){
+         vector<int>dp(n+1, 0);
+        dp[0]=1; 
+        dp[1] = 2;
+        for(int i=2; i<=n; i++){
+            dp[i] = (dp[i-1]+dp[i-2])%mod;
+        }
+        return dp[n];
+    }
     int countHousePlacements(int n) {
         // // Approach-1: Recursion 
         // int ansOfOneSide = solveRec(n);
         // int ansOfTwoSide = ansOfOneSide*ansOfOneSide;
         // return ansOfTwoSide;
         
-         // Approach-2: Recursion + Memoization
-        vector<int>dp(n+1, -1);
-        long long ansOfOneSide = solveMem(n, dp)%mod;
+        //  // Approach-2: Recursion + Memoization
+        // vector<int>dp(n+1, -1);
+        // long long ansOfOneSide = solveMem(n, dp)%mod;
+        // long long ansOfTwoSide = (ansOfOneSide*ansOfOneSide)%mod;
+        // return ansOfTwoSide;
+        
+         // Approach-3: Tabualtion (bottom up)
+        long long ansOfOneSide = solveTab(n)%mod;
         long long ansOfTwoSide = (ansOfOneSide*ansOfOneSide)%mod;
         return ansOfTwoSide;
     }
