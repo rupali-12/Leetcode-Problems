@@ -54,7 +54,7 @@ public:
             mp1[words[i]]++;
         }
         
-        for(int i=0;i<m; i++){
+        for(int i=0;i<m; i++){  // till m because j move to s.size()-m so may be matching string start in limit 0 to <m
             unordered_map<string, int>mp2;
             int left= i;
             for(int j=i; j<=s.size()-m; j+= m){
