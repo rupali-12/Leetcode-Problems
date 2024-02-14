@@ -1,26 +1,25 @@
 class Solution {
 public:
     vector<int> rearrangeArray(vector<int>& nums) {
-        // int countPos=0, countNeg=0;
-        int n= nums.size();
+        int n=nums.size();
         deque<int>dq;
-        // int curr;
         for(int i=n-1; i>=0; i--){
-            if(nums[i]<0){
+            if(nums[i]>0){
                 dq.push_front(nums[i]);
             }
             else{
                 dq.push_back(nums[i]);
             }
         }
+        
         int i=0;
         while(!dq.empty()){
-            int num1= dq.back();
-            int num2= dq.front();
-            dq.pop_back();
+            int num1= dq.front();
+            int num2= dq.back();
             dq.pop_front();
+            dq.pop_back();
             nums[i++]= num1;
-            nums[i++]=num2;
+            nums[i++]= num2;
         }
         return nums;
     }
