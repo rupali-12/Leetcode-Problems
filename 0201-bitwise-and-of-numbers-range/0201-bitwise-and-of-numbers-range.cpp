@@ -17,5 +17,6 @@ public:
             right= right&(right-1);
         }
         return right;
+        
     }
 };
