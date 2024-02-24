@@ -9,7 +9,7 @@ public:
         graph[0].push_back({firstPerson, 0});
         graph[firstPerson].push_back({0, 0});
         
-        for(auto x: meetings){
+        for(auto& x: meetings){
             int p1= x[0];
             int p2= x[1];
             int time= x[2];
