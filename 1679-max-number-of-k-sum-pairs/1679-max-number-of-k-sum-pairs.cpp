@@ -23,19 +23,22 @@ public:
         
         // Hashmap
          int total=0;
-       unordered_map<int,int>mp;
+        map<int,int>mp;
+        for(auto a: nums){
+            mp[a]++;
+        }
+        
         for(auto num: nums){
-            if(mp.count(k-num)){
+            if(mp.find(k-num)!=mp.end()){
                 total++;
                 mp[k-num]--;
                 if(mp[k-num]==0){
                     mp.erase(k-num);
                 }
             }
-            else{   // if num not present in map then insert it 
-                mp[num]++;
-            }
         }
-        return total;
+        
+        // but in this (1, 4) and (4,1) ccount we need to divide total/2
+        return floor(total/2);
     }
 };
