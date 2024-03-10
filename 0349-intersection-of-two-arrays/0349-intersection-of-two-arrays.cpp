@@ -6,7 +6,7 @@ public:
             mp[a]++;
         }
         
-        // // Way-1:
+        // // Way-1:    // more faster(85+)
         // set<int>s;
         // for(auto a: nums2){
         //     if(mp[a]>0){
@@ -16,7 +16,7 @@ public:
         // vector<int>ans(s.begin(),s.end());
         // return ans;
         
-        // Way-2:
+        // Way-2:    // less faster(25+)
         vector<int>ans;
         for(auto num: nums2){
             if(mp.find(num)!=mp.end()){
