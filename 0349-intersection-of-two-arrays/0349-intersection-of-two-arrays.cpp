@@ -6,15 +6,7 @@ public:
             mp[a]++;
         }
             
-        // // Way-1:    // less faster(25+)
-        // vector<int>ans;
-        // for(auto num: nums2){
-        //     if(mp.find(num)!=mp.end()){
-        //         ans.push_back(num);
-        //         mp.erase(num);
-        //     }
-        // }
-        // return ans;
+       
         
         // Way-2:    // more faster(85+)
         set<int>s;
