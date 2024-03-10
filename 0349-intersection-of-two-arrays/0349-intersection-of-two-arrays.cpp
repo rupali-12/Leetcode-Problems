@@ -5,25 +5,26 @@ public:
         for(auto a: nums1){
             mp[a]++;
         }
-        
-        // // Way-1:    // more faster(85+)
-        // set<int>s;
-        // for(auto a: nums2){
-        //     if(mp[a]>0){
-        //         s.insert(a);
+            
+        // // Way-1:    // less faster(25+)
+        // vector<int>ans;
+        // for(auto num: nums2){
+        //     if(mp.find(num)!=mp.end()){
+        //         ans.push_back(num);
+        //         mp.erase(num);
         //     }
         // }
-        // vector<int>ans(s.begin(),s.end());
         // return ans;
         
-        // Way-2:    // less faster(25+)
-        vector<int>ans;
-        for(auto num: nums2){
-            if(mp.find(num)!=mp.end()){
-                ans.push_back(num);
-                mp.erase(num);
+        // Way-2:    // more faster(85+)
+        set<int>s;
+        for(auto a: nums2){
+            if(mp[a]>0){
+                s.insert(a);
             }
         }
+        vector<int>ans(s.begin(),s.end());
         return ans;
+    
     }
 };
