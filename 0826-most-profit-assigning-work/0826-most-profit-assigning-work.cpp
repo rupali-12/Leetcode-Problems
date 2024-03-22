@@ -18,7 +18,7 @@ public:
                 j++;
             }
             
-            // if(j>0){
+            // if(j>0){   // optional 
                 maxProfit+= tempProfit;
             // }
         }
