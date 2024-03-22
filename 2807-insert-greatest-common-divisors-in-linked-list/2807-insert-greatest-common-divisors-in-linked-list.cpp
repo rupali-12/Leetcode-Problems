@@ -20,6 +20,7 @@ public:
         }
     }
     ListNode* insertGreatestCommonDivisors(ListNode* head) {
+        if(head==NULL || head->next==NULL) return head;
         vector<int>v;
         ListNode* temp= head;
         while(temp!=NULL){
