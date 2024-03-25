@@ -13,7 +13,7 @@ public:
            
            // calculate total sum
            long long sum=0;
-           for(int a:v) sum+= (long long)a;
+           for(int a:v) sum+= a;
            
            // calculate prefix 
            long long currsum=0, restsum=0;
