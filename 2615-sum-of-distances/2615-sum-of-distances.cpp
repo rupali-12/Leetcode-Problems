@@ -20,7 +20,7 @@ public:
            for(int i=0; i<v.size(); i++){
                restsum = sum - currsum - v[i];
                long long sumleft= (v[i]*(long long)(i)) - currsum;
-               long long sumright = restsum- (v[i]*(long long)(v.size()-1-i));
+               long long sumright = restsum- (v[i]*(v.size()-1-i));
                
                ans[v[i]] =  sumleft + sumright;  // actually v[i] stores index where the value occured   
                currsum+= v[i];
