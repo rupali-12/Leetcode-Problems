@@ -18,15 +18,17 @@ public:
         // return ans;
         
         // Way-2: 
-        long long ans=0;
+        long long ans=1;
         int i=0, j=0;
         for(int j=1; j<n; j++){
-            while(j<n && prices[j]==prices[j-1]-1){
-                ans+= j-i;
-                j++;
+           if(prices[j]==prices[j-1]-1){
+               ans+= j-i+1;
+           }
+            else{
+                i=j;
+                ans+= 1;
             }
-            i=j;
         }
-        return ans+n;
+        return ans;
     }
 };
