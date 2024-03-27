@@ -8,7 +8,7 @@ public:
         while(j<n){
             int len= j-i+1;
             sum+= nums[j];
-            while(i<=j && (sum*len)>=k){
+            while((sum*len)>=k){
                 sum-= nums[i];
                 i++;
                 len= j-i+1;  // update len after shrinking window
