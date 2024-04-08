@@ -1,48 +1,22 @@
 class Solution {
 public:
     int countStudents(vector<int>& students, vector<int>& sandwiches) {
-//         // Approach-1>> Using deque
-//         deque<int>dq;
-//         for(auto a: students){
-//             dq.push_back(a);
-//         }
-        
-//         for(auto a: sandwiches){
-//             if(dq.front()==a){
-//                 dq.pop_front();
-//             }
-//             int s=dq.size();
-//             int f=0;
-//             while(s--){
-//                 int x=dq.front();
-//                 if(x==a){
-//                     dq.pop_front();
-//                     f=1;
-//                     break;
-//                 }
-//                 else{
-//                dq.pop_front();
-//                dq.push_back(x);
-//                 }
-//             }
-//             if(f==0){
-//                 return dq.size();
-//             }
-        // }
-        // return 0;
-        
-        // Approach-2>> 
-        vector<int>v(2);
-        for(auto a: students){
-            v[a]++;
+        int student1=0, student0=0;
+        int n= sandwiches.size();
+        for(int i=0; i<n; i++){
+            if(students[i]==0) student0++;
+            else student1++;
         }
         
-        for(auto a:sandwiches){
-             if(v[a]>0){
-                 v[a]--;
-             }
+        for(int i=0; i<n; i++){
+            if(sandwiches[i]==1 && student1>0){
+                student1--;
+            }
+            else if(sandwiches[i]==0 && student0>0){
+                student0--;
+            }
             else{
-                return v[1]+v[0];
+                return n-i;
             }
         }
         return 0;
