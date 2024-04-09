@@ -33,16 +33,6 @@ public:
             highestPopularity= max(highestPopularity, mp[creators[i]].first);
         }
         
-          //  for(auto m: mp){
-        //     cout<<m.first<<": ";
-        //     pair<int, vector<pair<int, int>>>temp= m.second;
-        //     cout<<temp.first<<" -> ";
-        //     vector<pair<int, int>>ans= temp.second;
-        //     for(auto a: ans){
-        //         cout<<"("<<a.first<<", "<<a.second<<"), ";
-        //     }
-        //     cout<<endl;
-        // }
         
         vector<vector<string>>ans;
         for(auto m: mp){
