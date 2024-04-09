@@ -1,22 +1,23 @@
 class Solution {
 public:
     int timeRequiredToBuy(vector<int>& tickets, int k) {
-        int time=0;
-        int n = tickets.size();
+        int n= tickets.size();
         deque<pair<int, int>>dq;
         for(int i=0; i<n; i++){
-            pair<int, int>p = make_pair(tickets[i], i);
+            pair<int, int>p= make_pair(tickets[i], i);
             dq.push_back(p);
         }
-        
+        int time=0;
         while(true){
-            int size=dq.size();
+            int size= dq.size();
             while(size--){
-                pair<int, int>front =dq.front();
-                front.first--;
+                auto front= dq.front();
+                int val= front.first;
+                int idx= front.second;
+                val--;
                 time++;
-                if(front.first==0){
-                    if(front.second ==k){
+                if(val==0){
+                    if(idx==k){
                         return time;
                     }
                     else{
@@ -25,10 +26,11 @@ public:
                 }
                 else{
                     dq.pop_front();
-                    dq.push_back(front);
+                    dq.push_back({val, idx});
                 }
             }
         }
         return time;
     }
 };
+
