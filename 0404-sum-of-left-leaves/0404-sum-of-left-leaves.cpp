@@ -11,28 +11,18 @@
  */
 class Solution {
 public:
-    bool isLeaf(TreeNode* root){
-        if(root==NULL){
-            return false;
-        }
-        if(!root->left && !root->right){
-            return true;
-        }
-        return false;
-    }
-    void solve(TreeNode* root, int &sum){
-        if(root==NULL){
-            return;
-        }
-       if(isLeaf(root->left)){
-           sum+= root->left->val;
-       }
-        solve(root->left, sum);
-        solve(root->right, sum);
-    }
     int sumOfLeftLeaves(TreeNode* root) {
         int sum=0;
-        solve(root, sum);
+        if(root==NULL) return 0;
+        
+        // if let is leaf node or not
+        if(root->left && root->left->left==NULL && root->left->right==NULL){
+            sum+= root->left->val;
+        }
+        
+        sum+= sumOfLeftLeaves(root->left);
+        sum+= sumOfLeftLeaves(root->right);
+        
         return sum;
     }
 };
