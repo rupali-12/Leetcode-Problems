@@ -47,9 +47,14 @@ public:
         // Way-2: bit manipulation
         for(int i=0;i<m; i++){
             int num=0;
-            for(int j=n-1; j>=0; j--){
-               if(grid[i][j]){
-                   num= num | grid[i][j]<<(n-j-1);
+            // for(int j=n-1; j>=0; j--){
+            //    if(grid[i][j]){
+            //        num= num | grid[i][j]<<(n-j-1);
+            //    }
+            // Way-2
+            for(int j=0; j<n; j++){
+               if(grid[i][n-1-j]){
+                   num= num | grid[i][n-1-j]<<j;
                }
             }
             ans+= num;
