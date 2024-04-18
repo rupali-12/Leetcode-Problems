@@ -1,7 +1,7 @@
 class Solution {
 public:
      int row, col;
-    int ans;
+    int ans=0;
     void dfs(vector<vector<int>>& grid, int i, int j){
         if(i<0 || j<0 || i==row || j==col || grid[i][j]==0){
             ans++;
@@ -59,14 +59,36 @@ public:
         // }
         // return ans;
         
-        // Approach-2: BFS
+        // // Approach-2: BFS
+        // for(int i=0; i<row; i++){
+        //     for(int j=0; j<col; j++){
+        //         if(grid[i][j]==1){
+        //             return bfs(grid, i, j);
+        //         }
+        //     }
+        // }
+         // return 0;
+        
+        // Approach-3: Matrix Traversal
         for(int i=0; i<row; i++){
             for(int j=0; j<col; j++){
-                if(grid[i][j]==1){
-                    return bfs(grid, i, j);
+                if(grid[i][j]==0) continue;
+                
+                if(j+1>=col || grid[i][j+1]==0){
+                    ans++;
+                }
+                if(j-1<0 || grid[i][j-1]==0){
+                    ans++;
+                }
+                if(i+1>=row || grid[i+1][j]==0){
+                    ans++;
+                }
+                if(i-1<0 || grid[i-1][j]==0){
+                    ans++;
                 }
             }
         }
-        return 0;
+        return ans;
+       
     }
 };
