@@ -7,7 +7,7 @@ public:
         
         // mark visited
         vis[node]=true;
-        for(auto neigh: adjList[node]){
+        for(auto &neigh: adjList[node]){
             if(!vis[neigh]){
                 if(dfs(adjList, des, vis, neigh)){
                     return true;
@@ -29,8 +29,31 @@ public:
         
        vector<bool>vis(n);
         
-        // approach-1: dfs 
-        return dfs(adjList, destination, vis,source);
+        // // Approach-1: dfs 
+        // return dfs(adjList, destination, vis,source);
+        
+        // Approach-2: BFS 
+        queue<int>q;
+        q.push(source);
+        vis[source]=true;
+        
+        while(!q.empty()){
+            int node= q.front();
+            q.pop();
+            
+            if(node==destination){
+                return true;
+            }
+            
+            for(int neigh: adjList[node]){
+                if(!vis[neigh]){
+                    vis[neigh]=true;
+                    q.push(neigh);
+                }
+            }       
+        }
+        return false;
+        
         
     }
 }; 
