@@ -9,11 +9,7 @@ public:
             }
         }
         if(firstIndex==-1) return word;
-        string ans = word.substr(0, firstIndex+1);
-        reverse(ans.begin(), ans.end());
-        
-        // merge remaining part 
-        ans+= word.substr(firstIndex+1);
-        return ans;
+         reverse(word.begin(), word.begin()+firstIndex+1);
+        return word;
     }
 };
