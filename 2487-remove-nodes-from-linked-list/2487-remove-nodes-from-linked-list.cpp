@@ -12,15 +12,14 @@ class Solution {
 public:
     ListNode* removeNodes(ListNode* head) {
         ListNode* dummy= new ListNode(INT_MAX);
-        stack<ListNode*>st;
-        st.push(dummy);
+        stack<ListNode*>s;
+        s.push(dummy);
         while(head){
-            while(st.top()->val < head->val){
-                st.pop();
+            while(s.top()->val < head->val){
+                s.pop();
             }
-            
-            st.top()->next = head;
-            st.push(head);
+            s.top()->next = head;
+            s.push(head);
             head= head->next;
         }
         return dummy->next;
