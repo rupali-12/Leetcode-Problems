@@ -37,12 +37,23 @@ public:
         }
         
         int ans=0;
-        // way-1: using power function 
+        // // way-1: using power function 
+        // for(int i=0; i<m; i++){
+        //     int num=0, power=0;
+        //     for(int j=0; j<n; j++){
+        //         num+= pow(2, power)*grid[i][n-1-j];
+        //         power++;
+        //     }
+        //     ans+= num;
+        // }
+        
+        // way-2: using xor 
         for(int i=0; i<m; i++){
-            int num=0, power=0;
+            int num=0;
             for(int j=0; j<n; j++){
-                num+= pow(2, power)*grid[i][n-1-j];
-                power++;
+                if(grid[i][n-1-j]){
+                    num = num | grid[i][n-1-j]<<j;
+                }
             }
             ans+= num;
         }
