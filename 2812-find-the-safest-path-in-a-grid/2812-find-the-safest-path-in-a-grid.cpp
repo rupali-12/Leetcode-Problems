@@ -3,34 +3,34 @@ public:
     int n;
       vector<vector<int>> direction{{1, 0}, {-1, 0}, {0, -1}, {0, 1}};
     
-//     void multisourceBFS( vector<vector<int>>&disNearestThief,  vector<vector<int>>&grid,  vector<vector<bool>>&vis, queue<pair<int, int>>que){
-//         int level=0;
-//         while(!que.empty()){
-//             int size= que.size();
-//             while(size--){
-//                 int curr_i = que.front().first;
-//                 int curr_j = que.front().second;
-//             que.pop();
+    void multisourceBFS( vector<vector<int>>&disNearestThief,  vector<vector<int>>&grid,  vector<vector<bool>>&vis, queue<pair<int, int>>que){
+        int level=0;
+        while(!que.empty()){
+            int size= que.size();
+            while(size--){
+                int curr_i = que.front().first;
+                int curr_j = que.front().second;
+            que.pop();
                
-//                 disNearestThief[curr_i][curr_j] = level;
+                disNearestThief[curr_i][curr_j] = level;
                 
-//                 //push neipghbour in queue
-//                 for(auto dir: direction){
-//                     int new_i = curr_i + dir[0];
-//                     int new_j = curr_j + dir[1];
+                //push neipghbour in queue
+                for(auto dir: direction){
+                    int new_i = curr_i + dir[0];
+                    int new_j = curr_j + dir[1];
                     
-//                     if(new_i<0 || new_i >=n || new_j<0 || new_j >=n || vis[new_i][new_j]){
-//                         continue;
-//                     }
+                    if(new_i<0 || new_i >=n || new_j<0 || new_j >=n || vis[new_i][new_j]){
+                        continue;
+                    }
                     
-//                     que.push({new_i, new_j});
-//                     vis[new_i][new_j] =true;
-//                 }
-//             }
-//             level++;
-//         }
-//         return;
-    // }
+                    que.push({new_i, new_j});
+                    vis[new_i][new_j] =true;
+                }
+            }
+            level++;
+        }
+        return;
+    }
     
     
 //     bool check(vector<vector<int>>&disNearestThief, int safeFactor){
@@ -134,32 +134,8 @@ public:
         }
         
         // multisource BFS
-        // multisourceBFS(disNearestThief, grid, vis, que);
-         int level=0;
-        while(!que.empty()){
-            int size= que.size();
-            while(size--){
-                int curr_i = que.front().first;
-                int curr_j = que.front().second;
-            que.pop();
-               
-                disNearestThief[curr_i][curr_j] = level;
-                
-                //push neipghbour in queue
-                for(auto dir: direction){
-                    int new_i = curr_i + dir[0];
-                    int new_j = curr_j + dir[1];
-                    
-                    if(new_i<0 || new_i >=n || new_j<0 || new_j >=n || vis[new_i][new_j]){
-                        continue;
-                    }
-                    
-                    que.push({new_i, new_j});
-                    vis[new_i][new_j] =true;
-                }
-            }
-            level++;
-        }
+        multisourceBFS(disNearestThief, grid, vis, que);
+       
         
         // Step-2: Apply Binary Search on Safeness factor 
         int l=0, r= 400;    // As 1 <= grid.length == n <= 400
