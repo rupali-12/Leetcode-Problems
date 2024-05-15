@@ -33,86 +33,48 @@ public:
     }
     
     
-//     bool check(vector<vector<int>>&disNearestThief, int safeFactor){
-//       vector<vector<bool>>vis(n, vector<bool>(n, false));
-//         queue<pair<int, int>>que;
+    bool check(vector<vector<int>>&disNearestThief, int safeFactor){
+      vector<vector<bool>>vis(n, vector<bool>(n, false));
+        queue<pair<int, int>>que;
         
-//         // {0,0} -->{n-1, n-1}
-//         que.push({0, 0});
-//         vis[0][0] = true;
-        
-//         if(disNearestThief[0][0]<safeFactor){
-//             return false;
-//         }
-        
-//         while(!que.empty()){
-//             int curr_i = que.front().first;
-//             int curr_j = que.front().second;
-//             que.pop();
-//             if(curr_i== n-1 && curr_j == n-1){
-//                 return true;
-//             }
-            
-//             // check neighbour 
-//             for(auto dir: direction){
-//                 int new_i = curr_i + dir[0];
-//                 int new_j = curr_j + dir[1];
-                
-//                 // proceed only when 
-//                 if(new_i>=0 && new_i <n && new_j >=0 && new_j <n && !vis[new_i][new_j]){
-//                    if(disNearestThief[new_i][new_j] < safeFactor){
-//                         continue;
-//                    }
-                    
-//                     que.push({new_i, new_j});
-//                     vis[new_i][new_j] = true;
-//                 }
-//             }
-//         }
-        
-//         return false;
-//     }
-    
-    
-     bool check(vector<vector<int>>& disNearestThief, int sf) {
-        queue<pair<int, int>> que;
-
-        vector<vector<bool>> visited(n, vector<bool>(n, false));
-        //0,0 --> n-1, n-1
+        // {0,0} -->{n-1, n-1}
         que.push({0, 0});
-        visited[0][0] = true;
-
-        if(disNearestThief[0][0] < sf)
+        vis[0][0] = true;
+        
+        if(disNearestThief[0][0]<safeFactor){
             return false;
-
-        while(!que.empty()) {
+        }
+        
+        while(!que.empty()){
             int curr_i = que.front().first;
             int curr_j = que.front().second;
-
             que.pop();
-
-            if(curr_i == n-1 && curr_j == n-1) {
+            if(curr_i== n-1 && curr_j == n-1){
                 return true;
             }
-
-            for(vector<int>& dir : direction) {
+            
+            // check neighbour 
+            for(auto &dir: direction){
                 int new_i = curr_i + dir[0];
                 int new_j = curr_j + dir[1];
-
-                if(new_i >= 0 && new_i < n && new_j >= 0 && new_j < n && visited[new_i][new_j] != true) {
-                    if(disNearestThief[new_i][new_j] < sf) {
-                        continue; //reject this cell
-                    }
+                
+                // proceed only when 
+                if(new_i>=0 && new_i <n && new_j >=0 && new_j <n && !vis[new_i][new_j]){
+                   if(disNearestThief[new_i][new_j] < safeFactor){
+                        continue;
+                   }
+                    
                     que.push({new_i, new_j});
-                    visited[new_i][new_j] = true;
+                    vis[new_i][new_j] = true;
                 }
-
             }
         }
-
-        return false;
         
+        return false;
     }
+    
+    
+    
 
     
     int maximumSafenessFactor(vector<vector<int>>& grid) {
