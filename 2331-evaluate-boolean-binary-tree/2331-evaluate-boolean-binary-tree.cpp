@@ -16,8 +16,8 @@ public:
         // return solve(root);
         
         if(!root->left && !root->right) return root->val;
-        // if(root->val ==0) return 0;
-        // if(root->val==1) return 1;
+        if(root->val ==0) return 0;
+        if(root->val==1) return 1;
         
         bool left= evaluateTree(root->left);
         bool right = evaluateTree(root->right);
