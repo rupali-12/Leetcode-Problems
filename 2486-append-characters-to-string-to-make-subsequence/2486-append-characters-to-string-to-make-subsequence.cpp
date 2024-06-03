@@ -8,13 +8,10 @@ public:
                 i++; j++;
             }
             else{
-                while(i<s.length() && s[i]!=t[j]){
                     i++;
-                }
             }
-             ans= t.length()-j;
         }
-        
+         ans= t.length()-j;
         return ans;
     }
 };
