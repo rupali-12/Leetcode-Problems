@@ -1,31 +1,18 @@
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
-        // for(int i=0; i<nums.size()-1; i++){
-        //    for(int j=i+1; j<nums.size(); j++){
-        //        if(nums[i]>nums[j]){
-        //            int temp =nums[i];
-        //            nums[i]= nums[j];
-        //            nums[j]=temp;
-        //        }
-        //    }
-        // }
-        
-        // Approach-2 ->Binary Search 
-        int i=0, mid=0, j=nums.size()-1;
-        while(mid<=j){
-            if(nums[mid]==0){
-                swap(nums[mid], nums[i]);
-                i++; mid++;
-            }
-            else if(nums[mid]==1){
-                mid++;
-            }
-            else{
-                swap(nums[mid], nums[j]);
-                j--;
-            }
+        int num0=0, num1=0, num2=0;
+        for(auto num: nums){
+            if(num==0) num0++;
+            else if(num==1) num1++;
+            else num2++;
         }
+        
+        int i=0;
+        while(num0--) nums[i++]=0;
+        while(num1--) nums[i++]=1;
+        while(num2--) nums[i++]=2;
+        
         return;
     }
 };
