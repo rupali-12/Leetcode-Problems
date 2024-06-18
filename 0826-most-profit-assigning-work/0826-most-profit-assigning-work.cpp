@@ -27,7 +27,42 @@ public:
 //         }
 //         return totalProfit;
         
-        // Approach-2: Using Preprocessing
+        // ********************************************************************************
+//         // Approach-2: Using Preprocessing
+//         vector<pair<int, int>>vec;
+//         for(int i=0; i<n; i++){
+//             vec.push_back({difficulty[i], profit[i]});
+//         }
+        
+//         sort(vec.begin(), vec.end());
+        
+//         // pre processing to find the maximum profit of worker till index i at constant time 
+//         for(int i=1; i<n; i++){
+//             vec[i].second= max(vec[i].second, vec[i-1].second);
+//         }
+        
+//         int totalProfit=0;
+//         for(int i=0; i<m; i++){
+//             int workerLevel = worker[i];
+            
+//             int l=0, r= vec.size()-1;
+//             int maxProfit=0;
+//             while(l<=r){
+//                 int mid= l+(r-l)/2;
+//                 if(worker[i]>=vec[mid].first){
+//                     maxProfit= max(maxProfit, vec[mid].second);
+//                     l= mid+1;
+//                 }
+//                 else{
+//                     r= mid-1;
+//                 }
+//             }
+//             totalProfit+= maxProfit;
+//         }
+//         return totalProfit;
+        
+        // ************************************************************************
+        // Approach-3: Optimized 
         vector<pair<int, int>>vec;
         for(int i=0; i<n; i++){
             vec.push_back({difficulty[i], profit[i]});
@@ -35,26 +70,14 @@ public:
         
         sort(vec.begin(), vec.end());
         
-        // pre processing to find the maximum profit of worker till index i at constant time 
-        for(int i=1; i<n; i++){
-            vec[i].second= max(vec[i].second, vec[i-1].second);
-        }
+        sort(worker.begin(), worker.end());
+        int j=0;  // point to vec vector
+        int totalProfit=0, maxProfit=0;
         
-        int totalProfit=0;
         for(int i=0; i<m; i++){
-            int workerLevel = worker[i];
-            
-            int l=0, r= vec.size()-1;
-            int maxProfit=0;
-            while(l<=r){
-                int mid= l+(r-l)/2;
-                if(worker[i]>=vec[mid].first){
-                    maxProfit= max(maxProfit, vec[mid].second);
-                    l= mid+1;
-                }
-                else{
-                    r= mid-1;
-                }
+            while(j<n && worker[i]>= vec[j].first){
+                maxProfit = max(maxProfit, vec[j].second);
+                j++;
             }
             totalProfit+= maxProfit;
         }
