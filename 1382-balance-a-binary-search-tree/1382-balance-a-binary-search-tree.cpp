@@ -11,29 +11,31 @@
  */
 class Solution {
 public:
-    void inOrder(TreeNode* root, vector<int>&in){
-    if(root==NULL){
-        return;
+    void findInOrder(TreeNode* root, vector<int>&inOrder){
+        if(!root) return;
+        findInOrder(root->left, inOrder);
+        inOrder.push_back(root->val);
+        findInOrder(root->right, inOrder);
     }
-    inOrder(root->left, in);
-    in.push_back(root->val);
-    inOrder(root->right, in);
-}
-TreeNode* inOrderToBST(int s, int e, vector<int>&inorderVal){
-    if(s>e){  
-        return NULL;
+    
+    TreeNode* solve(int l, int r, vector<int>&inOrder){
+        if(l>r) return NULL;
+        
+        int mid = l + (r-l)/2;
+        TreeNode* root= new TreeNode(inOrder[mid]);
+       root->left= solve(l, mid-1, inOrder);
+        root->right = solve(mid+1, r, inOrder);
+        
+        return root;
     }
-
-    int mid =(s+e)/2;
-    TreeNode* root = new TreeNode(inorderVal[mid]);
-    root->left = inOrderToBST(s, mid-1, inorderVal);
-    root->right = inOrderToBST(mid+1, e, inorderVal);
-    return root;
-} 
+    
     TreeNode* balanceBST(TreeNode* root) {
-         vector<int>inorderVal;
-     inOrder(root, inorderVal);
-    TreeNode* ans= inOrderToBST(0, inorderVal.size()-1, inorderVal);
-     return ans;
+        
+        // Find inorder 
+        vector<int>inOrder;
+        findInOrder(root, inOrder);
+        int l=0, r= inOrder.size()-1;
+        TreeNode* ans = solve(l, r, inOrder);
+        return ans;
     }
 };
