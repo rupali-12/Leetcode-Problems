@@ -8,10 +8,37 @@ public:
     }
     int minDifference(vector<int>& nums) {
         int n= nums.size();
-        // Approach 1  Brute force 
-        if(n<=4) return 0;
-        sort(nums.begin(), nums.end());
-        return minDiff(nums, n);
         
+        // // Approach 1  Brute force 
+        if(n<=4) return 0;
+        // sort(nums.begin(), nums.end());
+        // return minDiff(nums, n);
+        
+        
+        // Approach -2: Using Heap
+        priority_queue<int>mxHeap;
+        priority_queue<int, vector<int>, greater<int>>mnHeap;
+        
+        // insert 4 max and min elements 
+        for(auto num: nums){
+            mxHeap.push(num);
+            mnHeap.push(num);
+            
+            if(mxHeap.size()>4) mxHeap.pop();
+            if(mnHeap.size()>4) mnHeap.pop();
+        }
+        
+        
+        
+        int l= 3, r= n-4;   // (n-1)-3
+        while(!mxHeap.empty()){
+            nums[l--] = mxHeap.top();
+            mxHeap.pop();
+            
+            nums[r++] = mnHeap.top();
+            mnHeap.pop();
+        }
+        
+        return minDiff(nums, n);
     }
 };
