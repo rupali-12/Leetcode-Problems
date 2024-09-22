@@ -1,32 +1,20 @@
 class Solution {
 public:
-    vector<int> lexicalOrder(int n) {
-        vector<int> result;
-        int current = 1;
-
-        for (int i = 0; i < n; ++i) {
-            result.push_back(current);
-            current = getNextNumber(current, n);
-        }
-
-        return result;
+    void solve(int start, int n, vector<int>&ans){
+        if(start>n) return;
+        ans.push_back(start);
+       for(int append=0; append<=9; append++){
+           int newNum= start*10 + append;
+           if(newNum>n) return;
+           solve(newNum, n, ans);
+       }
     }
-
-private:
-    int getNextNumber(int current, int n) {
-        if (current * 10 <= n) {
-            return current * 10; // Move to the next "level" in the lexicographical order
-        }
-
-        if (current >= n) {
-            current /= 10; // Go back to the parent node
+    vector<int> lexicalOrder(int n) {
+        vector<int>ans;
+        for(int start=1; start<=9; start++){
+            solve(start, n, ans);
         }
         
-        current += 1; // Increment to get to the next number
-        while (current % 10 == 0) {
-            current /= 10; // Remove trailing zeros
-        }
-
-        return current;
+        return ans;
     }
 };
