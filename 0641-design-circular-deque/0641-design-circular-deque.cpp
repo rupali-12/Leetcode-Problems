@@ -1,119 +1,54 @@
 class MyCircularDeque {
 public:
-    int *arr;
-    int size;
-    int front;
-    int rear;
+    int maxSize;
+    deque<int>dq;
+    
     MyCircularDeque(int k) {
-        size= k;
-        arr= new int[size];
-        front=-1;
-        rear=-1;
+        maxSize = k;    
     }
     
     bool insertFront(int value) {
-        if(isFull()){
-            return false;
-        }
-        else if(isEmpty()){
-            front=rear=0;
-        }
-        else if(front==0 && rear!=size-1){
-            front=size-1;
-        }
-        else{
-            front--;
-        }
-         arr[front]=value;
+        if(isFull()) return false;
+        dq.push_front(value);
         return true;
     }
     
     bool insertLast(int value) {
-        if(isFull()){
-            return false;
-        }
-        else if(front==-1){
-            front=0;
-            rear=0;
-        }
-        else if(front!=0 && rear==size-1){
-            rear=0;
-        }
-        else{
-            rear++;
-        }
-        arr[rear]=value;
+         if(isFull()) return false;
+        dq.push_back(value);
         return true;
     }
     
     bool deleteFront() {
-        if(isEmpty()){
-            return false;
-        }
-        arr[front]=-1;
-        if(front==rear){
-            front=rear=-1;
-        }
-        else if(front==size-1){
-            front=0;
-        }
-        else{
-            front++;
-        }
+         if(isEmpty()) return false;
+        dq.pop_front();
         return true;
     }
     
     bool deleteLast() {
-        if(isEmpty()){
-            return false;
-        }
-        arr[rear]=-1;
-        if(front==rear){
-            front=rear=-1;
-        }
-        else if(rear==0){
-            rear= size-1;
-        }
-        else{
-            rear--;
-        }
-        return true;
+         if(isEmpty()) return false;
+        dq.pop_back();
+        return true; 
     }
     
     int getFront() {
-        if(isEmpty()){
-            return -1;
-        }
-        else{
-            return arr[front];
-        }
+        if(!isEmpty()) return dq.front();
+        return -1;
     }
     
     int getRear() {
-        if(isEmpty()){
-            return -1;
-        }
-        else{
-            return arr[rear];
-        }
+        if(!isEmpty()) return dq.back();
+        return -1;
     }
     
     bool isEmpty() {
-        if(front==-1){
-            return true;
-        }
-        else{
-            return false;
-        }
+        if(dq.size()==0) return true;
+        return false;
     }
     
     bool isFull() {
-        if((front==0 && rear==size-1) || (front!=0 && rear==(front-1)%(size-1))){
-            return true;
-        }
-        else{
-            return false;
-        }
+        if(dq.size()==maxSize) return true;
+        return false;
     }
 };
 
