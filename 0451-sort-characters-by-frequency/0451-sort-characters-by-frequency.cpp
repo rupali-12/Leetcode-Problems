@@ -1,22 +1,31 @@
 class Solution {
 public:
-   static bool cmp(const pair<char, int>a, const pair<char, int>b){
-        return a.second > b.second;
-    }
     string frequencySort(string s) {
-        string ans="";
-        map<char, int>mp;
-        for(int i=0; i<s.length(); i++){
-            mp[s[i]]++;
-        }
-        vector<std::pair<char, int>> vec(mp.begin(), mp.end());
-        sort(vec.begin(), vec.end(), cmp);
-        for(auto a:vec){
-            int cnt= a.second;
-            while(cnt--){
-                ans+= a.first;
+          unordered_map<char, int> freq_map;
+    for (char c : s) {
+        freq_map[c]++;
+    }
+    
+    // Step 2: Create buckets where index represents frequency
+    int n = s.size();
+    vector<vector<char>> buckets(n + 1);
+    
+    for (auto& pair : freq_map) {
+        char character = pair.first;
+        int freq = pair.second;
+        buckets[freq].push_back(character);
+    }
+    
+    // Step 3: Build the result string by going through the buckets
+    string result = "";
+    for (int i = n; i > 0; --i) {
+        if (!buckets[i].empty()) {
+            for (char c : buckets[i]) {
+                result.append(i, c);  // Append the character 'i' times
             }
         }
-        return ans;
+    }
+    
+    return result;
     }
 };
