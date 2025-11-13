@@ -11,4 +11,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2288-count-operations-to-obtain-zero](https://github.com/rupali-12/Leetcode-Problems/tree/master/2288-count-operations-to-obtain-zero) |
+## String
+|  |
+| ------- |
+| [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
+## Greedy
+|  |
+| ------- |
+| [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
+## Counting
+|  |
+| ------- |
+| [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 <!---LeetCode Topics End-->
