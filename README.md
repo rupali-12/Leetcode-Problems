@@ -31,6 +31,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0001-two-sum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0001-two-sum) |
 | [0217-contains-duplicate](https://github.com/rupali-12/Leetcode-Problems/tree/master/0217-contains-duplicate) |
+| [0219-contains-duplicate-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0219-contains-duplicate-ii) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/rupali-12/Leetcode-Problems/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/2274-keep-multiplying-found-values-by-two) |
@@ -39,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0001-two-sum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0001-two-sum) |
 | [0217-contains-duplicate](https://github.com/rupali-12/Leetcode-Problems/tree/master/0217-contains-duplicate) |
+| [0219-contains-duplicate-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0219-contains-duplicate-ii) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 ## Sorting
@@ -55,4 +57,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/2059-unique-length-3-palindromic-subsequences) |
+## Sliding Window
+|  |
+| ------- |
+| [0219-contains-duplicate-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0219-contains-duplicate-ii) |
 <!---LeetCode Topics End-->
