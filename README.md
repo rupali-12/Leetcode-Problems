@@ -22,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 ## Counting
 |  |
@@ -36,6 +37,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0238-product-of-array-except-self](https://github.com/rupali-12/Leetcode-Problems/tree/master/0238-product-of-array-except-self) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/rupali-12/Leetcode-Problems/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 ## Hash Table
@@ -51,6 +53,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0217-contains-duplicate](https://github.com/rupali-12/Leetcode-Problems/tree/master/0217-contains-duplicate) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 ## Bit Manipulation
 |  |
@@ -65,4 +68,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0219-contains-duplicate-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0219-contains-duplicate-ii) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
 <!---LeetCode Topics End-->
