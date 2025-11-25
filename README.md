@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/rupali-12/Leetcode-Problems/tree/master/0013-roman-to-integer) |
+| [1015-smallest-integer-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/1015-smallest-integer-divisible-by-k) |
 | [2288-count-operations-to-obtain-zero](https://github.com/rupali-12/Leetcode-Problems/tree/master/2288-count-operations-to-obtain-zero) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 ## Simulation
@@ -56,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0219-contains-duplicate-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0219-contains-duplicate-ii) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 | [0953-verifying-an-alien-dictionary](https://github.com/rupali-12/Leetcode-Problems/tree/master/0953-verifying-an-alien-dictionary) |
+| [1015-smallest-integer-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/1015-smallest-integer-divisible-by-k) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 ## Sorting
