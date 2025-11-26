@@ -50,10 +50,31 @@ const int MOD = 1e9 + 7;
         // int currSum=0;
         // return solveRec(0, 0, grid, currSum, k);
 
-        // // Approach1: Recursion + Memoization
-        vector<vector<vector<int>>>dp(m, vector<vector<int>>(n, vector<int>(k, -1)));
-        int rem=0;
-        return solveRecMem(0, 0, grid, rem, k, dp);
+        // // // Approach2: Recursion + Memoization
+        // vector<vector<vector<int>>>dp(m, vector<vector<int>>(n, vector<int>(k, -1)));
+        // int rem=0;
+        // return solveRecMem(0, 0, grid, rem, k, dp);
 
+        // Approach3: Bottom approach 
+     int dp[m+1][n+1][k+1];
+     memset(dp, 0, sizeof(dp));
+
+    //  base case
+    for(int rem=0; rem<=k-1; rem++){
+        dp[m-1][n-1][rem] = (rem + grid[m-1][n-1])%k ==0? 1:0;
+    }
+
+       for(int i=m-1; i>=0; i--){
+         for(int j=n-1; j>=0; j--){
+            for(int rem=0; rem<= k-1; rem++){
+                if(i==m-1 && j==n-1) continue;
+                int R = (rem+grid[i][j])%k;
+                int down =dp[i+1][j][R];
+                int right=dp[i][j+1][R]; 
+               dp[i][j][rem] = (down + right)%MOD;
+            }
+         }
+       }
+      return dp[0][0][0];
     }
 };
