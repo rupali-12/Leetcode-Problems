@@ -1,18 +1,28 @@
-using ll = long long;
 class Solution {
 public:
-    ll maxSubarraySum(vector<int>& nums, int k) {       
-        ll prefSum = 0;
-        ll subMax = LLONG_MIN;
-        vector<ll> minSoFar(k, LLONG_MAX / 2);
-        minSoFar[(k - 1) % k] = 0;
-
-        for (int i = 0; i < nums.size(); i++) {
-            prefSum += nums[i];
-            subMax = max(subMax, prefSum - minSoFar[i % k]);
-            minSoFar[i % k] = min(minSoFar[i % k], prefSum);
+    long long maxSubarraySum(vector<int>& nums, int k) {
+        int n= nums.size();
+        vector<long long>prefSum(n);
+        
+        // calculate prefix sum
+        prefSum[0] = nums[0];
+        for(int i=1; i<n; i++){
+          prefSum[i] = prefSum[i-1] + nums[i];
         }
 
-        return subMax;
+        long long result = LLONG_MIN;
+        for(int start=0; start<k; start++){
+            long long currSum=0;
+
+            int i= start;
+            while(i<n && (i+k-1)<n){
+                int j= i+k-1;
+                long long subSum = prefSum[j] - ((i>0)? prefSum[i-1]: 0);
+                currSum = max(subSum, currSum + subSum);
+                result = max(result, currSum);
+                i+=k;
+            }
+        }
+        return result;
     }
 };
