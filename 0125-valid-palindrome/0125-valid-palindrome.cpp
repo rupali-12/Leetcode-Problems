@@ -1,18 +1,22 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
-        // string temp="";
-        for(int i=0; i<s.length();i++){
-          if(!isalnum(s[i])){
-              s.erase(i, 1);
-              i--;
-          }
-        }
-        transform(s.begin(), s.end(), s.begin(), ::tolower);
-        for(int i=0; i<s.length()/2; i++){
-            if(s[i]!=s[s.length()-i-1]){
+        int left= 0, right =s.length()-1;
+        while(left<right){
+            while(left<right && !isalnum(s[left])){
+                left++;
+            }
+            while(left<right && !isalnum(s[right])){
+                right--;
+            }
+ 
+            // if after converting lowercase not match then false
+            if(tolower(s[left])!= tolower(s[right])){
                 return false;
             }
+
+            left++;
+            right--;
         }
         return true;
     }
