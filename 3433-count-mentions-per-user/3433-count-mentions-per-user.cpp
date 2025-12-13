@@ -1,53 +1,63 @@
 class Solution {
 public:
-    using info=tuple<int, char, string>; //(timestamp, kind, users)
-    static void print(auto& X){
-        for(auto& x: X){
-            auto& [t, k, s]=x;
-            cout<<t<<"|"<<k<<"|"<<s<<endl;
+    void applyMessageEvent(vector<string>event, vector<int>&mentionCount, vector<int>offlineTime){
+        int timestamp = stoi(event[1]);
+        vector<string>ids;
+        stringstream ss(event[2]);
+        string token;
+        while(ss >> token){  // by default it will break based on white space  id0 id1 
+           ids.push_back(token);
+        }
+
+        // process all ids 
+        for(auto id: ids){
+           if(id == "ALL"){
+            //   increase count of every user 
+            for(int i=0; i<mentionCount.size(); i++){
+                mentionCount[i]++;
+            }
+           }
+           else if(id == "HERE"){
+            //  count of specified user if its offline or its case when it just came online
+              for(int i=0; i<mentionCount.size(); i++){
+                if(offlineTime[i]==0 || (offlineTime[i]+ 60)<= timestamp){
+                    mentionCount[i]++;
+                }
+              }
+           }
+           else{
+              mentionCount[stoi(id.substr(2))]++; // fetch id value like 0 from id0
+           }
         }
     }
-    static void data_proc(vector<string>& event, vector<info>& X){
-        int t=stoi(event[1]);
-        char k=event[0]=="MESSAGE"?'M':'A';
-        if (k=='A') X.emplace_back(t+60, '1', event[2]);
-        X.emplace_back(t, k, event[2]);
-    }
-    static vector<int> countMentions(int n, vector<vector<string>>& events) {
-        vector<int> freq(n, 0);
-        vector<info> X;
-        X.reserve(n*3);
-        for (auto& e: events)
-            data_proc(e, X);
-        sort(X.begin(), X.end());
-    //    print(X);
-        bitset<100> online;
-        online.set();// all bits set 1
-    //    cout<<online<<endl;
-        for(auto& x: X){
-            auto& [t, k, s]=x;
-            if (k!='M'){
-                int user=stoi(s);
-                online.flip(user);
+    vector<int> countMentions(int numberOfUsers, vector<vector<string>>& events) {
+        vector<int>mentionCount(numberOfUsers);
+        vector<int>offlineTime(numberOfUsers);
+
+        auto lambda = [](vector<string>&v1, vector<string>&v2){
+            int t1 = stoi(v1[1]);
+            int t2 = stoi(v2[1]);
+
+            if(t1==t2){
+                return v1[0][1] >v2[0][1]; // comparing 'O' of offline with 'M' of message
+                // OFFLINE should be first
             }
-            else{
-                if (s=="ALL") 
-                    for_each(freq.begin(), freq.end(), [](int& x){
-                        return ++x;});
-                else if(s=="HERE"){
-        //            cout<<online<<endl;
-                    for(int i=0; i<n; i++)
-                        freq[i]+=online[i];
-                }
-                else{
-                    stringstream ss(s);
-                    char c;
-                    int user;
-                    while(ss>>c>>c>>user)
-                        freq[user]++;
-                }
+
+            return t1 < t2;
+        };
+
+        sort(events.begin(), events.end(), lambda);
+
+        for(auto event: events){
+            if(event[0] == "MESSAGE"){
+                applyMessageEvent(event, mentionCount, offlineTime);
+            }
+            else if(event[0]=="OFFLINE"){
+                int timestamp = stoi(event[1]);
+                int id = stoi(event[2]);
+                offlineTime[id] = timestamp;
             }
         }
-        return freq;
+    return mentionCount;
     }
 };
