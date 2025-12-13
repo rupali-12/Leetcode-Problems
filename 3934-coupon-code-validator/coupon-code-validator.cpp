@@ -1,37 +1,48 @@
 class Solution {
 public:
-    bool isValid(string code, string bussLine, bool isActive){
-        if(!isActive) return false;
-        if(bussLine!="electronics" && bussLine!="grocery" && bussLine!="pharmacy" && bussLine!="restaurant") return false;
-        if(code=="") return false;
-        for(int i=0; i<code.length(); i++){
-            if(!isalnum(code[i]) && code[i]!='_') return false;
+    bool isValid(const string& code, const string& bussLine, bool isActive){
+        if(!isActive || code.empty()) return false;
+
+        for(char c : code){
+            if(!isalnum((unsigned char)c) && c != '_')
+                return false;
         }
         return true;
     }
-    vector<string> validateCoupons(vector<string>& code, vector<string>& businessLine, vector<bool>& isActive) {
-        int n= code.size();
 
-        vector<pair<string, string>>validCoupons;
+    vector<string> validateCoupons(vector<string>& code,
+                                   vector<string>& businessLine,
+                                   vector<bool>& isActive) {
 
-        // store valid coupons 
-        for(int i=0; i<n; i++){
-           if(isValid(code[i], businessLine[i], isActive[i])){
-               validCoupons.push_back({businessLine[i], code[i]});
-            }
+        vector<string> electronics, grocery, pharmacy, restaurant;
+
+        for(int i = 0; i < code.size(); i++){
+            if(!isValid(code[i], businessLine[i], isActive[i])) continue;
+
+            if(businessLine[i] == "electronics")
+                electronics.push_back(code[i]);
+            else if(businessLine[i] == "grocery")
+                grocery.push_back(code[i]);
+            else if(businessLine[i] == "pharmacy")
+                pharmacy.push_back(code[i]);
+            else if(businessLine[i] == "restaurant")
+                restaurant.push_back(code[i]);
         }
 
-        auto lambda = [](pair<string, string>& v1, pair<string, string>&v2){
-            if(v1.first == v2.first){
-                return v1.second < v2.second;
-            }
-            return v1.first < v2.first;
-        };
-        sort(validCoupons.begin(), validCoupons.end(), lambda);
-        vector<string>ans;
-        for(auto entry: validCoupons){
-            ans.push_back(entry.second);
-        }
+        sort(electronics.begin(), electronics.end());
+        sort(grocery.begin(), grocery.end());
+        sort(pharmacy.begin(), pharmacy.end());
+        sort(restaurant.begin(), restaurant.end());
+
+        vector<string> ans;
+        ans.reserve(electronics.size() + grocery.size() +
+                    pharmacy.size() + restaurant.size());
+
+        ans.insert(ans.end(), electronics.begin(), electronics.end());
+        ans.insert(ans.end(), grocery.begin(), grocery.end());
+        ans.insert(ans.end(), pharmacy.begin(), pharmacy.end());
+        ans.insert(ans.end(), restaurant.begin(), restaurant.end());
+
         return ans;
     }
 };
