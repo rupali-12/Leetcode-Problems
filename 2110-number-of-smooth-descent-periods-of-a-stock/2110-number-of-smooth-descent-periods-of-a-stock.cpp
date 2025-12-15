@@ -22,9 +22,9 @@ public:
 
         // Approach- 2: Two pointer 
         long long ans=1;   // Include first element
-        int i=0, j=0;
+        int i=0, j=1;
 
-        for(j=1; j<n; j++){
+        while(j<n){
             if(prices[j] == prices[j-1]-1){
                 ans+= j-i+1;
             }
@@ -32,6 +32,7 @@ public:
                 i=j;
                 ans+=1;
             }
+                j++;
         }
         return ans;
     }
