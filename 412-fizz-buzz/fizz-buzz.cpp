@@ -5,7 +5,6 @@ public:
         for(int i=1; i<=n; i++){
             if(i%3==0) ans[i] = "Fizz";
             if(i%5==0){
-                // ans[i]=""? "Buzz": (ans[i]+"Buzz");
                 ans[i]= ans[i]+"Buzz";
             }
             if(ans[i]=="") ans[i] = to_string(i);
