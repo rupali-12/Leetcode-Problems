@@ -12,7 +12,7 @@ public:
         if(CASE==0) return 0;  // all existing transaction completed now u r out of bound so valid case
         return INT_MIN;   // Invalid case, incomplete transaction with out of bound
        }
-       
+
       if(dp[i][k][CASE]!=INT_MIN){
         return dp[i][k][CASE];
       }
@@ -41,13 +41,49 @@ public:
     long long maximumProfit(vector<int>& prices, int k) {
         int n= prices.size();
 
-        for(int i=0; i<n; i++){
-            for(int j=0; j<=k; j++){
-                for(int K=0; K<3; K++){
-                    dp[i][j][K]=INT_MIN;
-                }
-            }
+        // // Top down -> dp+Memoization 
+        // for(int i=0; i<n; i++){
+        //     for(int j=0; j<=k; j++){
+        //         for(int K=0; K<3; K++){
+        //             dp[i][j][K]=INT_MIN;
+        //         }
+        //     }
+        // }
+        // return solve(0, k, 0, prices);    // k, 0(initially fresh case)
+
+        // Approcah-2: Bottom up -> Tabulation 
+        // base case
+        
+        for(int i=0; i<=k; i++){
+           dp[n][i][0]=0;
+           dp[n][i][1] = INT_MIN;
+           dp[n][i][2] = INT_MIN;
         }
-        return solve(0, k, 0, prices);    // k, 0(initially fresh case)
+
+        for(int i=n-1; i>=0; i--){
+          for(int K=0; K<=k; K++){
+            for(int CASE=0; CASE<3; CASE++){
+                long long take=INT_MIN;
+                long long notTake = dp[i+1][K][CASE];
+
+                if(K>0){
+                    if(CASE == 1){
+                        // complete normal transaction 
+                       take = prices[i] + dp[i+1][K-1][0];
+                    }
+                    else if(CASE ==2){
+                        // complete short transaction 
+                       take = -prices[i] + dp[i+1][K-1][0];
+                    }
+                    else{
+                        // fresh transaction
+                       take = max((-prices[i] + dp[i+1][K][1]), (prices[i] + dp[i+1][K][2]));
+                    }
+                }
+                dp[i][K][CASE] = max(notTake, take);
+            }
+          }
+        }
+        return dp[0][k][0];
     }
 };
