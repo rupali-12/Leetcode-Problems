@@ -140,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
+| [2092-find-all-people-with-secret](https://github.com/rupali-12/Leetcode-Problems/tree/master/2092-find-all-people-with-secret) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/rupali-12/Leetcode-Problems/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [3433-count-mentions-per-user](https://github.com/rupali-12/Leetcode-Problems/tree/master/3433-count-mentions-per-user) |
@@ -207,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/rupali-12/Leetcode-Problems/tree/master/0128-longest-consecutive-sequence) |
+| [2092-find-all-people-with-secret](https://github.com/rupali-12/Leetcode-Problems/tree/master/2092-find-all-people-with-secret) |
 ## Matrix
 |  |
 | ------- |
@@ -278,5 +280,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [2092-find-all-people-with-secret](https://github.com/rupali-12/Leetcode-Problems/tree/master/2092-find-all-people-with-secret) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/rupali-12/Leetcode-Problems/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
+## Breadth-First Search
+|  |
+| ------- |
+| [2092-find-all-people-with-secret](https://github.com/rupali-12/Leetcode-Problems/tree/master/2092-find-all-people-with-secret) |
+## Graph
+|  |
+| ------- |
+| [2092-find-all-people-with-secret](https://github.com/rupali-12/Leetcode-Problems/tree/master/2092-find-all-people-with-secret) |
 <!---LeetCode Topics End-->
