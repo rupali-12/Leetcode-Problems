@@ -63,6 +63,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/rupali-12/Leetcode-Problems/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3583-count-special-triplets](https://github.com/rupali-12/Leetcode-Problems/tree/master/3583-count-special-triplets) |
@@ -82,6 +83,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0088-merge-sorted-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0088-merge-sorted-array) |
 | [0128-longest-consecutive-sequence](https://github.com/rupali-12/Leetcode-Problems/tree/master/0128-longest-consecutive-sequence) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rupali-12/Leetcode-Problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0169-majority-element](https://github.com/rupali-12/Leetcode-Problems/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/rupali-12/Leetcode-Problems/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/rupali-12/Leetcode-Problems/tree/master/0238-product-of-array-except-self) |
@@ -125,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0041-first-missing-positive](https://github.com/rupali-12/Leetcode-Problems/tree/master/0041-first-missing-positive) |
 | [0076-minimum-window-substring](https://github.com/rupali-12/Leetcode-Problems/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/rupali-12/Leetcode-Problems/tree/master/0128-longest-consecutive-sequence) |
+| [0169-majority-element](https://github.com/rupali-12/Leetcode-Problems/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/rupali-12/Leetcode-Problems/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0219-contains-duplicate-ii) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
@@ -147,6 +150,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0015-3sum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/rupali-12/Leetcode-Problems/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0088-merge-sorted-array) |
+| [0169-majority-element](https://github.com/rupali-12/Leetcode-Problems/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/rupali-12/Leetcode-Problems/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
@@ -200,6 +204,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/rupali-12/Leetcode-Problems/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
 |  |
