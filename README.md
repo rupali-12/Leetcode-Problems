@@ -79,6 +79,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0041-first-missing-positive](https://github.com/rupali-12/Leetcode-Problems/tree/master/0041-first-missing-positive) |
 | [0042-trapping-rain-water](https://github.com/rupali-12/Leetcode-Problems/tree/master/0042-trapping-rain-water) |
+| [0074-search-a-2d-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/rupali-12/Leetcode-Problems/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0088-merge-sorted-array) |
 | [0128-longest-consecutive-sequence](https://github.com/rupali-12/Leetcode-Problems/tree/master/0128-longest-consecutive-sequence) |
@@ -228,6 +229,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0074-search-a-2d-matrix) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2536-increment-submatrices-by-one](https://github.com/rupali-12/Leetcode-Problems/tree/master/2536-increment-submatrices-by-one) |
 ## Enumeration
@@ -239,6 +241,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+| [0074-search-a-2d-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0074-search-a-2d-matrix) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rupali-12/Leetcode-Problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0704-binary-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0704-binary-search) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/rupali-12/Leetcode-Problems/tree/master/2141-maximum-running-time-of-n-computers) |
