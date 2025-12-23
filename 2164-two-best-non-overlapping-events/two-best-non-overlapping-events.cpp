@@ -2,13 +2,13 @@ class Solution {
 public:
 int n;
 int dp[100001][3];
-   int binarySearch(vector<vector<int>>& events, int currEndTime){
-      int low= 0;
+   int binarySearch(vector<vector<int>>& events, int currIdx){
+      int low= currIdx+1;
       int high= n-1;
       int ans=n;
       while(low<=high){
         int mid = low + (high-low)/2;
-        if(events[mid][0] > currEndTime){
+        if(events[mid][0] > events[currIdx][1]){
             ans = mid;
             high= mid-1;
         }
@@ -27,7 +27,7 @@ int dp[100001][3];
         return dp[i][count];
     }
     
-    int nextValidIdx = binarySearch(events, events[i][1]);   // end time of current index i
+    int nextValidIdx = binarySearch(events, i);   
     int take = events[i][2] + solve(events, nextValidIdx, count+1);
     int notTake = solve(events, i+1, count);
     return dp[i][count] = max(take, notTake);
