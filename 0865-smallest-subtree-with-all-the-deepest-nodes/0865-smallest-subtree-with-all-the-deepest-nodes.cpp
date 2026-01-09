@@ -23,7 +23,6 @@ public:
     }
     TreeNode* subtreeWithAllDeepest(TreeNode* root) {
         dfs(root, 0);
-    //    cout<<maxDepth<<endl;
         return lca;
     }
 };
