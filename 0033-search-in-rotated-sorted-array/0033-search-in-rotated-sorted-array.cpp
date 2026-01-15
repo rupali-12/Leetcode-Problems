@@ -1,33 +1,28 @@
 class Solution {
 public:
-    int search(vector<int>& arr, int target) {
-        int n= arr.size();
-          int s=0, e=n-1;
-    int mid = s+(e-s)/2;
-    while(s<=e){
-         mid = s+(e-s)/2;
-        if(arr[mid]==target){
-            return mid;
-        }
-//         right part is sorted >>
-        else if(arr[mid]<arr[s]){
-            if(target>arr[mid] && target<=arr[n-1]){
+    int search(vector<int>& nums, int target) {
+        int s =0, e=nums.size()-1;
+        while(s<=e){
+            int mid= s+(e-s)/2;
+            if(nums[mid]==target) return mid;
+            // if right part is sorted 
+            else if(nums[mid]<nums[s]){
+              if(target > nums[mid] && target<=nums[e]){
                 s = mid+1;
+              }
+              else{
+                e=mid-1;
+              }
             }
-            else{
-                e = mid-1;
+            else{    // left part is sorted
+              if(target<nums[mid] && target>=nums[s]){
+                e=mid-1;
+              }
+              else{
+                s=mid+1;
+              }
             }
         }
-        else{
-            if(target<arr[mid] && target>=arr[s]){
-                e= mid-1;
-            }
-            else{
-                s= mid+1;
-            }
-        }
-        mid = s+(e-s)/2;
-    }
-    return -1;
+        return -1;
     }
 };
