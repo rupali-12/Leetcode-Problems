@@ -6,7 +6,7 @@ public:
             int mid= s+(e-s)/2;
             if(nums[mid]==target) return mid;
             // if right part is sorted 
-             if(nums[mid]<nums[s]){
+            else if(nums[mid]<nums[s]){
               if(target > nums[mid] && target<=nums[e]){
                 s = mid+1;
               }
