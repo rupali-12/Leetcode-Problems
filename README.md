@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0013-roman-to-integer](https://github.com/rupali-12/Leetcode-Problems/tree/master/0013-roman-to-integer) |
 | [0412-fizz-buzz](https://github.com/rupali-12/Leetcode-Problems/tree/master/0412-fizz-buzz) |
+| [0812-largest-triangle-area](https://github.com/rupali-12/Leetcode-Problems/tree/master/0812-largest-triangle-area) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1523-count-odd-numbers-in-an-interval-range](https://github.com/rupali-12/Leetcode-Problems/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 | [1925-count-square-sum-triples](https://github.com/rupali-12/Leetcode-Problems/tree/master/1925-count-square-sum-triples) |
@@ -100,6 +101,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0704-binary-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0704-binary-search) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/rupali-12/Leetcode-Problems/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
+| [0812-largest-triangle-area](https://github.com/rupali-12/Leetcode-Problems/tree/master/0812-largest-triangle-area) |
 | [0944-delete-columns-to-make-sorted](https://github.com/rupali-12/Leetcode-Problems/tree/master/0944-delete-columns-to-make-sorted) |
 | [0953-verifying-an-alien-dictionary](https://github.com/rupali-12/Leetcode-Problems/tree/master/0953-verifying-an-alien-dictionary) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0955-delete-columns-to-make-sorted-ii) |
@@ -302,6 +304,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Geometry
 |  |
 | ------- |
+| [0812-largest-triangle-area](https://github.com/rupali-12/Leetcode-Problems/tree/master/0812-largest-triangle-area) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/rupali-12/Leetcode-Problems/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3623-count-number-of-trapezoids-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3625-count-number-of-trapezoids-ii) |
