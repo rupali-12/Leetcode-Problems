@@ -23,11 +23,26 @@ public:
         return dp[i][j] = upper_left + upper_right;
     }
     double champagneTower(int poured, int query_row, int query_glass) {
-        for(int i=0; i<101; i++){
-            for(int j=0; j<101; j++){
-                dp[i][j] =-1;
+        // // Approach 1- Recursion + Memoization
+        // for(int i=0; i<101; i++){
+        //     for(int j=0; j<101; j++){
+        //         dp[i][j] =-1;
+        //     }
+        // }
+        // return min(1.0, solve(poured, query_row, query_glass));
+
+        // Approach -2: Tabulation
+        double t[101][101]={0.0};
+        t[0][0]=poured;
+        for(int i=0; i<query_row; i++){
+            for(int j=0; j<=i; j++){
+                if(t[i][j]>1.0){
+                    double overflow = (t[i][j]-1.0)/2.0;
+                    t[i+1][j] +=overflow;
+                    t[i+1][j+1] +=overflow;
+                }
             }
         }
-        return min(1.0, solve(poured, query_row, query_glass));
+        return min(1.0, t[query_row][query_glass]);
     }
 };
