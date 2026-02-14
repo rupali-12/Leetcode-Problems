@@ -238,6 +238,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/rupali-12/Leetcode-Problems/tree/master/0005-longest-palindromic-substring) |
 | [0042-trapping-rain-water](https://github.com/rupali-12/Leetcode-Problems/tree/master/0042-trapping-rain-water) |
 | [0647-palindromic-substrings](https://github.com/rupali-12/Leetcode-Problems/tree/master/0647-palindromic-substrings) |
+| [0799-champagne-tower](https://github.com/rupali-12/Leetcode-Problems/tree/master/0799-champagne-tower) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/1458-max-dot-product-of-two-subsequences) |
 | [1578-minimum-time-to-make-rope-colorful](https://github.com/rupali-12/Leetcode-Problems/tree/master/1578-minimum-time-to-make-rope-colorful) |
