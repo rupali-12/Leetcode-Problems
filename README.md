@@ -183,6 +183,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0015-3sum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/rupali-12/Leetcode-Problems/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0088-merge-sorted-array) |
+| [0148-sort-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/rupali-12/Leetcode-Problems/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/rupali-12/Leetcode-Problems/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
@@ -257,6 +258,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 |  |
 | ------- |
+| [0148-sort-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/rupali-12/Leetcode-Problems/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0190-reverse-bits) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
@@ -332,6 +334,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0075-sort-colors](https://github.com/rupali-12/Leetcode-Problems/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/rupali-12/Leetcode-Problems/tree/master/0125-valid-palindrome) |
+| [0148-sort-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0148-sort-list) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rupali-12/Leetcode-Problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0567-permutation-in-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/rupali-12/Leetcode-Problems/tree/master/0647-palindromic-substrings) |
@@ -425,4 +428,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/rupali-12/Leetcode-Problems/tree/master/3650-minimum-cost-path-with-edge-reversals) |
+## Linked List
+|  |
+| ------- |
+| [0148-sort-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0148-sort-list) |
+## Merge Sort
+|  |
+| ------- |
+| [0148-sort-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0148-sort-list) |
 <!---LeetCode Topics End-->
