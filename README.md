@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0013-roman-to-integer](https://github.com/rupali-12/Leetcode-Problems/tree/master/0013-roman-to-integer) |
 | [0412-fizz-buzz](https://github.com/rupali-12/Leetcode-Problems/tree/master/0412-fizz-buzz) |
+| [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/rupali-12/Leetcode-Problems/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0812-largest-triangle-area](https://github.com/rupali-12/Leetcode-Problems/tree/master/0812-largest-triangle-area) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1523-count-odd-numbers-in-an-interval-range](https://github.com/rupali-12/Leetcode-Problems/tree/master/1523-count-odd-numbers-in-an-interval-range) |
@@ -212,6 +213,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0401-binary-watch](https://github.com/rupali-12/Leetcode-Problems/tree/master/0401-binary-watch) |
 | [0693-binary-number-with-alternating-bits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0693-binary-number-with-alternating-bits) |
 | [0756-pyramid-transition-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0756-pyramid-transition-matrix) |
+| [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/rupali-12/Leetcode-Problems/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/rupali-12/Leetcode-Problems/tree/master/1018-binary-prefix-divisible-by-5) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [3315-construct-the-minimum-bitwise-array-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
