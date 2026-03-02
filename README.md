@@ -156,6 +156,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3640-trionic-array-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3640-trionic-array-ii) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/rupali-12/Leetcode-Problems/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
+| [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 ## Hash Table
 |  |
 | ------- |
@@ -187,6 +188,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3623-count-number-of-trapezoids-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3625-count-number-of-trapezoids-ii) |
 | [3714-longest-balanced-substring-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3714-longest-balanced-substring-ii) |
+| [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 ## Sorting
 |  |
 | ------- |
@@ -237,6 +239,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/rupali-12/Leetcode-Problems/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
 | [3714-longest-balanced-substring-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3714-longest-balanced-substring-ii) |
+| [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 ## Sliding Window
 |  |
 | ------- |
@@ -278,6 +281,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0169-majority-element](https://github.com/rupali-12/Leetcode-Problems/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0190-reverse-bits) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
+| [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -435,6 +439,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3454-separate-squares-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3454-separate-squares-ii) |
+| [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 ## Line Sweep
 |  |
 | ------- |
