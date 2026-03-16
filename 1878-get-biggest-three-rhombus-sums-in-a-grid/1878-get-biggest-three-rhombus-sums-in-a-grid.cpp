@@ -3,7 +3,7 @@ public:
     vector<int> getBiggestThree(vector<vector<int>>& grid) {
         int m = grid.size();
         int n = grid[0].size();
-        // Approach 1: Brute force
+        // Approach 1: Brute force  TC= O(m*n*(side)^2)  SC = O(1)
         set<int>st;
 
        auto addSet = [&](int sum){
