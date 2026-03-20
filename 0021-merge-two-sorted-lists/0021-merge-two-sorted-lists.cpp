@@ -10,48 +10,35 @@
  */
 class Solution {
 public:
-   ListNode* solve(ListNode* first, ListNode* second){
-    if(first->next==NULL){
-        first->next=second;
-        return first;
-    }
-
-    ListNode* curr1= first;
-    ListNode* next1= first->next;
-    ListNode* curr2= second;
-    ListNode* next2= second->next;
-    while(next1!=NULL && curr2!=NULL){
-        if(curr2->val >= curr1->val && curr2->val <= next1->val){
-            curr1->next = curr2;
-            next2= curr2->next;
-            curr2->next= next1;
-            curr1= curr2;
-            curr2= next2;
-        }
-        else{
-            curr1= next1;
-            next1= next1->next;
-
-            if (next1 == NULL) {
-              curr1->next = curr2;
-              return first;
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        ListNode* head1 =list1, *head2= list2;
+        ListNode* ans=new ListNode(0);
+        ListNode* temp=ans;
+        while(head1!=NULL && head2!=NULL){
+            if(head1->val < head2->val){
+                temp->next = new ListNode(head1->val);
+                temp= temp->next;
+                head1= head1->next;
+            }
+            else{
+                temp->next = new ListNode(head2->val);
+                temp= temp->next;
+                head2= head2->next;
             }
         }
-    }
-    return first;
-}
-    ListNode* mergeTwoLists(ListNode* first, ListNode* second) {
-         if(first==NULL){
-       return second;
-   }
-   if(second==NULL){
-       return first;
-   }
-   if(first->val<=second->val){
-       return solve(first, second);
-   }
-   else{
-       return solve(second, first);
-   }
+
+        while(head1!=NULL){
+             temp->next = new ListNode(head1->val);
+                temp= temp->next;
+                head1= head1->next;
+        }
+
+        while(head2!=NULL){
+                temp->next = new ListNode(head2->val);
+                temp= temp->next;
+                head2= head2->next;
+        }
+
+        return ans->next;
     }
 };
