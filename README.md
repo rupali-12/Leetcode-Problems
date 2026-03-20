@@ -499,6 +499,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Linked List
 |  |
 | ------- |
+| [0021-merge-two-sorted-lists](https://github.com/rupali-12/Leetcode-Problems/tree/master/0021-merge-two-sorted-lists) |
 | [0141-linked-list-cycle](https://github.com/rupali-12/Leetcode-Problems/tree/master/0141-linked-list-cycle) |
 | [0148-sort-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0148-sort-list) |
 | [0206-reverse-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0206-reverse-linked-list) |
@@ -510,6 +511,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Recursion
 |  |
 | ------- |
+| [0021-merge-two-sorted-lists](https://github.com/rupali-12/Leetcode-Problems/tree/master/0021-merge-two-sorted-lists) |
 | [0206-reverse-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0206-reverse-linked-list) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/1545-find-kth-bit-in-nth-binary-string) |
 ## Design
