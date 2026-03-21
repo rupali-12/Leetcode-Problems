@@ -10,40 +10,40 @@
  */
 class Solution {
 public:
-    int findLength(ListNode* head){
-        ListNode* temp= head;
-        int len=0;
-        while(temp!=NULL){
-            len++;
-            temp= temp->next;
-        }
-        return len;
+int findLength(ListNode* head){
+    if(head==NULL) return 0;
+    int ans=0;
+    ListNode* temp = head;
+    while(temp!=NULL){
+        ans++;
+        temp= temp->next;
     }
-    void deleteNode(ListNode* &head, int nodeFromStart){
-         // case of delete first node 
-        if(nodeFromStart==1){
-            head= head->next;
-            return;
-        }
-        
-        // Delete any other node 
-        ListNode* temp= head;
-        int i=1;
-        while(i<nodeFromStart-1){
-            i++;
-            temp=temp->next;
-        }
-        temp->next= temp->next->next;
+    return ans;
+}
+void deleteFromStart(ListNode* &head, int nodeFromStart){
+    if(nodeFromStart==1){
+        head= head->next;
         return;
     }
+    int i=1;
+    ListNode* temp = head;
+    while(i < nodeFromStart-1){
+        temp= temp->next;
+        i++;
+    }
+    temp->next =temp->next->next;
+    return;
+}
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        if(head->next==NULL) return NULL;
-        
-        int length= findLength(head);
-        int nodeFromStart= length - n +1;
-        if(length>=nodeFromStart){
-            deleteNode(head, nodeFromStart);
+        if(head->next==NULL){
+          return NULL;
         }
-       return head;
+        int length =findLength(head);
+
+        int nodeFromStart = length - n+1;
+        if(length >= nodeFromStart){
+            deleteFromStart(head, nodeFromStart);
+        }
+        return head;
     }
 };
