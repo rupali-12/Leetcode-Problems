@@ -117,6 +117,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0219-contains-duplicate-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/rupali-12/Leetcode-Problems/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0239-sliding-window-maximum) |
+| [0287-find-the-duplicate-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 | [0704-binary-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0704-binary-search) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/rupali-12/Leetcode-Problems/tree/master/0717-1-bit-and-2-bit-characters) |
@@ -241,6 +242,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0190-reverse-bits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0190-reverse-bits) |
+| [0287-find-the-duplicate-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0287-find-the-duplicate-number) |
 | [0401-binary-watch](https://github.com/rupali-12/Leetcode-Problems/tree/master/0401-binary-watch) |
 | [0693-binary-number-with-alternating-bits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0693-binary-number-with-alternating-bits) |
 | [0756-pyramid-transition-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0756-pyramid-transition-matrix) |
@@ -370,6 +372,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0074-search-a-2d-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0074-search-a-2d-matrix) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rupali-12/Leetcode-Problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0287-find-the-duplicate-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0287-find-the-duplicate-number) |
 | [0704-binary-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0704-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/rupali-12/Leetcode-Problems/tree/master/0875-koko-eating-bananas) |
 | [0981-time-based-key-value-store](https://github.com/rupali-12/Leetcode-Problems/tree/master/0981-time-based-key-value-store) |
@@ -402,6 +405,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/rupali-12/Leetcode-Problems/tree/master/0141-linked-list-cycle) |
 | [0148-sort-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0148-sort-list) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rupali-12/Leetcode-Problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0287-find-the-duplicate-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0287-find-the-duplicate-number) |
 | [0567-permutation-in-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/rupali-12/Leetcode-Problems/tree/master/0647-palindromic-substrings) |
 | [0876-middle-of-the-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0876-middle-of-the-linked-list) |
