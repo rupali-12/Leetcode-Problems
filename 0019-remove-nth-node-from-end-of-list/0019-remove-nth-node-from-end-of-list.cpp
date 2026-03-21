@@ -19,16 +19,11 @@ public:
         }
         return len;
     }
-    ListNode* removeNthFromEnd(ListNode* head, int n) {
-        if(head->next==NULL) return NULL;
-        
-        int length= findLength(head);
-        int nodeFromStart= length - n +1;
-        
-        // case of delete first node 
+    void deleteNode(ListNode* &head, int nodeFromStart){
+         // case of delete first node 
         if(nodeFromStart==1){
             head= head->next;
-            return head;
+            return;
         }
         
         // Delete any other node 
@@ -39,6 +34,16 @@ public:
             temp=temp->next;
         }
         temp->next= temp->next->next;
-        return head;
+        return;
+    }
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        if(head->next==NULL) return NULL;
+        
+        int length= findLength(head);
+        int nodeFromStart= length - n +1;
+        if(length>=nodeFromStart){
+            deleteNode(head, nodeFromStart);
+        }
+       return head;
     }
 };
