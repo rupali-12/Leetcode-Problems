@@ -17,12 +17,12 @@ public:
            }
         else{
             int last = mat[i][n-1];
-        //   for even row, shift left
+        //   for even row, shift right
              for(int j=n-1; j>0; j--){
                mat[i][j]= mat[i][j-1];
             }
 
-            // Now fill end column position
+            // Now fill first column position
             mat[i][0] = last;
            }
         }
