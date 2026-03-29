@@ -66,6 +66,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2147-number-of-ways-to-divide-a-long-corridor](https://github.com/rupali-12/Leetcode-Problems/tree/master/2147-number-of-ways-to-divide-a-long-corridor) |
 | [2211-count-collisions-on-a-road](https://github.com/rupali-12/Leetcode-Problems/tree/master/2211-count-collisions-on-a-road) |
+| [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 | [3234-count-the-number-of-substrings-with-dominant-ones](https://github.com/rupali-12/Leetcode-Problems/tree/master/3234-count-the-number-of-substrings-with-dominant-ones) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3606-coupon-code-validator](https://github.com/rupali-12/Leetcode-Problems/tree/master/3606-coupon-code-validator) |
