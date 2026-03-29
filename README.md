@@ -125,6 +125,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 | [0704-binary-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0704-binary-search) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/rupali-12/Leetcode-Problems/tree/master/0717-1-bit-and-2-bit-characters) |
+| [0739-daily-temperatures](https://github.com/rupali-12/Leetcode-Problems/tree/master/0739-daily-temperatures) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
 | [0812-largest-triangle-area](https://github.com/rupali-12/Leetcode-Problems/tree/master/0812-largest-triangle-area) |
 | [0875-koko-eating-bananas](https://github.com/rupali-12/Leetcode-Problems/tree/master/0875-koko-eating-bananas) |
@@ -431,6 +432,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0042-trapping-rain-water](https://github.com/rupali-12/Leetcode-Problems/tree/master/0042-trapping-rain-water) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0155-min-stack](https://github.com/rupali-12/Leetcode-Problems/tree/master/0155-min-stack) |
+| [0739-daily-temperatures](https://github.com/rupali-12/Leetcode-Problems/tree/master/0739-daily-temperatures) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/rupali-12/Leetcode-Problems/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [2211-count-collisions-on-a-road](https://github.com/rupali-12/Leetcode-Problems/tree/master/2211-count-collisions-on-a-road) |
 ## Queue
@@ -455,6 +457,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/rupali-12/Leetcode-Problems/tree/master/0042-trapping-rain-water) |
+| [0739-daily-temperatures](https://github.com/rupali-12/Leetcode-Problems/tree/master/0739-daily-temperatures) |
 ## Trie
 |  |
 | ------- |
