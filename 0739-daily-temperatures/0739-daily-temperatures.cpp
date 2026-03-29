@@ -1,23 +1,30 @@
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& temperatures) {
-        int n = temperatures.size();
+        int n= temperatures.size();
         vector<int>ans(n, 0);
-        stack<pair<int, int>>s;
-        s.push({temperatures[n-1], n-1});
-        
+        stack<pair<int, int>>st;
+        st.push({temperatures[n-1], n-1});
+
         for(int i=n-2; i>=0; i--){
-            while(!s.empty() && temperatures[i]>= s.top().first){
-                s.pop();
+            while(!st.empty() && temperatures[i]>=st.top().first){
+                st.pop();
             }
-            
-           // if !s.empty then only you nedd to update ans at that index else left it as 0
-            if(!s.empty()){
-              ans[i] = s.top().second - i;
+
+            // if st is not empty then only update ans at index else leave it is 0
+            if(!st.empty()){
+                ans[i] = st.top().second - i;
             }
-            
-            s.push({temperatures[i], i});
+            st.push({temperatures[i], i});
         }
         return ans;
     }
 };
+
+
+
+
+
+
+
+
