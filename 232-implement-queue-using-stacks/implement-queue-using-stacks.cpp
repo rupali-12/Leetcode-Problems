@@ -1,30 +1,65 @@
 class MyQueue {
 public:
 
-    // Using Arrays 
-    int front;
-    vector<int>arr;
+    // // Using Arrays 
+    // int front;
+    // vector<int>arr;
+    // MyQueue() {
+    //     front=0;
+    // }
+    
+    // void push(int x) {
+    //     arr.push_back(x);
+    // }
+    
+    // int pop() {
+    //     if(empty()) return -1;
+    //     int val= arr[front++];
+    //     return val;
+    // }
+    
+    // int peek() {
+    //     if(empty()) return -1;
+    //     return arr[front];
+    // }
+    
+    // bool empty() {
+    //     return front == arr.size();
+    // }
+
+    // Using Stacks 
+    stack<int>s1, s2;
     MyQueue() {
-        front=0;
     }
     
     void push(int x) {
-        arr.push_back(x);
+       s1.push(x);
     }
     
     int pop() {
-        if(empty()) return -1;
-        int val= arr[front++];
+        if(s2.empty()){
+            while(!s1.empty()){
+                s2.push(s1.top());
+                s1.pop();
+            }
+        }
+        int val = s2.top();
+        s2.pop();
         return val;
     }
     
     int peek() {
-        if(empty()) return -1;
-        return arr[front];
+       if(s2.empty()){
+        while(!s1.empty()){
+            s2.push(s1.top());
+            s1.pop();
+        }
+       }
+       return s2.top();
     }
     
     bool empty() {
-        return front == arr.size();
+        return s1.empty() && s2.empty();
     }
 };
 
