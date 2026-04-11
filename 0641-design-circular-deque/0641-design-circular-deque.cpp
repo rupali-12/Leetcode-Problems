@@ -1,54 +1,73 @@
 class MyCircularDeque {
 public:
-    int maxSize;
-    deque<int>dq;
-    
+    int K, front, rear, currCount;
+    vector<int>deq;
     MyCircularDeque(int k) {
-        maxSize = k;    
+        K=k;
+        deq =vector<int>(K, 0);
+        front=0;
+        rear=K-1;
+        currCount=0;
     }
     
     bool insertFront(int value) {
-        if(isFull()) return false;
-        dq.push_front(value);
+        if(isFull()){
+            return false;
+        }
+        front= (front-1+K)%K;
+        currCount++;
+        deq[front]=value;
         return true;
     }
     
     bool insertLast(int value) {
-         if(isFull()) return false;
-        dq.push_back(value);
+        if(isFull()){
+            return false;
+        }
+        rear= (rear+1)%K;
+        currCount++;
+        deq[rear]=value;
         return true;
     }
     
     bool deleteFront() {
-         if(isEmpty()) return false;
-        dq.pop_front();
+        if(isEmpty()){
+            return false;
+        }
+        front= (front+1)%K;
+        currCount--;
         return true;
     }
     
     bool deleteLast() {
-         if(isEmpty()) return false;
-        dq.pop_back();
-        return true; 
+        if(isEmpty()){
+            return false;
+        }
+        rear= (rear-1+K)%K;
+        currCount--;
+        return true;   
     }
     
     int getFront() {
-        if(!isEmpty()) return dq.front();
-        return -1;
+        if(isEmpty()){
+            return -1;
+        }
+        return deq[front];
     }
     
     int getRear() {
-        if(!isEmpty()) return dq.back();
-        return -1;
+        if(isEmpty()){
+            return -1;
+        }
+        return deq[rear];
     }
     
     bool isEmpty() {
-        if(dq.size()==0) return true;
-        return false;
+        return currCount ==0;
     }
     
     bool isFull() {
-        if(dq.size()==maxSize) return true;
-        return false;
+        return currCount == K;
     }
 };
 
