@@ -1,51 +1,80 @@
 class Solution {
 public:
-    long long minimumTotalDistance(vector<int>& robot, vector<vector<int>>& factory) {
-        // Sort both robots and factories for optimal assignment
-        sort(robot.begin(), robot.end());
-        sort(factory.begin(), factory.end());
-        
-        int m = robot.size(), n = factory.size();
-        // dp[i][j]: minimum total distance for robots[i:] using factories[j:]
-        vector<vector<long long>> dp(m + 1, vector<long long>(n + 1));
-        
-        // Base case: if no factories are available, distance is infinity
-        for (int i = 0; i < m; i++) {
-            dp[i][n] = LLONG_MAX;
+  typedef long long ll;
+   vector<vector<ll>>dp;
+    ll solve(int r, int f, vector<int> robots, vector<int> positions){
+        if(r >= robots.size()) return 0;
+        if(f >= positions.size()) return LLONG_MAX;
+        if(dp[r][f]!=-1){
+            return dp[r][f];
         }
-        
-        // Process each factory from right to left
-        for (int j = n - 1; j >= 0; j--) {
-            // Track cumulative distance from current factory to robots
-            long long prefix = 0;
-            // Deque stores pairs of (robot index, minimum distance)
-            deque<pair<int, long long>> qq;
-            // Initialize with base case
-            qq.push_back({m, 0});
-            
-            // Process each robot from right to left
-            for (int i = m - 1; i >= 0; i--) {
-                // Add distance from current robot to current factory
-                prefix += abs(robot[i] - factory[j][0]);
-                
-                // Remove entries that exceed factory capacity
-                while (!qq.empty() && qq.front().first > i + factory[j][1]) {
-                    qq.pop_front();
-                }
-                
-                // Maintain monotonic property of deque
-                while (!qq.empty() && qq.back().second >= dp[i][j + 1] - prefix) {
-                    qq.pop_back();
-                }
-                
-                // Add current state to deque
-                qq.push_back({i, dp[i][j + 1] - prefix});
-                // Calculate minimum distance for current state
-                dp[i][j] = qq.front().second + prefix;
+
+        ll next = solve(r+1, f+1, robots, positions);
+        ll take_curr_factory;
+        if(next != LLONG_MAX){   
+            take_curr_factory = abs((ll)robots[r] - positions[f]) + next;
+        }
+
+        ll skip_curr_factory = solve(r, f+1, robots, positions);
+
+        return dp[r][f] = min(take_curr_factory, skip_curr_factory);
+    }
+    long long minimumTotalDistance(vector<int>& robot, vector<vector<int>>& factory) {
+        // // Approach: 1 Using DP _Memoization
+        // // sort
+        // sort(robot.begin(), robot.end());
+        // sort(factory.begin(), factory.end());
+
+        // // Expand all factory to avoid limit processing
+        // vector<int>positions;
+        // for(int i=0; i<factory.size(); i++){
+        //     int pos = factory[i][0];
+        //     int limit = factory[i][1];
+
+        //     for(int j=0; j<limit; j++){
+        //         positions.push_back(pos);
+        //     }
+        // }
+
+        //  dp = vector<vector<ll>>(robot.size()+1, vector<ll>(positions.size()+1, -1));
+
+        // // recursion
+        // return solve(0, 0, robot, positions);
+
+        // Approach -2: Top Bottom 
+         sort(robot.begin(), robot.end());
+        sort(factory.begin(), factory.end());
+
+        // Expand all factory to avoid limit processing
+        vector<int>positions;
+        for(int i=0; i<factory.size(); i++){
+            int pos = factory[i][0];
+            int limit = factory[i][1];
+
+            for(int j=0; j<limit; j++){
+                positions.push_back(pos);
             }
         }
+        int n=robot.size();
+        int m=positions.size();
+        dp = vector<vector<ll>>(n+1, vector<ll>(m+1, LLONG_MAX));
         
-        // Return minimum total distance starting from first robot and first factory
-        return dp[0][0];
+        // No robot left
+        for(int j=0; j<=m; j++){
+            dp[n][j]=0;
+        }
+
+        for(int i= n-1; i>=0; i--){
+            for(int j=m-1; j>=0; j--){
+                ll skip= dp[i][j+1];
+
+                ll take=LLONG_MAX;
+                if(dp[i+1][j+1]!=LLONG_MAX){
+                    take = abs((ll)robot[i]-positions[j])+dp[i+1][j+1];
+                }
+                dp[i][j] =min(take, skip);
+            }
+        }
+       return dp[0][0];
     }
 };
