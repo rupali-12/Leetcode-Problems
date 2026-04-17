@@ -28,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3623-count-number-of-trapezoids-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3625-count-number-of-trapezoids-ii) |
+| [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/rupali-12/Leetcode-Problems/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 ## Simulation
 |  |
 | ------- |
@@ -208,6 +209,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
+| [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/rupali-12/Leetcode-Problems/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 ## Hash Table
 |  |
 | ------- |
@@ -247,6 +249,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
+| [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/rupali-12/Leetcode-Problems/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 ## Sorting
 |  |
 | ------- |
