@@ -68,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0981-time-based-key-value-store](https://github.com/rupali-12/Leetcode-Problems/tree/master/0981-time-based-key-value-store) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/rupali-12/Leetcode-Problems/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
+| [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/rupali-12/Leetcode-Problems/tree/master/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/1545-find-kth-bit-in-nth-binary-string) |
 | [1578-minimum-time-to-make-rope-colorful](https://github.com/rupali-12/Leetcode-Problems/tree/master/1578-minimum-time-to-make-rope-colorful) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/rupali-12/Leetcode-Problems/tree/master/1653-minimum-deletions-to-make-string-balanced) |
@@ -556,6 +557,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0022-generate-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0022-generate-parentheses) |
 | [0401-binary-watch](https://github.com/rupali-12/Leetcode-Problems/tree/master/0401-binary-watch) |
 | [0756-pyramid-transition-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0756-pyramid-transition-matrix) |
+| [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/rupali-12/Leetcode-Problems/tree/master/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 ## Binary Tree
 |  |
 | ------- |
