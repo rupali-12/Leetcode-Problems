@@ -1,22 +1,29 @@
 class Solution {
 public:
+   typedef pair<int, int> P;
+
+   int findDist(vector<int>a, vector<int>b){
+    int dis = (a[0]-b[0])*(a[0]-b[0]) + (a[1]-b[1])*(a[1]-b[1]);
+    return dis;
+   }
+
     vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
-        vector<vector<int>>ans;
-        priority_queue<pair<int, pair<int, int>>>maxi;
-        for(int i=0; i<points.size(); i++){
-            maxi.push({(points[i][0]*points[i][0] + points[i][1]*points[i][1]), {points[i][0], points[i][1]}});
-            
-            // if maxi size is greater than k then pop from queue
-            if(maxi.size() >k){
-                maxi.pop();
+        priority_queue<P>pq;
+        int n = points.size();
+        vector<vector<int>>ans(k);
+        for(int i=0; i<n; i++){
+            int dist = findDist(points[i], {0,0});
+            pq.push({dist, i});
+            if(pq.size()>k){
+                pq.pop();
             }
         }
-        
-        // store ans -> heap contain only k eleements right now 
-        while(maxi.size()>0){
-            pair<int, int>p = maxi.top().second;
-            ans.push_back({p.first, p.second});
-            maxi.pop();
+        int i=0;
+        while(!pq.empty()){
+            int idx = pq.top().second;
+            pq.pop();
+            ans[i] =points[idx];
+            i++;
         }
         return ans;
     }
