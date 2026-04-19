@@ -165,6 +165,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1578-minimum-time-to-make-rope-colorful](https://github.com/rupali-12/Leetcode-Problems/tree/master/1578-minimum-time-to-make-rope-colorful) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/rupali-12/Leetcode-Problems/tree/master/1727-largest-submatrix-with-rearrangements) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/rupali-12/Leetcode-Problems/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/rupali-12/Leetcode-Problems/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
@@ -448,6 +449,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0704-binary-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0704-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/rupali-12/Leetcode-Problems/tree/master/0875-koko-eating-bananas) |
 | [0981-time-based-key-value-store](https://github.com/rupali-12/Leetcode-Problems/tree/master/0981-time-based-key-value-store) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/rupali-12/Leetcode-Problems/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/rupali-12/Leetcode-Problems/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2054-two-best-non-overlapping-events](https://github.com/rupali-12/Leetcode-Problems/tree/master/2054-two-best-non-overlapping-events) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/rupali-12/Leetcode-Problems/tree/master/2141-maximum-running-time-of-n-computers) |
@@ -483,6 +485,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0567-permutation-in-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/rupali-12/Leetcode-Problems/tree/master/0647-palindromic-substrings) |
 | [0876-middle-of-the-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0876-middle-of-the-linked-list) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/rupali-12/Leetcode-Problems/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [3643-flip-square-submatrix-vertically](https://github.com/rupali-12/Leetcode-Problems/tree/master/3643-flip-square-submatrix-vertically) |
 ## Stack
