@@ -14,20 +14,11 @@ public:
     vector<string> twoEditWords(vector<string>& queries, vector<string>& dictionary) {
         vector<string>ans;
         int n=queries.size();
-        unordered_set<string>dict;
-        for(auto d: dictionary){
-            dict.insert(d);
-        }
 
         for(int i=0; i<n; i++){
-            if(dict.find(queries[i]) != dict.end() || isPossible(queries[i], dictionary)){
+            if(isPossible(queries[i], dictionary)){
                 ans.push_back(queries[i]);
             }
-            // else{
-            //     if(isPossible(queries[i], dictionary)){
-            //         ans.push_back(queries[i]);
-            //     }
-            // }
         }
         return ans;
     }
