@@ -1,68 +1,38 @@
 class MedianFinder {
 public:
-    priority_queue<int>maxHeap;
-    vector<int> arr;
-    // int n;
-	priority_queue<int, vector<int>, greater<int>>minHeap;
-	vector<double>ans;
-		double median;
+    priority_queue<int>left_max_heap;
+    priority_queue<int, vector<int>, greater<int>>right_min_heap;
     MedianFinder() {
-        median=-1;
+        
     }
-    int signum(int a,int b){
-	if(a==b){
-		return 0;
-	}
-	else if(a>b){
-		return 1;
-	}
-	return -1;
-}
-    void addNum(int element) {
-      switch(signum(maxHeap.size(), minHeap.size())){
-		case 0: if(element>median){
-			      minHeap.push(element);
-				  median =minHeap.top();
-		      }
-		      else{
-			     maxHeap.push(element);
-				 median = maxHeap.top();
-		      }
-		      break;
-			//   case when left size > right size 
-	     case 1: if(element>median){
-			      minHeap.push(element);
-		       }
-		      else{
-			    //  case when element < M , pop 1 element from maxHeap and push in minheap then push element in maxheap
-				minHeap.push(maxHeap.top());
-				maxHeap.pop();
-				maxHeap.push(element);				
-		      }
-               median = (minHeap.top() + maxHeap.top())/2.0;
-		      break;
-		case -1: if(element>median){
-			   	maxHeap.push(minHeap.top());
-				minHeap.pop();
-				minHeap.push(element);
-		   }
-		      else{
-			     maxHeap.push(element);
-		      }
-               median = (minHeap.top() + maxHeap.top())/2.0;
-		      break;
-	}
+    
+    void addNum(int num) {
+        if(left_max_heap.empty() || num < left_max_heap.top()){
+            left_max_heap.push(num);
+        }
+        else{
+            right_min_heap.push(num);
+        }
+
+        // Always maintain left max heap size one greeater than rigth min heap or maintain equal size
+        if(abs((int)left_max_heap.size() - (int)right_min_heap.size()) > 1){
+            right_min_heap.push(left_max_heap.top());
+            left_max_heap.pop();
+        }
+        else if(left_max_heap.size() < right_min_heap.size()){
+            left_max_heap.push(right_min_heap.top());
+            right_min_heap.pop();
+        } 
     }
     
     double findMedian() {
-        for(int i=0; i<arr.size(); i++){
-		addNum(arr[i]);
-		ans.push_back(median);
-	}
-       if(arr.size()>0){
-            return ans[ans.size()-1];
-       }
-        return median;
+        // if both have same size
+        if(left_max_heap.size() == right_min_heap.size()){
+            double median = (left_max_heap.top() + right_min_heap.top())/2.0;
+            return median;
+        }
+        // if left_max_heap size is one greater than right_min_heap
+        return left_max_heap.top();
     }
 };
 
