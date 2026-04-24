@@ -278,6 +278,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0179-largest-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0179-largest-number) |
 | [0215-kth-largest-element-in-an-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/rupali-12/Leetcode-Problems/tree/master/0217-contains-duplicate) |
+| [0295-find-median-from-data-stream](https://github.com/rupali-12/Leetcode-Problems/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/rupali-12/Leetcode-Problems/tree/master/0621-task-scheduler) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
@@ -396,6 +397,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0023-merge-k-sorted-lists](https://github.com/rupali-12/Leetcode-Problems/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0239-sliding-window-maximum) |
+| [0295-find-median-from-data-stream](https://github.com/rupali-12/Leetcode-Problems/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/rupali-12/Leetcode-Problems/tree/master/0621-task-scheduler) |
 | [0973-k-closest-points-to-origin](https://github.com/rupali-12/Leetcode-Problems/tree/master/0973-k-closest-points-to-origin) |
@@ -494,6 +496,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0148-sort-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0148-sort-list) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rupali-12/Leetcode-Problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0287-find-the-duplicate-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0287-find-the-duplicate-number) |
+| [0295-find-median-from-data-stream](https://github.com/rupali-12/Leetcode-Problems/tree/master/0295-find-median-from-data-stream) |
 | [0567-permutation-in-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/rupali-12/Leetcode-Problems/tree/master/0647-palindromic-substrings) |
 | [0876-middle-of-the-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0876-middle-of-the-linked-list) |
@@ -650,6 +653,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0155-min-stack](https://github.com/rupali-12/Leetcode-Problems/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/rupali-12/Leetcode-Problems/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/rupali-12/Leetcode-Problems/tree/master/0232-implement-queue-using-stacks) |
+| [0295-find-median-from-data-stream](https://github.com/rupali-12/Leetcode-Problems/tree/master/0295-find-median-from-data-stream) |
 | [0622-design-circular-queue](https://github.com/rupali-12/Leetcode-Problems/tree/master/0622-design-circular-queue) |
 | [0641-design-circular-deque](https://github.com/rupali-12/Leetcode-Problems/tree/master/0641-design-circular-deque) |
 | [0981-time-based-key-value-store](https://github.com/rupali-12/Leetcode-Problems/tree/master/0981-time-based-key-value-store) |
@@ -665,4 +669,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3474-lexicographically-smallest-generated-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/3474-lexicographically-smallest-generated-string) |
+## Data Stream
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/rupali-12/Leetcode-Problems/tree/master/0295-find-median-from-data-stream) |
 <!---LeetCode Topics End-->
