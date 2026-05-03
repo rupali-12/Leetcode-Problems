@@ -44,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2288-count-operations-to-obtain-zero](https://github.com/rupali-12/Leetcode-Problems/tree/master/2288-count-operations-to-obtain-zero) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/rupali-12/Leetcode-Problems/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
+| [3379-transformed-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/3379-transformed-array) |
 | [3433-count-mentions-per-user](https://github.com/rupali-12/Leetcode-Problems/tree/master/3433-count-mentions-per-user) |
 ## String
 |  |
@@ -205,6 +206,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3225-maximum-score-from-grid-operations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3225-maximum-score-from-grid-operations) |
 | [3315-construct-the-minimum-bitwise-array-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
 | [3321-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3321-find-x-sum-of-all-k-long-subarrays-ii) |
+| [3379-transformed-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/3379-transformed-array) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/rupali-12/Leetcode-Problems/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/rupali-12/Leetcode-Problems/tree/master/3432-count-partitions-with-even-sum-difference) |
