@@ -11,36 +11,38 @@
 class Solution {
 public:
     int findLength(ListNode* head){
-        if(head==NULL) return 0;
+        ListNode* temp=head;
         int count=0;
-        ListNode* temp= head;
+
         while(temp!=NULL){
             count++;
-            temp= temp->next;
+            temp=temp->next;
         }
         return count;
     }
 
     ListNode* rotateRight(ListNode* head, int k) {
         if(head==NULL || head->next==NULL || k==0) return head;
-        
-        int len = findLength(head);
-        ListNode* temp= head;
-        
-        // make linkedlist as circular 
+
+        int length = findLength(head);
+        ListNode* temp=head;
+
+        // Make linkedlist circular
         while(temp->next){
-            temp= temp->next;
+            temp=temp->next;
         }
-        temp->next= head;
-        
-        k= k%len;
-        k= len-k;
+        temp->next=head;
+
+        k = k%length;
+        k= length-k;
         while(k--){
             temp= temp->next;
         }
-       head =temp->next;
-       temp->next=NULL;
-        
-     return head; 
+
+        head= temp->next;
+        temp->next=NULL;
+        return head;
     }
 };
+
+
