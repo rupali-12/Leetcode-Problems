@@ -234,6 +234,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3643-flip-square-submatrix-vertically](https://github.com/rupali-12/Leetcode-Problems/tree/master/3643-flip-square-submatrix-vertically) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/rupali-12/Leetcode-Problems/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
+| [3660-jump-game-ix](https://github.com/rupali-12/Leetcode-Problems/tree/master/3660-jump-game-ix) |
 | [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
@@ -397,6 +398,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
 | [3640-trionic-array-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3640-trionic-array-ii) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3651-minimum-cost-path-with-teleportations) |
+| [3660-jump-game-ix](https://github.com/rupali-12/Leetcode-Problems/tree/master/3660-jump-game-ix) |
 | [3742-maximum-path-score-in-a-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/3742-maximum-path-score-in-a-grid) |
 ## Divide and Conquer
 |  |
