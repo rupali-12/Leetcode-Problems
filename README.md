@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3623-count-number-of-trapezoids-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3625-count-number-of-trapezoids-ii) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/rupali-12/Leetcode-Problems/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/rupali-12/Leetcode-Problems/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 ## Simulation
 |  |
@@ -230,6 +231,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3606-coupon-code-validator](https://github.com/rupali-12/Leetcode-Problems/tree/master/3606-coupon-code-validator) |
 | [3623-count-number-of-trapezoids-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3625-count-number-of-trapezoids-ii) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/rupali-12/Leetcode-Problems/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3640-trionic-array-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3640-trionic-array-ii) |
 | [3643-flip-square-submatrix-vertically](https://github.com/rupali-12/Leetcode-Problems/tree/master/3643-flip-square-submatrix-vertically) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3651-minimum-cost-path-with-teleportations) |
@@ -277,6 +279,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3606-coupon-code-validator](https://github.com/rupali-12/Leetcode-Problems/tree/master/3606-coupon-code-validator) |
 | [3623-count-number-of-trapezoids-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3625-count-number-of-trapezoids-ii) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/rupali-12/Leetcode-Problems/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3714-longest-balanced-substring-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3714-longest-balanced-substring-ii) |
 | [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
@@ -619,6 +622,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1559-detect-cycles-in-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/rupali-12/Leetcode-Problems/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2092-find-all-people-with-secret](https://github.com/rupali-12/Leetcode-Problems/tree/master/2092-find-all-people-with-secret) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/rupali-12/Leetcode-Problems/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 ## Graph
 |  |
 | ------- |
@@ -719,4 +723,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1382-balance-a-binary-search-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1382-balance-a-binary-search-tree) |
+## Number Theory
+|  |
+| ------- |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/rupali-12/Leetcode-Problems/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 <!---LeetCode Topics End-->
