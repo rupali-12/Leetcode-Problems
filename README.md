@@ -201,6 +201,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2463-minimum-total-distance-traveled](https://github.com/rupali-12/Leetcode-Problems/tree/master/2463-minimum-total-distance-traveled) |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/2515-shortest-distance-to-target-string-in-a-circular-array) |
 | [2536-increment-submatrices-by-one](https://github.com/rupali-12/Leetcode-Problems/tree/master/2536-increment-submatrices-by-one) |
+| [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/rupali-12/Leetcode-Problems/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
 | [2943-maximize-area-of-square-hole-in-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/2943-maximize-area-of-square-hole-in-grid) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/rupali-12/Leetcode-Problems/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/rupali-12/Leetcode-Problems/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
@@ -394,6 +395,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2147-number-of-ways-to-divide-a-long-corridor](https://github.com/rupali-12/Leetcode-Problems/tree/master/2147-number-of-ways-to-divide-a-long-corridor) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2463-minimum-total-distance-traveled](https://github.com/rupali-12/Leetcode-Problems/tree/master/2463-minimum-total-distance-traveled) |
+| [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/rupali-12/Leetcode-Problems/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3129-find-all-possible-stable-binary-arrays-i) |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3130-find-all-possible-stable-binary-arrays-ii) |
 | [3225-maximum-score-from-grid-operations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3225-maximum-score-from-grid-operations) |
