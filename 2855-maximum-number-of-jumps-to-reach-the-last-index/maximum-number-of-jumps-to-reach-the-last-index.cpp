@@ -18,10 +18,22 @@ public:
     }
     int maximumJumps(vector<int>& nums, int target) {
          n= nums.size();
-        
         vector<int>dp(n+1, INT_MIN);
 
-         int result= solve(0, nums, target, dp);
-         return result <0 ? -1: result;
+        // //  Approach-1: Memoization 
+        //  int result= solve(0, nums, target, dp);
+        //  return result <0 ? -1: result;
+
+        // Approach-2: Bottom up 
+        dp[n-1]=0;
+        for(int i=n-2; i>=0; i--){
+            for(int j=i+1; j<n; j++){
+                if(abs(nums[j]-nums[i])<=target && dp[j]!=INT_MIN){
+                    int temp= 1+dp[j];
+                    dp[i] = max(dp[i], temp);
+                } 
+            }
+        }
+        return dp[0] <0 ? -1: dp[0];
     }
 };
