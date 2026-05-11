@@ -598,6 +598,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Tree
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0100-same-tree) |
 | [0110-balanced-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0110-balanced-binary-tree) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/rupali-12/Leetcode-Problems/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
@@ -609,6 +610,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0100-same-tree) |
 | [0110-balanced-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0110-balanced-binary-tree) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/rupali-12/Leetcode-Problems/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
@@ -623,6 +625,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Breadth-First Search
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0100-same-tree) |
 | [0752-open-the-lock](https://github.com/rupali-12/Leetcode-Problems/tree/master/0752-open-the-lock) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/rupali-12/Leetcode-Problems/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -644,6 +647,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Tree
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0100-same-tree) |
 | [0110-balanced-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0110-balanced-binary-tree) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/rupali-12/Leetcode-Problems/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
