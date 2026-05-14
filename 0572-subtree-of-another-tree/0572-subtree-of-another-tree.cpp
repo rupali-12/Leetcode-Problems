@@ -11,29 +11,15 @@
  */
 class Solution {
 public:
-    bool isIdentical(TreeNode* root, TreeNode* subRoot){
-         if(root==NULL && subRoot==NULL){
-            return true;
-        }
-         if(root==NULL || subRoot==NULL){
-            return false;
-        }
-        if(root->val!=subRoot->val){
-            return false;
-        }
-        bool leftAns = isIdentical(root->left, subRoot->left);
-        bool rightAns = isIdentical(root->right, subRoot->right);
-        return leftAns && rightAns;
+    bool isSame(TreeNode* root, TreeNode* subRoot){
+        if(root==NULL && subRoot==NULL) return true;
+        if(root==NULL || subRoot==NULL) return false;
+        if(root->val != subRoot->val) return false;
+        return isSame(root->left, subRoot->left) && isSame(root->right, subRoot->right);
     }
     bool isSubtree(TreeNode* root, TreeNode* subRoot) {
-       if(!root){
-           return false;
-       }
-        if(isIdentical(root, subRoot)){
-            return true;
-        }
-        bool lAns = isSubtree(root->left, subRoot);
-        bool rAns = isSubtree(root->right, subRoot);
-        return lAns || rAns;
+        if(root==NULL) return false;
+        if(isSame(root, subRoot)) return true;
+        return isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
     }
 };
