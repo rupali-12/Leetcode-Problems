@@ -609,6 +609,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0199-binary-tree-right-side-view](https://github.com/rupali-12/Leetcode-Problems/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0226-invert-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0572-subtree-of-another-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/rupali-12/Leetcode-Problems/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -623,6 +624,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0199-binary-tree-right-side-view](https://github.com/rupali-12/Leetcode-Problems/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0226-invert-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0572-subtree-of-another-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/rupali-12/Leetcode-Problems/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -664,6 +666,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0199-binary-tree-right-side-view](https://github.com/rupali-12/Leetcode-Problems/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0226-invert-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0572-subtree-of-another-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/rupali-12/Leetcode-Problems/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -738,6 +741,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String Matching
 |  |
 | ------- |
+| [0572-subtree-of-another-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0572-subtree-of-another-tree) |
 | [0796-rotate-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0796-rotate-string) |
 | [3474-lexicographically-smallest-generated-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/3474-lexicographically-smallest-generated-string) |
 ## Data Stream
@@ -752,4 +756,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/rupali-12/Leetcode-Problems/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
+## Hash Function
+|  |
+| ------- |
+| [0572-subtree-of-another-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0572-subtree-of-another-tree) |
 <!---LeetCode Topics End-->
