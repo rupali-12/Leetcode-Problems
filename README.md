@@ -179,6 +179,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1200-minimum-absolute-difference](https://github.com/rupali-12/Leetcode-Problems/tree/master/1200-minimum-absolute-difference) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1306-jump-game-iii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1306-jump-game-iii) |
+| [1345-jump-game-iv](https://github.com/rupali-12/Leetcode-Problems/tree/master/1345-jump-game-iv) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/1458-max-dot-product-of-two-subsequences) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1559-detect-cycles-in-2d-grid) |
@@ -275,6 +276,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0953-verifying-an-alien-dictionary](https://github.com/rupali-12/Leetcode-Problems/tree/master/0953-verifying-an-alien-dictionary) |
 | [0981-time-based-key-value-store](https://github.com/rupali-12/Leetcode-Problems/tree/master/0981-time-based-key-value-store) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/1015-smallest-integer-divisible-by-k) |
+| [1345-jump-game-iv](https://github.com/rupali-12/Leetcode-Problems/tree/master/1345-jump-game-iv) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/rupali-12/Leetcode-Problems/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/2274-keep-multiplying-found-values-by-two) |
@@ -648,6 +650,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/rupali-12/Leetcode-Problems/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1306-jump-game-iii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1306-jump-game-iii) |
+| [1345-jump-game-iv](https://github.com/rupali-12/Leetcode-Problems/tree/master/1345-jump-game-iv) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/rupali-12/Leetcode-Problems/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2092-find-all-people-with-secret](https://github.com/rupali-12/Leetcode-Problems/tree/master/2092-find-all-people-with-secret) |
