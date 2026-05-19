@@ -26,11 +26,26 @@ public:
         // }
         // return -1;
 
-        // Approach-2: Binary Search
-        for(int num: nums1){
-            if(isBinarySearch(nums2, num)){
-                return num;
-            }
+        // // Approach-2: Binary Search
+        // for(int num: nums1){
+        //     if(isBinarySearch(nums2, num)){
+        //         return num;
+        //     }
+        // }
+        // return -1;
+
+        // Approach-3: Two pointer approach
+        int i=0, j=0;
+        while(i<n1 && j<n2){
+           if(nums1[i]==nums2[j]){
+            return nums1[i];
+           }
+           else if(nums1[i]<nums2[j]){
+             i++;
+           }
+           else{
+             j++;
+           }
         }
         return -1;
     }
