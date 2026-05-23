@@ -188,6 +188,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/rupali-12/Leetcode-Problems/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/rupali-12/Leetcode-Problems/tree/master/1727-largest-submatrix-with-rearrangements) |
+| [1752-check-if-array-is-sorted-and-rotated](https://github.com/rupali-12/Leetcode-Problems/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/rupali-12/Leetcode-Problems/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1861-rotating-the-box](https://github.com/rupali-12/Leetcode-Problems/tree/master/1861-rotating-the-box) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/1877-minimize-maximum-pair-sum-in-array) |
