@@ -28,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/rupali-12/Leetcode-Problems/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3433-count-mentions-per-user](https://github.com/rupali-12/Leetcode-Problems/tree/master/3433-count-mentions-per-user) |
+| [3443-maximum-manhattan-distance-after-k-changes](https://github.com/rupali-12/Leetcode-Problems/tree/master/3443-maximum-manhattan-distance-after-k-changes) |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/rupali-12/Leetcode-Problems/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
@@ -100,6 +101,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3120-count-the-number-of-special-characters-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3234-count-the-number-of-substrings-with-dominant-ones](https://github.com/rupali-12/Leetcode-Problems/tree/master/3234-count-the-number-of-substrings-with-dominant-ones) |
+| [3443-maximum-manhattan-distance-after-k-changes](https://github.com/rupali-12/Leetcode-Problems/tree/master/3443-maximum-manhattan-distance-after-k-changes) |
 | [3474-lexicographically-smallest-generated-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/3474-lexicographically-smallest-generated-string) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3606-coupon-code-validator](https://github.com/rupali-12/Leetcode-Problems/tree/master/3606-coupon-code-validator) |
@@ -132,6 +134,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0621-task-scheduler](https://github.com/rupali-12/Leetcode-Problems/tree/master/0621-task-scheduler) |
 | [0869-reordered-power-of-2](https://github.com/rupali-12/Leetcode-Problems/tree/master/0869-reordered-power-of-2) |
 | [2833-furthest-point-from-origin](https://github.com/rupali-12/Leetcode-Problems/tree/master/2833-furthest-point-from-origin) |
+| [3443-maximum-manhattan-distance-after-k-changes](https://github.com/rupali-12/Leetcode-Problems/tree/master/3443-maximum-manhattan-distance-after-k-changes) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3583-count-special-triplets](https://github.com/rupali-12/Leetcode-Problems/tree/master/3583-count-special-triplets) |
 ## Array
@@ -306,6 +309,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3121-count-the-number-of-special-characters-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3321-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3321-find-x-sum-of-all-k-long-subarrays-ii) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
+| [3443-maximum-manhattan-distance-after-k-changes](https://github.com/rupali-12/Leetcode-Problems/tree/master/3443-maximum-manhattan-distance-after-k-changes) |
 | [3488-closest-equal-element-queries](https://github.com/rupali-12/Leetcode-Problems/tree/master/3488-closest-equal-element-queries) |
 | [3531-count-covered-buildings](https://github.com/rupali-12/Leetcode-Problems/tree/master/3531-count-covered-buildings) |
 | [3583-count-special-triplets](https://github.com/rupali-12/Leetcode-Problems/tree/master/3583-count-special-triplets) |
