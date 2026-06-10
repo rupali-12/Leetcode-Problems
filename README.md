@@ -128,6 +128,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3474-lexicographically-smallest-generated-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/3474-lexicographically-smallest-generated-string) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/rupali-12/Leetcode-Problems/tree/master/3600-maximize-spanning-tree-stability-with-upgrades) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3691-maximum-total-subarray-value-ii) |
 ## Counting
 |  |
 | ------- |
@@ -265,6 +266,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3651-minimum-cost-path-with-teleportations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/rupali-12/Leetcode-Problems/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
 | [3660-jump-game-ix](https://github.com/rupali-12/Leetcode-Problems/tree/master/3660-jump-game-ix) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
@@ -484,6 +486,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3013-divide-an-array-into-subarrays-with-minimum-cost-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3013-divide-an-array-into-subarrays-with-minimum-cost-ii) |
 | [3321-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3321-find-x-sum-of-all-k-long-subarrays-ii) |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/rupali-12/Leetcode-Problems/tree/master/3650-minimum-cost-path-with-edge-reversals) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3691-maximum-total-subarray-value-ii) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -737,6 +740,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3454-separate-squares-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3454-separate-squares-ii) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3721-longest-balanced-subarray-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3721-longest-balanced-subarray-ii) |
 ## Line Sweep
 |  |
