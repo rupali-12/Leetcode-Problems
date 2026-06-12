@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/rupali-12/Leetcode-Problems/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
+| [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3623-count-number-of-trapezoids-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3625-count-number-of-trapezoids-ii) |
@@ -252,6 +253,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3488-closest-equal-element-queries](https://github.com/rupali-12/Leetcode-Problems/tree/master/3488-closest-equal-element-queries) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3531-count-covered-buildings](https://github.com/rupali-12/Leetcode-Problems/tree/master/3531-count-covered-buildings) |
+| [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/rupali-12/Leetcode-Problems/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
 | [3567-minimum-absolute-difference-in-sliding-submatrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/3567-minimum-absolute-difference-in-sliding-submatrix) |
 | [3573-best-time-to-buy-and-sell-stock-v](https://github.com/rupali-12/Leetcode-Problems/tree/master/3573-best-time-to-buy-and-sell-stock-v) |
@@ -381,6 +383,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/rupali-12/Leetcode-Problems/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [3315-construct-the-minimum-bitwise-array-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
+| [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -447,6 +450,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3130-find-all-possible-stable-binary-arrays-ii) |
 | [3225-maximum-score-from-grid-operations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3225-maximum-score-from-grid-operations) |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/rupali-12/Leetcode-Problems/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
+| [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/rupali-12/Leetcode-Problems/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
 | [3573-best-time-to-buy-and-sell-stock-v](https://github.com/rupali-12/Leetcode-Problems/tree/master/3573-best-time-to-buy-and-sell-stock-v) |
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
@@ -670,6 +674,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1382-balance-a-binary-search-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1382-balance-a-binary-search-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
+| [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/rupali-12/Leetcode-Problems/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
 ## Depth-First Search
 |  |
@@ -693,6 +698,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1970-last-day-where-you-can-still-cross](https://github.com/rupali-12/Leetcode-Problems/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2092-find-all-people-with-secret](https://github.com/rupali-12/Leetcode-Problems/tree/master/2092-find-all-people-with-secret) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
+| [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/rupali-12/Leetcode-Problems/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
 ## Breadth-First Search
 |  |
