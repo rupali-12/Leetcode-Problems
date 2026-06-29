@@ -1,82 +1,68 @@
-
-class TrieNode{
-    public:
-    char data;
-    bool isEnd;
-    TrieNode*children[26];
-    TrieNode(char ch){
-           data =ch;
-           for(int i=0; i<26; i++){
-               children[i]=NULL;
-           }
-           isEnd = false;
-       }
-};
 class Trie {
 public:
-    TrieNode* root;
+    struct trieNode{
+           bool isEndOfWord;
+        trieNode* children[26];
+    };
+    trieNode* getNode(){
+        trieNode* newNode = new trieNode();
+        newNode->isEndOfWord = false;
+        for(int i=0; i<26; i++){
+            newNode->children[i] = NULL;
+        }
+        return newNode;
+    }
+    trieNode* root;
     Trie() {
-        root= new TrieNode('\0');
-    }
-    void insertUtils(TrieNode* root, string word){
-    if(word.length()==0){
-        root->isEnd=true;
-        return;
-    }
-
-    int index= word[0]-'a';
-    TrieNode* child;
-    if(root->children[index]!=NULL){
-      child= root->children[index];
-    }
-    else{
-       child= new TrieNode(word[0]);
-       root->children[index]= child;
-    }
-
-    insertUtils(child, word.substr(1));
-}
-    void insert(string word) {
-        insertUtils(root, word);
+     root= getNode();
     }
     
-    bool searchUtil(TrieNode* root, string word){
-    if(word.length()==0){
-       return root->isEnd;
+    void insert(string word) {  // apple
+    trieNode* crawler = root;
+    for(int i=0; i<word.length(); i++){
+        char ch =word[i];
+        int idx = ch-'a';
+        if(crawler->children[idx]==NULL){
+            crawler->children[idx] = getNode();  // a
+        }
+        crawler =  crawler->children[idx];
     }
-
-    int index= word[0]-'a';
-    TrieNode* child;
-    if(root->children[index]!=NULL){
-      child= root->children[index];
+        crawler->isEndOfWord =true;  // reach to e
     }
-    else{
-    return false;
-    }
-
-   return searchUtil(child, word.substr(1));
-}
+    
     bool search(string word) {
-        return searchUtil(root, word);
-    }
-    bool startWithUtil(TrieNode* root, string word){
-    if(word.length()==0){
-        return true;
-    }
+        trieNode* crawler =root;
+        for(int i=0; i<word.length(); i++){
+            char ch =word[i];
+            int idx = ch-'a';
 
-    int index= word[0]-'a';
-    TrieNode* child;
-    if(root->children[index]!=NULL){
-      child= root->children[index];
+            if(crawler->children[idx]==NULL){
+                return false;
+            }
+            crawler =crawler->children[idx];
+        }
+        if(crawler!=NULL && crawler->isEndOfWord==true){
+            return true;
+        }
+        return false;
     }
-    else{
-    return false;
-    }
-
-   return startWithUtil(child, word.substr(1));
-}
+    
     bool startsWith(string prefix) {
-        return startWithUtil(root, prefix);
+                trieNode* crawler =root;
+                int i=0;
+        for( i=0; i<prefix.length(); i++){
+            char ch =prefix[i];
+            int idx = ch-'a';
+
+            if(crawler->children[idx]==NULL){
+                return false;
+            }
+            crawler =crawler->children[idx];
+        }
+        if(i==prefix.length()){
+            return true;
+        }
+        return false;
     }
 };
 
