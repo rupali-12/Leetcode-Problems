@@ -91,6 +91,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1189-maximum-number-of-balloons](https://github.com/rupali-12/Leetcode-Problems/tree/master/1189-maximum-number-of-balloons) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/rupali-12/Leetcode-Problems/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/rupali-12/Leetcode-Problems/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/rupali-12/Leetcode-Problems/tree/master/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/1545-find-kth-bit-in-nth-binary-string) |
 | [1578-minimum-time-to-make-rope-colorful](https://github.com/rupali-12/Leetcode-Problems/tree/master/1578-minimum-time-to-make-rope-colorful) |
@@ -327,6 +328,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1015-smallest-integer-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1189-maximum-number-of-balloons](https://github.com/rupali-12/Leetcode-Problems/tree/master/1189-maximum-number-of-balloons) |
 | [1345-jump-game-iv](https://github.com/rupali-12/Leetcode-Problems/tree/master/1345-jump-game-iv) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/rupali-12/Leetcode-Problems/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/rupali-12/Leetcode-Problems/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/2274-keep-multiplying-found-values-by-two) |
@@ -448,6 +450,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0239-sliding-window-maximum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0239-sliding-window-maximum) |
 | [0424-longest-repeating-character-replacement](https://github.com/rupali-12/Leetcode-Problems/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0567-permutation-in-string) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/rupali-12/Leetcode-Problems/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1871-jump-game-vii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1871-jump-game-vii) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/rupali-12/Leetcode-Problems/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/rupali-12/Leetcode-Problems/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
