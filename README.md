@@ -234,6 +234,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/rupali-12/Leetcode-Problems/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/rupali-12/Leetcode-Problems/tree/master/1970-last-day-where-you-can-still-cross) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/rupali-12/Leetcode-Problems/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
+| [2016-maximum-difference-between-increasing-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/2016-maximum-difference-between-increasing-elements) |
 | [2054-two-best-non-overlapping-events](https://github.com/rupali-12/Leetcode-Problems/tree/master/2054-two-best-non-overlapping-events) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/rupali-12/Leetcode-Problems/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/rupali-12/Leetcode-Problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
