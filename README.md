@@ -212,6 +212,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1046-last-stone-weight](https://github.com/rupali-12/Leetcode-Problems/tree/master/1046-last-stone-weight) |
 | [1200-minimum-absolute-difference](https://github.com/rupali-12/Leetcode-Problems/tree/master/1200-minimum-absolute-difference) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
+| [1288-remove-covered-intervals](https://github.com/rupali-12/Leetcode-Problems/tree/master/1288-remove-covered-intervals) |
 | [1306-jump-game-iii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1306-jump-game-iii) |
 | [1345-jump-game-iv](https://github.com/rupali-12/Leetcode-Problems/tree/master/1345-jump-game-iv) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/1458-max-dot-product-of-two-subsequences) |
@@ -385,6 +386,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0973-k-closest-points-to-origin](https://github.com/rupali-12/Leetcode-Problems/tree/master/0973-k-closest-points-to-origin) |
 | [1200-minimum-absolute-difference](https://github.com/rupali-12/Leetcode-Problems/tree/master/1200-minimum-absolute-difference) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
+| [1288-remove-covered-intervals](https://github.com/rupali-12/Leetcode-Problems/tree/master/1288-remove-covered-intervals) |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/rupali-12/Leetcode-Problems/tree/master/1727-largest-submatrix-with-rearrangements) |
 | [1833-maximum-ice-cream-bars](https://github.com/rupali-12/Leetcode-Problems/tree/master/1833-maximum-ice-cream-bars) |
 | [1840-maximum-building-height](https://github.com/rupali-12/Leetcode-Problems/tree/master/1840-maximum-building-height) |
