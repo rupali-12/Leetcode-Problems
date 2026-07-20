@@ -55,6 +55,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0412-fizz-buzz](https://github.com/rupali-12/Leetcode-Problems/tree/master/0412-fizz-buzz) |
 | [0657-robot-return-to-origin](https://github.com/rupali-12/Leetcode-Problems/tree/master/0657-robot-return-to-origin) |
+| [1260-shift-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1260-shift-2d-grid) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/1545-find-kth-bit-in-nth-binary-string) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
 | [1914-cyclically-rotating-a-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1914-cyclically-rotating-a-grid) |
@@ -221,6 +222,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1018-binary-prefix-divisible-by-5](https://github.com/rupali-12/Leetcode-Problems/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1046-last-stone-weight](https://github.com/rupali-12/Leetcode-Problems/tree/master/1046-last-stone-weight) |
 | [1200-minimum-absolute-difference](https://github.com/rupali-12/Leetcode-Problems/tree/master/1200-minimum-absolute-difference) |
+| [1260-shift-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1260-shift-2d-grid) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1288-remove-covered-intervals](https://github.com/rupali-12/Leetcode-Problems/tree/master/1288-remove-covered-intervals) |
 | [1306-jump-game-iii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1306-jump-game-iii) |
@@ -589,6 +591,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0048-rotate-image](https://github.com/rupali-12/Leetcode-Problems/tree/master/0048-rotate-image) |
 | [0074-search-a-2d-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0074-search-a-2d-matrix) |
+| [1260-shift-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1260-shift-2d-grid) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
