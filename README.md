@@ -127,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3443-maximum-manhattan-distance-after-k-changes](https://github.com/rupali-12/Leetcode-Problems/tree/master/3443-maximum-manhattan-distance-after-k-changes) |
 | [3474-lexicographically-smallest-generated-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/3474-lexicographically-smallest-generated-string) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
+| [3499-maximize-active-section-with-trade-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3499-maximize-active-section-with-trade-i) |
 | [3606-coupon-code-validator](https://github.com/rupali-12/Leetcode-Problems/tree/master/3606-coupon-code-validator) |
 | [3612-process-string-with-special-operations-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3612-process-string-with-special-operations-i) |
 | [3614-process-string-with-special-operations-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3614-process-string-with-special-operations-ii) |
@@ -625,6 +626,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/rupali-12/Leetcode-Problems/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 | [3234-count-the-number-of-substrings-with-dominant-ones](https://github.com/rupali-12/Leetcode-Problems/tree/master/3234-count-the-number-of-substrings-with-dominant-ones) |
+| [3499-maximize-active-section-with-trade-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3499-maximize-active-section-with-trade-i) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 ## Binary Search
 |  |
