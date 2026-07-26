@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0013-roman-to-integer](https://github.com/rupali-12/Leetcode-Problems/tree/master/0013-roman-to-integer) |
 | [0048-rotate-image](https://github.com/rupali-12/Leetcode-Problems/tree/master/0048-rotate-image) |
 | [0412-fizz-buzz](https://github.com/rupali-12/Leetcode-Problems/tree/master/0412-fizz-buzz) |
+| [0628-maximum-product-of-three-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/rupali-12/Leetcode-Problems/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0788-rotated-digits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0788-rotated-digits) |
 | [0812-largest-triangle-area](https://github.com/rupali-12/Leetcode-Problems/tree/master/0812-largest-triangle-area) |
@@ -210,6 +211,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/rupali-12/Leetcode-Problems/tree/master/0621-task-scheduler) |
 | [0622-design-circular-queue](https://github.com/rupali-12/Leetcode-Problems/tree/master/0622-design-circular-queue) |
+| [0628-maximum-product-of-three-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0641-design-circular-deque](https://github.com/rupali-12/Leetcode-Problems/tree/master/0641-design-circular-deque) |
 | [0704-binary-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0704-binary-search) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/rupali-12/Leetcode-Problems/tree/master/0717-1-bit-and-2-bit-characters) |
@@ -406,6 +408,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0295-find-median-from-data-stream](https://github.com/rupali-12/Leetcode-Problems/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/rupali-12/Leetcode-Problems/tree/master/0621-task-scheduler) |
+| [0628-maximum-product-of-three-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
 | [0853-car-fleet](https://github.com/rupali-12/Leetcode-Problems/tree/master/0853-car-fleet) |
 | [0869-reordered-power-of-2](https://github.com/rupali-12/Leetcode-Problems/tree/master/0869-reordered-power-of-2) |
