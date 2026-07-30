@@ -28,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2288-count-operations-to-obtain-zero](https://github.com/rupali-12/Leetcode-Problems/tree/master/2288-count-operations-to-obtain-zero) |
 | [2566-maximum-difference-by-remapping-a-digit](https://github.com/rupali-12/Leetcode-Problems/tree/master/2566-maximum-difference-by-remapping-a-digit) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/rupali-12/Leetcode-Problems/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/rupali-12/Leetcode-Problems/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3312-sorted-gcd-pair-queries](https://github.com/rupali-12/Leetcode-Problems/tree/master/3312-sorted-gcd-pair-queries) |
@@ -123,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2833-furthest-point-from-origin](https://github.com/rupali-12/Leetcode-Problems/tree/master/2833-furthest-point-from-origin) |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/rupali-12/Leetcode-Problems/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3093-longest-common-suffix-queries](https://github.com/rupali-12/Leetcode-Problems/tree/master/3093-longest-common-suffix-queries) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3120-count-the-number-of-special-characters-i) |
@@ -160,6 +162,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2078-two-furthest-houses-with-different-colors](https://github.com/rupali-12/Leetcode-Problems/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/rupali-12/Leetcode-Problems/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2566-maximum-difference-by-remapping-a-digit](https://github.com/rupali-12/Leetcode-Problems/tree/master/2566-maximum-difference-by-remapping-a-digit) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3474-lexicographically-smallest-generated-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/3474-lexicographically-smallest-generated-string) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/rupali-12/Leetcode-Problems/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3534-path-existence-queries-in-a-graph-ii) |
