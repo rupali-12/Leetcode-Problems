@@ -777,6 +777,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0014-longest-common-prefix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0014-longest-common-prefix) |
 | [0208-implement-trie-prefix-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0208-implement-trie-prefix-tree) |
+| [0440-k-th-smallest-in-lexicographical-order](https://github.com/rupali-12/Leetcode-Problems/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/rupali-12/Leetcode-Problems/tree/master/2452-words-within-two-edits-of-dictionary) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/rupali-12/Leetcode-Problems/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3093-longest-common-suffix-queries](https://github.com/rupali-12/Leetcode-Problems/tree/master/3093-longest-common-suffix-queries) |
