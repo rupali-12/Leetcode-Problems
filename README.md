@@ -229,6 +229,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0752-open-the-lock](https://github.com/rupali-12/Leetcode-Problems/tree/master/0752-open-the-lock) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
 | [0812-largest-triangle-area](https://github.com/rupali-12/Leetcode-Problems/tree/master/0812-largest-triangle-area) |
+| [0823-binary-trees-with-factors](https://github.com/rupali-12/Leetcode-Problems/tree/master/0823-binary-trees-with-factors) |
 | [0853-car-fleet](https://github.com/rupali-12/Leetcode-Problems/tree/master/0853-car-fleet) |
 | [0875-koko-eating-bananas](https://github.com/rupali-12/Leetcode-Problems/tree/master/0875-koko-eating-bananas) |
 | [0944-delete-columns-to-make-sorted](https://github.com/rupali-12/Leetcode-Problems/tree/master/0944-delete-columns-to-make-sorted) |
@@ -365,6 +366,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0621-task-scheduler](https://github.com/rupali-12/Leetcode-Problems/tree/master/0621-task-scheduler) |
 | [0752-open-the-lock](https://github.com/rupali-12/Leetcode-Problems/tree/master/0752-open-the-lock) |
 | [0756-pyramid-transition-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0756-pyramid-transition-matrix) |
+| [0823-binary-trees-with-factors](https://github.com/rupali-12/Leetcode-Problems/tree/master/0823-binary-trees-with-factors) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/rupali-12/Leetcode-Problems/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0869-reordered-power-of-2](https://github.com/rupali-12/Leetcode-Problems/tree/master/0869-reordered-power-of-2) |
 | [0953-verifying-an-alien-dictionary](https://github.com/rupali-12/Leetcode-Problems/tree/master/0953-verifying-an-alien-dictionary) |
@@ -423,6 +425,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0621-task-scheduler](https://github.com/rupali-12/Leetcode-Problems/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
+| [0823-binary-trees-with-factors](https://github.com/rupali-12/Leetcode-Problems/tree/master/0823-binary-trees-with-factors) |
 | [0853-car-fleet](https://github.com/rupali-12/Leetcode-Problems/tree/master/0853-car-fleet) |
 | [0869-reordered-power-of-2](https://github.com/rupali-12/Leetcode-Problems/tree/master/0869-reordered-power-of-2) |
 | [0973-k-closest-points-to-origin](https://github.com/rupali-12/Leetcode-Problems/tree/master/0973-k-closest-points-to-origin) |
@@ -529,6 +532,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0647-palindromic-substrings](https://github.com/rupali-12/Leetcode-Problems/tree/master/0647-palindromic-substrings) |
 | [0788-rotated-digits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0788-rotated-digits) |
 | [0799-champagne-tower](https://github.com/rupali-12/Leetcode-Problems/tree/master/0799-champagne-tower) |
+| [0823-binary-trees-with-factors](https://github.com/rupali-12/Leetcode-Problems/tree/master/0823-binary-trees-with-factors) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/rupali-12/Leetcode-Problems/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/1458-max-dot-product-of-two-subsequences) |
