@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0013-roman-to-integer](https://github.com/rupali-12/Leetcode-Problems/tree/master/0013-roman-to-integer) |
 | [0048-rotate-image](https://github.com/rupali-12/Leetcode-Problems/tree/master/0048-rotate-image) |
 | [0412-fizz-buzz](https://github.com/rupali-12/Leetcode-Problems/tree/master/0412-fizz-buzz) |
+| [0486-predict-the-winner](https://github.com/rupali-12/Leetcode-Problems/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/0628-maximum-product-of-three-numbers) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/rupali-12/Leetcode-Problems/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0788-rotated-digits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0788-rotated-digits) |
@@ -219,6 +220,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0239-sliding-window-maximum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0239-sliding-window-maximum) |
 | [0287-find-the-duplicate-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/rupali-12/Leetcode-Problems/tree/master/0347-top-k-frequent-elements) |
+| [0486-predict-the-winner](https://github.com/rupali-12/Leetcode-Problems/tree/master/0486-predict-the-winner) |
 | [0621-task-scheduler](https://github.com/rupali-12/Leetcode-Problems/tree/master/0621-task-scheduler) |
 | [0622-design-circular-queue](https://github.com/rupali-12/Leetcode-Problems/tree/master/0622-design-circular-queue) |
 | [0628-maximum-product-of-three-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/0628-maximum-product-of-three-numbers) |
@@ -529,6 +531,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0032-longest-valid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/rupali-12/Leetcode-Problems/tree/master/0042-trapping-rain-water) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0486-predict-the-winner](https://github.com/rupali-12/Leetcode-Problems/tree/master/0486-predict-the-winner) |
 | [0647-palindromic-substrings](https://github.com/rupali-12/Leetcode-Problems/tree/master/0647-palindromic-substrings) |
 | [0788-rotated-digits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0788-rotated-digits) |
 | [0799-champagne-tower](https://github.com/rupali-12/Leetcode-Problems/tree/master/0799-champagne-tower) |
@@ -944,6 +947,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0002-add-two-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/0002-add-two-numbers) |
 | [0021-merge-two-sorted-lists](https://github.com/rupali-12/Leetcode-Problems/tree/master/0021-merge-two-sorted-lists) |
 | [0206-reverse-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0206-reverse-linked-list) |
+| [0486-predict-the-winner](https://github.com/rupali-12/Leetcode-Problems/tree/master/0486-predict-the-winner) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/1545-find-kth-bit-in-nth-binary-string) |
 ## Design
 |  |
@@ -1007,4 +1011,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3620-network-recovery-pathways](https://github.com/rupali-12/Leetcode-Problems/tree/master/3620-network-recovery-pathways) |
+## Game Theory
+|  |
+| ------- |
+| [0486-predict-the-winner](https://github.com/rupali-12/Leetcode-Problems/tree/master/0486-predict-the-winner) |
 <!---LeetCode Topics End-->
