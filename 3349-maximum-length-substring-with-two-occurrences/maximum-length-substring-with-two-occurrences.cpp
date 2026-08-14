@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int maximumLengthSubstring(string s) {
+        int mxLength=0;
+        int n=s.length();
+        int i=0,j=0;
+        unordered_map<char, int>mp;
+        while(j<n){
+          mp[s[j]]++;
+          while(mp[s[j]]>2){
+            mp[s[i]]--;
+            i++;
+          }
+          mxLength =max(mxLength, j-i+1);
+          j++;
+        }
+        return mxLength;
+    }
+};
