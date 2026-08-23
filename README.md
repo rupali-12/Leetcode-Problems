@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1840-maximum-building-height](https://github.com/rupali-12/Leetcode-Problems/tree/master/1840-maximum-building-height) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1925-count-square-sum-triples](https://github.com/rupali-12/Leetcode-Problems/tree/master/1925-count-square-sum-triples) |
+| [1927-sum-game](https://github.com/rupali-12/Leetcode-Problems/tree/master/1927-sum-game) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/rupali-12/Leetcode-Problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2147-number-of-ways-to-divide-a-long-corridor](https://github.com/rupali-12/Leetcode-Problems/tree/master/2147-number-of-ways-to-divide-a-long-corridor) |
 | [2288-count-operations-to-obtain-zero](https://github.com/rupali-12/Leetcode-Problems/tree/master/2288-count-operations-to-obtain-zero) |
@@ -123,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/rupali-12/Leetcode-Problems/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
 | [1871-jump-game-vii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1871-jump-game-vii) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/rupali-12/Leetcode-Problems/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
+| [1927-sum-game](https://github.com/rupali-12/Leetcode-Problems/tree/master/1927-sum-game) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/rupali-12/Leetcode-Problems/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2075-decode-the-slanted-ciphertext](https://github.com/rupali-12/Leetcode-Problems/tree/master/2075-decode-the-slanted-ciphertext) |
@@ -174,6 +176,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1833-maximum-ice-cream-bars](https://github.com/rupali-12/Leetcode-Problems/tree/master/1833-maximum-ice-cream-bars) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/rupali-12/Leetcode-Problems/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/1877-minimize-maximum-pair-sum-in-array) |
+| [1927-sum-game](https://github.com/rupali-12/Leetcode-Problems/tree/master/1927-sum-game) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/rupali-12/Leetcode-Problems/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/rupali-12/Leetcode-Problems/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2566-maximum-difference-by-remapping-a-digit](https://github.com/rupali-12/Leetcode-Problems/tree/master/2566-maximum-difference-by-remapping-a-digit) |
@@ -1070,6 +1073,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1406-stone-game-iii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/rupali-12/Leetcode-Problems/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/rupali-12/Leetcode-Problems/tree/master/1563-stone-game-v) |
+| [1927-sum-game](https://github.com/rupali-12/Leetcode-Problems/tree/master/1927-sum-game) |
 ## Minimax
 |  |
 | ------- |
