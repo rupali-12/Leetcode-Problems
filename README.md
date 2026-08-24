@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1563-stone-game-v](https://github.com/rupali-12/Leetcode-Problems/tree/master/1563-stone-game-v) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
 | [1840-maximum-building-height](https://github.com/rupali-12/Leetcode-Problems/tree/master/1840-maximum-building-height) |
+| [1872-stone-game-viii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1872-stone-game-viii) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1925-count-square-sum-triples](https://github.com/rupali-12/Leetcode-Problems/tree/master/1925-count-square-sum-triples) |
 | [1927-sum-game](https://github.com/rupali-12/Leetcode-Problems/tree/master/1927-sum-game) |
@@ -284,6 +285,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/rupali-12/Leetcode-Problems/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/rupali-12/Leetcode-Problems/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1861-rotating-the-box](https://github.com/rupali-12/Leetcode-Problems/tree/master/1861-rotating-the-box) |
+| [1872-stone-game-viii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1872-stone-game-viii) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/rupali-12/Leetcode-Problems/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
@@ -525,6 +527,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/rupali-12/Leetcode-Problems/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1732-find-the-highest-altitude](https://github.com/rupali-12/Leetcode-Problems/tree/master/1732-find-the-highest-altitude) |
 | [1871-jump-game-vii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1871-jump-game-vii) |
+| [1872-stone-game-viii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1872-stone-game-viii) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1895-largest-magic-square](https://github.com/rupali-12/Leetcode-Problems/tree/master/1895-largest-magic-square) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rupali-12/Leetcode-Problems/tree/master/2059-unique-length-3-palindromic-subsequences) |
@@ -587,6 +590,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/rupali-12/Leetcode-Problems/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [1871-jump-game-vii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1871-jump-game-vii) |
+| [1872-stone-game-viii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1872-stone-game-viii) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/rupali-12/Leetcode-Problems/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [2054-two-best-non-overlapping-events](https://github.com/rupali-12/Leetcode-Problems/tree/master/2054-two-best-non-overlapping-events) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/rupali-12/Leetcode-Problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
@@ -1073,17 +1077,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1406-stone-game-iii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/rupali-12/Leetcode-Problems/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/rupali-12/Leetcode-Problems/tree/master/1563-stone-game-v) |
+| [1872-stone-game-viii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1872-stone-game-viii) |
 | [1927-sum-game](https://github.com/rupali-12/Leetcode-Problems/tree/master/1927-sum-game) |
 ## Minimax
 |  |
 | ------- |
 | [1140-stone-game-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/rupali-12/Leetcode-Problems/tree/master/1510-stone-game-iv) |
+| [1872-stone-game-viii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1872-stone-game-viii) |
 ## Zero-Sum Game
 |  |
 | ------- |
 | [1140-stone-game-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/rupali-12/Leetcode-Problems/tree/master/1510-stone-game-iv) |
+| [1872-stone-game-viii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1872-stone-game-viii) |
 ## Nim Game
 |  |
 | ------- |
