@@ -999,6 +999,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0622-design-circular-queue](https://github.com/rupali-12/Leetcode-Problems/tree/master/0622-design-circular-queue) |
 | [0641-design-circular-deque](https://github.com/rupali-12/Leetcode-Problems/tree/master/0641-design-circular-deque) |
 | [0876-middle-of-the-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0876-middle-of-the-linked-list) |
+| [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/rupali-12/Leetcode-Problems/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 ## Merge Sort
 |  |
 | ------- |
