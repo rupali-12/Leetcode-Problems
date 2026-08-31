@@ -54,20 +54,43 @@ public:
    }
 
     vector<int> nodesBetweenCriticalPoints(ListNode* head) {
-        // Approach -1: Brute force
-        vector<int>arr;
-        ListNode* temp= head;
-        while(temp!=NULL){
-          arr.push_back(temp->val);
-          temp = temp->next;
-        } 
+        // // Approach -1: Brute force
+        // vector<int>arr;
+        // ListNode* temp= head;
+        // while(temp!=NULL){
+        //   arr.push_back(temp->val);
+        //   temp = temp->next;
+        // } 
 
-        int n = arr.size();
-        if(n<3) return {-1, -1};
+        // int n = arr.size();
+        // if(n<3) return {-1, -1};
 
-        int mxDistance = findMaxDistance(arr, n);
-        int mnDistance = findMinDistance(arr, n);
+        // int mxDistance = findMaxDistance(arr, n);
+        // int mnDistance = findMinDistance(arr, n);
 
-        return {mnDistance, mxDistance};
+        // return {mnDistance, mxDistance};
+
+        // Approach -2: optimize approach using linked list 
+        vector<int>criticalPoints;
+        int position=0;
+        ListNode* prev = NULL, *curr = head;
+        while(curr != NULL && curr->next !=NULL){
+            if(prev!=NULL && curr->next !=NULL){
+                if((prev->val > curr->val && curr->next->val > curr->val) || 
+                (prev->val < curr->val && curr->next->val < curr->val)){
+                    criticalPoints.push_back(position);
+                }
+            }
+            prev= curr;
+            curr = curr->next;
+            position++;
+        }
+        if(criticalPoints.size() < 2) return {-1, -1};
+        int mxDis = criticalPoints.back() - criticalPoints.front();
+        int mnDis = INT_MAX;
+        for(int i=1; i<criticalPoints.size(); i++){
+            mnDis = min(mnDis, criticalPoints[i]-criticalPoints[i-1]);
+        }
+        return {mnDis, mxDis};
     }
 };
