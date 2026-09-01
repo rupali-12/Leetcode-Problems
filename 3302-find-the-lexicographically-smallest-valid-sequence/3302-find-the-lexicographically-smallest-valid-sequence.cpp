@@ -1,35 +1,46 @@
 class Solution {
 public:
     vector<int> validSequence(string word1, string word2) {
-        int n = word1.length();
-        int m = word2.length();
-        vector<int>rightHandSideMatchLength(n, 0);
-        int rightMatched=0, j=m-1, i=n-1;
-        while(i>=0){
-            if(j>=0 && word1[i]==word2[j]){
-                rightMatched++;
-                j--;
+        int n = word1.size();
+        int m = word2.size();
+
+        vector<int> last(m, -1);
+
+        int i = n - 1;
+        int j = m - 1;
+
+        while (i >= 0 && j >= 0) {
+            if (word1[i] == word2[j]) {
+                last[j] = i;
+                --j;
             }
-            rightHandSideMatchLength[i] = rightMatched;
-            i--;
+
+            --i;
         }
 
-   vector<int>seq;
-   i=0;
-   j=0;
-   bool changePower =true;  // can change one char
-   while(i<n && j<m){
-    if(word1[i]==word2[j]){
-        seq.push_back(i);
-        j++;
-    }
-    else if(changePower==true && (i+1)< n && rightHandSideMatchLength[i+1]>=(m-j-1)){
-        seq.push_back(i);
-        j++;
-        changePower= false;
-    }
-    i++;
-   }
-   return j==m? seq:vector<int>();
+        vector<int> ans;
+        ans.reserve(m);
+
+        bool canSkip = true;
+        j = 0;
+
+        for (i = 0; i < n && j < m; ++i) {
+            if (word1[i] == word2[j]) {
+                ans.push_back(i);
+                ++j;
+            }
+            else if (canSkip &&
+                     (j == m - 1 || i < last[j + 1])) {
+                canSkip = false;
+                ans.push_back(i);
+                ++j;
+            }
+        }
+
+        if (j == m) {
+            return ans;
+        }
+
+        return {};
     }
 };
