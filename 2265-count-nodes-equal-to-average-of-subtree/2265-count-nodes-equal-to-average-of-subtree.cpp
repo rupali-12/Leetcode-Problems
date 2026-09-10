@@ -11,31 +11,18 @@
  */
 class Solution {
 public:
-    // <sum, countVisited> 
-    pair<int, int> solve(TreeNode* root,  int &ans){
-        if(root==NULL){
-           return {0, 0};
-        }
-        if(root->left==NULL && root->right==NULL){
-            ans++;
-            return {root->val,1};
-        }
-        
-       pair<int, int> leftSum= solve(root->left, ans);
-       pair<int, int> rightSum= solve(root->right, ans);
-        
-        // count cureent root node 
-        int sum= leftSum.first + rightSum.first +root->val;
-        int countVisited = leftSum.second + rightSum.second +1;  // +1 to count current node
-        if(sum/countVisited == root->val){
-            ans++;
-        }
-    
-        return {sum, countVisited};
+    int ans=0;
+    pair<int, int>dfs(TreeNode* node){
+        if(!node) return {0, 0};
+        auto [ls, lc] = dfs(node->left);
+        auto [rs, rc] = dfs(node->right);
+        int sum = ls + rs + node->val;
+        int cnt = lc + rc + 1;
+        if(sum/cnt == node->val) ans++;
+        return {sum, cnt};
     }
     int averageOfSubtree(TreeNode* root) {
-        int ans=0;
-        solve(root, ans);
+        dfs(root);
         return ans;
     }
 };
