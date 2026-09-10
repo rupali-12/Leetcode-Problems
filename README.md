@@ -877,6 +877,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1382-balance-a-binary-search-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1382-balance-a-binary-search-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1448-count-good-nodes-in-binary-tree) |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/rupali-12/Leetcode-Problems/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/rupali-12/Leetcode-Problems/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/rupali-12/Leetcode-Problems/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
@@ -902,6 +903,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1559-detect-cycles-in-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/rupali-12/Leetcode-Problems/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2092-find-all-people-with-secret](https://github.com/rupali-12/Leetcode-Problems/tree/master/2092-find-all-people-with-secret) |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/rupali-12/Leetcode-Problems/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/rupali-12/Leetcode-Problems/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/rupali-12/Leetcode-Problems/tree/master/2685-count-the-number-of-complete-components) |
 | [3310-remove-methods-from-project](https://github.com/rupali-12/Leetcode-Problems/tree/master/3310-remove-methods-from-project) |
@@ -962,6 +964,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1382-balance-a-binary-search-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1382-balance-a-binary-search-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/1448-count-good-nodes-in-binary-tree) |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/rupali-12/Leetcode-Problems/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Segment Tree
 |  |
 | ------- |
