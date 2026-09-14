@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/rupali-12/Leetcode-Problems/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0788-rotated-digits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0788-rotated-digits) |
 | [0812-largest-triangle-area](https://github.com/rupali-12/Leetcode-Problems/tree/master/0812-largest-triangle-area) |
+| [0836-rectangle-overlap](https://github.com/rupali-12/Leetcode-Problems/tree/master/0836-rectangle-overlap) |
 | [0869-reordered-power-of-2](https://github.com/rupali-12/Leetcode-Problems/tree/master/0869-reordered-power-of-2) |
 | [0877-stone-game](https://github.com/rupali-12/Leetcode-Problems/tree/master/0877-stone-game) |
 | [0973-k-closest-points-to-origin](https://github.com/rupali-12/Leetcode-Problems/tree/master/0973-k-closest-points-to-origin) |
@@ -770,6 +771,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0812-largest-triangle-area](https://github.com/rupali-12/Leetcode-Problems/tree/master/0812-largest-triangle-area) |
+| [0836-rectangle-overlap](https://github.com/rupali-12/Leetcode-Problems/tree/master/0836-rectangle-overlap) |
 | [0973-k-closest-points-to-origin](https://github.com/rupali-12/Leetcode-Problems/tree/master/0973-k-closest-points-to-origin) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/rupali-12/Leetcode-Problems/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/rupali-12/Leetcode-Problems/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
