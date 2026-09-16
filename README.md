@@ -26,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1510-stone-game-iv](https://github.com/rupali-12/Leetcode-Problems/tree/master/1510-stone-game-iv) |
 | [1523-count-odd-numbers-in-an-interval-range](https://github.com/rupali-12/Leetcode-Problems/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 | [1563-stone-game-v](https://github.com/rupali-12/Leetcode-Problems/tree/master/1563-stone-game-v) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/rupali-12/Leetcode-Problems/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/rupali-12/Leetcode-Problems/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
 | [1840-maximum-building-height](https://github.com/rupali-12/Leetcode-Problems/tree/master/1840-maximum-building-height) |
 | [1872-stone-game-viii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1872-stone-game-viii) |
@@ -542,6 +543,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/rupali-12/Leetcode-Problems/tree/master/0238-product-of-array-except-self) |
 | [1140-stone-game-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1140-stone-game-ii) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/rupali-12/Leetcode-Problems/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/rupali-12/Leetcode-Problems/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1732-find-the-highest-altitude](https://github.com/rupali-12/Leetcode-Problems/tree/master/1732-find-the-highest-altitude) |
 | [1871-jump-game-vii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1871-jump-game-vii) |
@@ -608,6 +610,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1563-stone-game-v](https://github.com/rupali-12/Leetcode-Problems/tree/master/1563-stone-game-v) |
 | [1578-minimum-time-to-make-rope-colorful](https://github.com/rupali-12/Leetcode-Problems/tree/master/1578-minimum-time-to-make-rope-colorful) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/rupali-12/Leetcode-Problems/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/rupali-12/Leetcode-Problems/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [1871-jump-game-vii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1871-jump-game-vii) |
 | [1872-stone-game-viii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1872-stone-game-viii) |
@@ -844,6 +847,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Combinatorics
 |  |
 | ------- |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/rupali-12/Leetcode-Problems/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [3312-sorted-gcd-pair-queries](https://github.com/rupali-12/Leetcode-Problems/tree/master/3312-sorted-gcd-pair-queries) |
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3518-smallest-palindromic-rearrangement-ii) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
