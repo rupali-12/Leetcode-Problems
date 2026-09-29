@@ -319,6 +319,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/rupali-12/Leetcode-Problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/rupali-12/Leetcode-Problems/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/rupali-12/Leetcode-Problems/tree/master/2213-longest-substring-of-one-repeating-character) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/rupali-12/Leetcode-Problems/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/rupali-12/Leetcode-Problems/tree/master/2452-words-within-two-edits-of-dictionary) |
@@ -640,6 +641,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2054-two-best-non-overlapping-events](https://github.com/rupali-12/Leetcode-Problems/tree/master/2054-two-best-non-overlapping-events) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/rupali-12/Leetcode-Problems/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2147-number-of-ways-to-divide-a-long-corridor](https://github.com/rupali-12/Leetcode-Problems/tree/master/2147-number-of-ways-to-divide-a-long-corridor) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/rupali-12/Leetcode-Problems/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2463-minimum-total-distance-traveled](https://github.com/rupali-12/Leetcode-Problems/tree/master/2463-minimum-total-distance-traveled) |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/rupali-12/Leetcode-Problems/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
@@ -733,6 +735,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1895-largest-magic-square](https://github.com/rupali-12/Leetcode-Problems/tree/master/1895-largest-magic-square) |
 | [1914-cyclically-rotating-a-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1914-cyclically-rotating-a-grid) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/rupali-12/Leetcode-Problems/tree/master/1970-last-day-where-you-can-still-cross) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/rupali-12/Leetcode-Problems/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rupali-12/Leetcode-Problems/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2536-increment-submatrices-by-one](https://github.com/rupali-12/Leetcode-Problems/tree/master/2536-increment-submatrices-by-one) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/2812-find-the-safest-path-in-a-grid) |
@@ -1173,4 +1176,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/rupali-12/Leetcode-Problems/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 <!---LeetCode Topics End-->
