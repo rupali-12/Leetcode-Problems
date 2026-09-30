@@ -122,6 +122,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0981-time-based-key-value-store](https://github.com/rupali-12/Leetcode-Problems/tree/master/0981-time-based-key-value-store) |
 | [1096-brace-expansion-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1096-brace-expansion-ii) |
+| [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/rupali-12/Leetcode-Problems/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1189-maximum-number-of-balloons](https://github.com/rupali-12/Leetcode-Problems/tree/master/1189-maximum-number-of-balloons) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
@@ -852,6 +853,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0739-daily-temperatures](https://github.com/rupali-12/Leetcode-Problems/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/rupali-12/Leetcode-Problems/tree/master/0853-car-fleet) |
 | [1096-brace-expansion-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1096-brace-expansion-ii) |
+| [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/rupali-12/Leetcode-Problems/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
@@ -1174,6 +1176,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bracket Sequences
 |  |
 | ------- |
+| [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/rupali-12/Leetcode-Problems/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/rupali-12/Leetcode-Problems/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
