@@ -21,11 +21,11 @@ public:
         vector<int>ans(n);
         st.push(-1);
         for(int i=0; i<n; i++){
-            while(st.top()!=-1 && arr[st.top()] >= arr[i]){
+            while(st.top()!=-1 && arr[st.top()]>=arr[i]){
                 st.pop();
             }
 
-            ans[i] =st.top();
+            ans[i]= st.top();
             st.push(i);
         }
         return ans;
@@ -36,11 +36,11 @@ public:
         vector<int>ans(n);
         st.push(-1);
         for(int i=n-1; i>=0; i--){
-            while(st.top()!=-1 && arr[st.top()] >= arr[i]){
+            while(st.top()!=-1 && arr[st.top()]>=arr[i]){
                 st.pop();
             }
 
-            ans[i] =st.top();
+            ans[i]= st.top();
             st.push(i);
         }
         return ans;
@@ -54,15 +54,15 @@ public:
         vector<int>next(n);
         next = nextSmaller(heights, n);
        
-        int ans= INT_MIN;
-        for(int i=0; i<n; i++){
-            int height = heights[i];
-            if(next[i]==-1){
-                next[i]= n;
-            }
+       int ans = INT_MIN;
+       for(int i=0; i<n; i++){
+         int height = heights[i];
+         if(next[i]==-1){
+            next[i]=n;
+         }
             int breadth = next[i] - prev[i] -1;
             ans=max(ans, height*breadth);
-        }
+       }
         return ans;
     }
 };
