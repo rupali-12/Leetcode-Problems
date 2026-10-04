@@ -115,6 +115,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0567-permutation-in-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/rupali-12/Leetcode-Problems/tree/master/0647-palindromic-substrings) |
 | [0657-robot-return-to-origin](https://github.com/rupali-12/Leetcode-Problems/tree/master/0657-robot-return-to-origin) |
+| [0678-valid-parenthesis-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0678-valid-parenthesis-string) |
 | [0752-open-the-lock](https://github.com/rupali-12/Leetcode-Problems/tree/master/0752-open-the-lock) |
 | [0756-pyramid-transition-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0756-pyramid-transition-matrix) |
 | [0796-rotate-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0796-rotate-string) |
@@ -182,6 +183,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/rupali-12/Leetcode-Problems/tree/master/0011-container-with-most-water) |
 | [0179-largest-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0179-largest-number) |
 | [0621-task-scheduler](https://github.com/rupali-12/Leetcode-Problems/tree/master/0621-task-scheduler) |
+| [0678-valid-parenthesis-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0678-valid-parenthesis-string) |
 | [0759-set-intersection-size-at-least-two](https://github.com/rupali-12/Leetcode-Problems/tree/master/0759-set-intersection-size-at-least-two) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/rupali-12/Leetcode-Problems/tree/master/1262-greatest-sum-divisible-by-three) |
@@ -622,6 +624,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0124-binary-tree-maximum-path-sum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0486-predict-the-winner](https://github.com/rupali-12/Leetcode-Problems/tree/master/0486-predict-the-winner) |
 | [0647-palindromic-substrings](https://github.com/rupali-12/Leetcode-Problems/tree/master/0647-palindromic-substrings) |
+| [0678-valid-parenthesis-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0678-valid-parenthesis-string) |
 | [0788-rotated-digits](https://github.com/rupali-12/Leetcode-Problems/tree/master/0788-rotated-digits) |
 | [0799-champagne-tower](https://github.com/rupali-12/Leetcode-Problems/tree/master/0799-champagne-tower) |
 | [0823-binary-trees-with-factors](https://github.com/rupali-12/Leetcode-Problems/tree/master/0823-binary-trees-with-factors) |
@@ -854,6 +857,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0155-min-stack](https://github.com/rupali-12/Leetcode-Problems/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/rupali-12/Leetcode-Problems/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/rupali-12/Leetcode-Problems/tree/master/0232-implement-queue-using-stacks) |
+| [0678-valid-parenthesis-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0678-valid-parenthesis-string) |
 | [0739-daily-temperatures](https://github.com/rupali-12/Leetcode-Problems/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/rupali-12/Leetcode-Problems/tree/master/0853-car-fleet) |
 | [1096-brace-expansion-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1096-brace-expansion-ii) |
@@ -1183,6 +1187,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0020-valid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0032-longest-valid-parentheses) |
+| [0678-valid-parenthesis-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0678-valid-parenthesis-string) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/rupali-12/Leetcode-Problems/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
