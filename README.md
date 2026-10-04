@@ -420,6 +420,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/rupali-12/Leetcode-Problems/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0128-longest-consecutive-sequence](https://github.com/rupali-12/Leetcode-Problems/tree/master/0128-longest-consecutive-sequence) |
 | [0141-linked-list-cycle](https://github.com/rupali-12/Leetcode-Problems/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/rupali-12/Leetcode-Problems/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/rupali-12/Leetcode-Problems/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/rupali-12/Leetcode-Problems/tree/master/0217-contains-duplicate) |
@@ -1060,6 +1061,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0061-rotate-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0061-rotate-list) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0141-linked-list-cycle](https://github.com/rupali-12/Leetcode-Problems/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/rupali-12/Leetcode-Problems/tree/master/0146-lru-cache) |
 | [0148-sort-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0148-sort-list) |
 | [0206-reverse-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0206-reverse-linked-list) |
 | [0355-design-twitter](https://github.com/rupali-12/Leetcode-Problems/tree/master/0355-design-twitter) |
@@ -1086,6 +1088,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/rupali-12/Leetcode-Problems/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/rupali-12/Leetcode-Problems/tree/master/0155-min-stack) |
 | [0208-implement-trie-prefix-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0208-implement-trie-prefix-tree) |
 | [0225-implement-stack-using-queues](https://github.com/rupali-12/Leetcode-Problems/tree/master/0225-implement-stack-using-queues) |
@@ -1192,4 +1195,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/rupali-12/Leetcode-Problems/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/rupali-12/Leetcode-Problems/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
