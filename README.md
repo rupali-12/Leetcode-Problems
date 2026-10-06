@@ -106,6 +106,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0022-generate-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0032-longest-valid-parentheses) |
 | [0076-minimum-window-substring](https://github.com/rupali-12/Leetcode-Problems/tree/master/0076-minimum-window-substring) |
+| [0079-word-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/rupali-12/Leetcode-Problems/tree/master/0125-valid-palindrome) |
 | [0179-largest-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0179-largest-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0208-implement-trie-prefix-tree) |
@@ -249,6 +250,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/rupali-12/Leetcode-Problems/tree/master/0048-rotate-image) |
 | [0074-search-a-2d-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/rupali-12/Leetcode-Problems/tree/master/0075-sort-colors) |
+| [0079-word-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/rupali-12/Leetcode-Problems/tree/master/0084-largest-rectangle-in-histogram) |
 | [0088-merge-sorted-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0088-merge-sorted-array) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/rupali-12/Leetcode-Problems/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
@@ -737,6 +739,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0048-rotate-image](https://github.com/rupali-12/Leetcode-Problems/tree/master/0048-rotate-image) |
 | [0074-search-a-2d-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0074-search-a-2d-matrix) |
+| [0079-word-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0079-word-search) |
 | [1260-shift-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1260-shift-2d-grid) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1559-detect-cycles-in-2d-grid) |
@@ -942,6 +945,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0079-word-search) |
 | [0098-validate-binary-search-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0100-same-tree) |
 | [0110-balanced-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0110-balanced-binary-tree) |
@@ -1002,6 +1006,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0022-generate-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/rupali-12/Leetcode-Problems/tree/master/0046-permutations) |
+| [0079-word-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0079-word-search) |
 | [0401-binary-watch](https://github.com/rupali-12/Leetcode-Problems/tree/master/0401-binary-watch) |
 | [0756-pyramid-transition-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0756-pyramid-transition-matrix) |
 | [1096-brace-expansion-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1096-brace-expansion-ii) |
