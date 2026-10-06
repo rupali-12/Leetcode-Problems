@@ -1,26 +1,36 @@
 class Solution {
 public:
-    bool solve(int index, int i, int j, string word, vector<vector<char>>& board){
-        if(index==word.length()) return true;
-        if(i<0 || j<0 || i==board.size() || j==board[0].size()) return false;
-        bool ans= false;
-        if(word[index]==board[i][j]){
-            board[i][j]='*' ;  // to avoid run time error
-            ans= solve(index+1, i-1, j, word, board) || solve(index+1, i+1, j, word, board) || solve(index+1, i, j-1, word, board) || solve(index+1, i, j+1, word, board);
-            
-            board[i][j]= word[index];  // backtrack
+    int m, n;
+    vector<vector<bool>> visited;
+    vector<vector<int>> dp;
+    bool solve(vector<vector<char>>& board, int i, int j, string word,
+               int index) {
+        if (index == word.length())
+            return true;
+        if (i >= m || j >= n || i < 0 || j < 0)
+            return false;
+        bool ans = false;
+        if (word[index] == board[i][j]) {
+            board[i][j] = '*'; // mark for visit
+            bool right = solve(board, i, j + 1, word, index+1);
+            bool left = solve(board, i, j - 1, word, index+1);
+            bool up = solve(board, i - 1, j, word, index+1);
+            bool down = solve(board, i + 1, j, word, index+1);
+            ans = right || left || up || down;
+
+            // backtrack
+            board[i][j] = word[index];
         }
         return ans;
     }
     bool exist(vector<vector<char>>& board, string word) {
-        int m=board.size(), n= board[0].size();
-        int index=0;
-        for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){
-                if(word[index]==board[i][j]){
-                    if(solve(index, i, j, word, board)){
+        m = board.size(), n = board[0].size();
+        int index = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (word[index] == board[i][j]) {
+                    if (solve(board, i, j, word, index))
                         return true;
-                    }
                 }
             }
         }
