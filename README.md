@@ -111,6 +111,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0179-largest-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0179-largest-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0208-implement-trie-prefix-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0301-remove-invalid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0301-remove-invalid-parentheses) |
 | [0412-fizz-buzz](https://github.com/rupali-12/Leetcode-Problems/tree/master/0412-fizz-buzz) |
 | [0424-longest-repeating-character-replacement](https://github.com/rupali-12/Leetcode-Problems/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/rupali-12/Leetcode-Problems/tree/master/0567-permutation-in-string) |
@@ -979,6 +980,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0199-binary-tree-right-side-view](https://github.com/rupali-12/Leetcode-Problems/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0301-remove-invalid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0301-remove-invalid-parentheses) |
 | [0752-open-the-lock](https://github.com/rupali-12/Leetcode-Problems/tree/master/0752-open-the-lock) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/rupali-12/Leetcode-Problems/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1096-brace-expansion-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1096-brace-expansion-ii) |
@@ -1007,6 +1009,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/rupali-12/Leetcode-Problems/tree/master/0046-permutations) |
 | [0079-word-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0079-word-search) |
+| [0301-remove-invalid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0301-remove-invalid-parentheses) |
 | [0401-binary-watch](https://github.com/rupali-12/Leetcode-Problems/tree/master/0401-binary-watch) |
 | [0756-pyramid-transition-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0756-pyramid-transition-matrix) |
 | [1096-brace-expansion-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/1096-brace-expansion-ii) |
