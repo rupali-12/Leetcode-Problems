@@ -18,22 +18,51 @@ public:
         mp[root->val]++;
         solve(root->right, mp);
     }
-    vector<int> findMode(TreeNode* root) {
-        // Approach-1: unordered_map 
-        unordered_map<int, int>mp;
-        solve(root, mp);
 
-        int maxFreq=0;
-        for(auto m: mp){
-            if(m.second > maxFreq){
-                maxFreq = m.second;
-                ans={};
-                ans.push_back(m.first);
-            }
-            else if(m.second == maxFreq){
-                ans.push_back(m.first);
-            }
-        }
+    void dfs(TreeNode* root, int &currNum, int &currFreq, int &maxFreq){
+       if(root==NULL) return;
+
+       dfs(root->left, currNum, currFreq, maxFreq);
+
+       if(root->val == currNum){
+        currFreq++;
+       }
+       else{
+        currNum= root->val;
+        currFreq=1;
+       }
+
+       if(currFreq>maxFreq){
+        maxFreq= currFreq;
+        ans={};
+       }
+        if(currFreq==maxFreq){
+        ans.push_back(root->val);
+       }
+       dfs(root->right, currNum, currFreq, maxFreq);
+    }
+
+    vector<int> findMode(TreeNode* root) {
+        // // Approach-1: unordered_map 
+        // unordered_map<int, int>mp;
+        // solve(root, mp);
+
+        // int maxFreq=0;
+        // for(auto m: mp){
+        //     if(m.second > maxFreq){
+        //         maxFreq = m.second;
+        //         ans={};
+        //         ans.push_back(m.first);
+        //     }
+        //     else if(m.second == maxFreq){
+        //         ans.push_back(m.first);
+        //     }
+        // }
+        // return ans;
+
+        // Approach-2: using DFS - Inplace way
+        int currNum=0, currFreq = 0, maxFreq=0;
+        dfs(root, currNum, currFreq, maxFreq);
         return ans;
     }
 };
