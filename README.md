@@ -885,6 +885,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0032-longest-valid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/rupali-12/Leetcode-Problems/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/rupali-12/Leetcode-Problems/tree/master/0084-largest-rectangle-in-histogram) |
+| [0094-binary-tree-inorder-traversal](https://github.com/rupali-12/Leetcode-Problems/tree/master/0094-binary-tree-inorder-traversal) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0155-min-stack](https://github.com/rupali-12/Leetcode-Problems/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/rupali-12/Leetcode-Problems/tree/master/0225-implement-stack-using-queues) |
@@ -947,6 +948,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Tree
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/rupali-12/Leetcode-Problems/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0100-same-tree) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/rupali-12/Leetcode-Problems/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
@@ -972,6 +974,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0079-word-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0079-word-search) |
+| [0094-binary-tree-inorder-traversal](https://github.com/rupali-12/Leetcode-Problems/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0100-same-tree) |
 | [0110-balanced-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0110-balanced-binary-tree) |
@@ -1043,6 +1046,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Tree
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/rupali-12/Leetcode-Problems/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0100-same-tree) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/rupali-12/Leetcode-Problems/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
