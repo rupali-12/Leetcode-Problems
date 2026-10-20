@@ -11,50 +11,15 @@
  */
 class Solution {
 public:
+    vector<int>ans;
+    void solve(TreeNode* root){
+        if(root==NULL) return;
+        solve(root->left);
+        ans.push_back(root->val);
+        solve(root->right);
+    }
     vector<int> inorderTraversal(TreeNode* root) {
-        // vector<int>ans;
-        // if(root==NULL){
-        //     return ans;
-        // }
-        // vector<int>left =inorderTraversal(root->left);
-        // ans.insert(ans.end(), left.begin(), left.end());
-        // ans.push_back(root->val);
-        //  vector<int>right =inorderTraversal(root->right);
-        // ans.insert(ans.end(), right.begin(), right.end());
-        // return ans;
-        
-        // Morris traversal
-       vector<int>ans;
-        if(root==NULL){
-            return ans;
-        }
-        TreeNode* curr= root;
-        while(curr!=NULL){
-            if(curr->left==NULL){
-                ans.push_back(curr->val);
-                curr= curr->right;
-            }
-            else{
-                TreeNode* pred= curr->left;
-                while(pred->right!=NULL && pred->right!=curr){
-                    pred= pred->right;
-                }
-                 
-                // if pred->right not exist 
-                if(pred->right==NULL){
-                    pred->right= curr;
-                    curr= curr->left;
-                }
-                else{
-                    pred->right=NULL;
-                    ans.push_back(curr->val);
-                    curr= curr->right;
-                }
-            }
-        }
-        
-        
-            
+        solve(root);
         return ans;
     }
 };
