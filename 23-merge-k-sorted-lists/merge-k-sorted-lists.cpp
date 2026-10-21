@@ -10,79 +10,70 @@
  */
 class Solution {
 public:
-class compare{
+    class compare {
     public:
-    bool operator()(ListNode* a, ListNode* b){
-        return a->val > b->val;
-    }
-};
-    ListNode* merge(ListNode* first, ListNode* second){
-        if(first==NULL) return second;
-        if(second==NULL) return first;
-        
-        ListNode* ans=new ListNode(0);
-        ListNode* temp=ans;
-        while(first!=NULL && second !=NULL){
-            if(first->val < second->val){
-                temp->next = first;
-                first= first->next;
-            }
-            else{
-                temp->next = second;
-                second= second->next;
-            }
-                temp=temp->next;
-        }
-        
-        temp->next = first==NULL?second:first;
-        return ans->next;
-    }
+        bool operator()(ListNode* a, ListNode* b) { return a->val > b->val; }
+    };
+    ListNode* mergeSortedList(ListNode* l1, ListNode* l2) {
+        if (!l1)
+            return l2;
+        if (!l2)
+            return l1;
 
+        if (l1->val <= l2->val) {
+            l1->next = mergeSortedList(l1->next, l2);
+            return l1;
+        } else {
+            l2->next = mergeSortedList(l1, l2->next);
+            return l2;
+        }
+        return NULL;
+    }
+    ListNode* partitionAndMerge(int s, int e, vector<ListNode*> lists) {
+        if (s > e)
+            return NULL;
+        if (s == e) {
+            return lists[s];
+        }
+        int mid = s + (e - s) / 2;
+        ListNode* l1 = partitionAndMerge(s, mid, lists);
+        ListNode* l2 = partitionAndMerge(mid + 1, e, lists);
+
+        return mergeSortedList(l1, l2);
+    }
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        // Approach-1: MAnual processing merging one by one
-    //     if(lists.empty()) return NULL;
-    //    ListNode* ans= lists[0];
-    //     int i=1;
+        // // Approach -1: using partition
+        // int n = lists.size();
+        // if(n==0) return NULL;
+        // return partitionAndMerge(0, n-1, lists);
 
-    //     while(i<lists.size()){
-    //         ans = merge(ans, lists[i]);
-    //         i++;
-    //     }
-    //     return ans;
+        // Approach -2: using min heap
+        priority_queue<ListNode*, vector<ListNode*>, compare> minHeap;
+        ListNode *head = NULL, *tail = NULL;
 
-    // Approach 2: using priority queue
-     int k=lists.size();
-     priority_queue<ListNode*, vector<ListNode*>, compare>minHeap;
-
-     if(k==0) return NULL;
-
-     for(int i=0; i<k; i++){
-        if(lists[i]!=NULL){
-            minHeap.push(lists[i]);
+        for (int i = 0; i < lists.size(); i++) {
+            if (lists[i] != NULL) {
+                minHeap.push(lists[i]);
+            }
         }
-     }
 
-     ListNode* head= NULL;
-     ListNode* tail= NULL;
-
-     while(minHeap.size()>0){
-       ListNode* top =minHeap.top();
-       minHeap.pop();
-
-       if(top->next != NULL){  // insert in heap
-            minHeap.push(top->next);
-          }
-
-       if(head==NULL){   // first insertion
-          head= top;
-          tail=top;
-       }
-       else{
-          tail->next= top;
-          tail =top;
-       }
-     }
-
-     return head;
+        while (!minHeap.empty()) {
+            ListNode* top = minHeap.top();
+            minHeap.pop();
+            if (head == NULL) { // first insertion
+                head = top;
+                tail = top;
+                if (tail->next != NULL) {
+                    minHeap.push(tail->next);
+                }
+            } else {
+                tail->next = top;
+                tail = top;
+                if (tail->next != NULL) {
+                    minHeap.push(tail->next);
+                }
+            }
+        }
+        return head;
     }
 };
