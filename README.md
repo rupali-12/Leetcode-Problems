@@ -414,6 +414,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/rupali-12/Leetcode-Problems/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3640-trionic-array-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3640-trionic-array-ii) |
 | [3643-flip-square-submatrix-vertically](https://github.com/rupali-12/Leetcode-Problems/tree/master/3643-flip-square-submatrix-vertically) |
+| [3644-maximum-k-to-sort-a-permutation](https://github.com/rupali-12/Leetcode-Problems/tree/master/3644-maximum-k-to-sort-a-permutation) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/rupali-12/Leetcode-Problems/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/rupali-12/Leetcode-Problems/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
 | [3660-jump-game-ix](https://github.com/rupali-12/Leetcode-Problems/tree/master/3660-jump-game-ix) |
@@ -594,6 +595,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/rupali-12/Leetcode-Problems/tree/master/3568-minimum-moves-to-clean-the-classroom) |
+| [3644-maximum-k-to-sort-a-permutation](https://github.com/rupali-12/Leetcode-Problems/tree/master/3644-maximum-k-to-sort-a-permutation) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/rupali-12/Leetcode-Problems/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
 ## Prefix Sum
 |  |
