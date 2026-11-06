@@ -275,6 +275,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rupali-12/Leetcode-Problems/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/rupali-12/Leetcode-Problems/tree/master/0169-majority-element) |
 | [0179-largest-number](https://github.com/rupali-12/Leetcode-Problems/tree/master/0179-largest-number) |
+| [0200-number-of-islands](https://github.com/rupali-12/Leetcode-Problems/tree/master/0200-number-of-islands) |
 | [0215-kth-largest-element-in-an-array](https://github.com/rupali-12/Leetcode-Problems/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/rupali-12/Leetcode-Problems/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/rupali-12/Leetcode-Problems/tree/master/0219-contains-duplicate-ii) |
@@ -789,6 +790,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/rupali-12/Leetcode-Problems/tree/master/0048-rotate-image) |
 | [0074-search-a-2d-matrix](https://github.com/rupali-12/Leetcode-Problems/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/rupali-12/Leetcode-Problems/tree/master/0079-word-search) |
+| [0200-number-of-islands](https://github.com/rupali-12/Leetcode-Problems/tree/master/0200-number-of-islands) |
 | [1254-number-of-closed-islands](https://github.com/rupali-12/Leetcode-Problems/tree/master/1254-number-of-closed-islands) |
 | [1260-shift-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1260-shift-2d-grid) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
@@ -1017,6 +1019,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/rupali-12/Leetcode-Problems/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/rupali-12/Leetcode-Problems/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0199-binary-tree-right-side-view](https://github.com/rupali-12/Leetcode-Problems/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/rupali-12/Leetcode-Problems/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0501-find-mode-in-binary-search-tree) |
@@ -1046,6 +1049,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0100-same-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0100-same-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/rupali-12/Leetcode-Problems/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/rupali-12/Leetcode-Problems/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/rupali-12/Leetcode-Problems/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0301-remove-invalid-parentheses](https://github.com/rupali-12/Leetcode-Problems/tree/master/0301-remove-invalid-parentheses) |
@@ -1195,6 +1199,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Union-Find
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/rupali-12/Leetcode-Problems/tree/master/0200-number-of-islands) |
 | [1254-number-of-closed-islands](https://github.com/rupali-12/Leetcode-Problems/tree/master/1254-number-of-closed-islands) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/rupali-12/Leetcode-Problems/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/rupali-12/Leetcode-Problems/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
